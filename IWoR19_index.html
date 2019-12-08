@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 800px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="active"><a href="IWoR19_Experiment.html">Experiment</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid text-center">
+  <div class="row content">
+
+    <div class="col-sm-2 sidenav">
+     <h3>Collected Data</h3>
+     <div class="well">
+        <p></p>
+      <p><a href="./commit_InternalQA_update.csv">Commits Containing Internal Quality Attributes</a></p>
+    </div>
+  <div class="well">
+        <p></p>
+      <p><a href="./commit_ExternalQA_update.csv">Commits Containing External Quality Attributes</a></p>
+    </div>
+  <div class="well">
+        <p></p>
+      <p><a href="./commit_CodeSmell_update.csv">Commits Containing Code Smells</a></p>
+    </div>
+    <div class="well">
+        <p></p>
+      <p><a href="./commit_with_refactor_keyword_update.csv">Commits Labeled "Refactor"</a></p>
+    </div>
+    <div class="well">
+        <p></p>
+      <p><a href="./commit_without_keyword_refactor_update.csv">Commits Unlabeled "Refactor"</a></p>
+    </div>
+    </div>
+
+
+    <div class="col-sm-8 text-left">
+      <h1>Can Refactoring be Self-Affirmed? An Exploratory Study on How Developers Document their Refactoring Activities in Commit Messages</h1>
+      <hr>
+      <p>In this empirical study, we examined refactoring activities to explore how developers document their refactoring activities during
+the software life-cycle. Then we extract the rationale behind the applied refactorings, e.g.,
+fixing code smells or improving specific quality attributes. Our approach relies on text mining refactoring-related change
+messages and identifying refactoring patterns by only considering
+refactoring commits.</p><br>
+      <p>More specifically, the research questions that we investigated are:</p>
+      <p><strong>RQ1. What patterns do developers use to describe their
+refactoring activities?</strong></p>
+      <p>Since there is no consensus on how to formally document the act of refactoring code, we mine in this research questions, patterns, using which developers have described their refactoring activities. The outcome of this research question enumerates the most popular text patterns used in the analyzed commit messages.</p>
+      <p><strong>RQ2. What are the quality issues that drive developers to refactor?</strong></p>
+      <p>In this research question, we investigate whether developers explicitly mention the purpose of their refactoring activity, e.g.,
+improving structural metrics of fixing code smells.</p>
+      <p><strong>RQ3. What are the top-10 patterns developers use to
+describe quality issues in their commits?</strong></p>
+      <p>we link between patterns extracted from the first research question and the quality issues found in the second question. We explore how developers express combining them
+to express their refactoring activity.</p>
+      <p><strong>RQ4. Do Commits containing the label "Refactor" indicate
+more refactoring activity than those without the label?</strong></p>
+      <p>We quantify the commit messages with the label "refactor" and without to compare between them.</p>
+</br>
+<p>If you are interested to learn more about the process we followed, please refer to our paper.</p>
+<hr>
+<!--
+<div style="text-align: center" >
+
+<img src="./pattern.PNG" height="1000" width="1000"></div>
+-->
+<!--
+<div style="text-align: center" >
+
+<?php include_once "graph.php" ?>
+
+</div>
+<div style="text-align: center" >
+
+<div id="SecondHTML">
+</div>
+</div>
+<script>
+$(function()
+{
+$("#SecondHTML").load("graph.html");
+});
+
+</script>
+<div style="text-align: center" >
+
+<hr>
+<div w3-include-html="graph.html"></div>
+<script>
+w3IncludeHTML();
+</script>
+</div>
+-->
+
+      <h3>Related Paper</h3>
+      <p>Eman Abdullah AlOmar, Mohamed Wiem Mkaouer, and Ali Ouni, "Can  refactoring  be  self-affirmed? an  exploratory  study  on  how  developers  document  their  refactoring  activities in  commit  messages", the 3nd  International  Workshop  on Refactoring (IWoR'2019). <a href="./IWoR_Manuscript.pdf">[preprint]</a></p>
+    </div>
+    <div class="col-sm-2 sidenav">
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,472 @@
+Commit message
+Deduplicate code in InterpretedByteCode
+"[1120417] Break up transaction of updatePluginConfigurationDefinition into smaller pieces Another pass here given some oracle test failures in the CI env. - Fix an issue with PropertyDefinitionSimple.removeEnumeratedValues.   An unexpected problem brought out, I guess, by the Tx reworking,   must be careful not to replace hibernate proxy dealing with   orphanRemoval. - remove unnecessary REQUIRES_NEW that could lead to locking issues - remove some dead code - start shortening xxxInNewTransaction to xxxInNewTx, purely for selfish reasons."
+Added a FoldedData class for cycling through training
+"EST-610-add-display-order-to-property: Removed the @Nullable annotation, which was causing build errors. No longer sorting the allProperties() by default. Moved duplicate code in the moveUp/Down functions to a general move function. Removed secondary ordering by name. Since the allProperties() doesn't sort by default, several sorts are performed inside the PropertyOrderingViewModel"
+Code cleanup:  Score function should work in doubles to avoid wrapping on longs for long distances;  Minimum distance we care about was too high;  Removed link between Geo Only and Lucene+Geo path;  Removed some dead code that was commented out
+Introduce Writeback to reduce duplicate codes
+rename and remove dead code
+Camel forge command - Align the duplicate code we have for add/edit endpoint options to use same class.
+"ISIS-1711: removes dead code, renames method"
+move duplicate code to common method loadEntryWithCacheHints()
+refactoring of Abstract*DataSet to delete duplicate code
+Moving some duplicate code into AttachmentUtil
+"- Bugzilla Bug (s) Resolved: 284870,284794 - Description: remove and merge duplicate code in multiple places"
+Remove dead code.
+embellish DuplicateBranches detector to look at switch statements. TODO: Need to convert relative offsets to absolute offsets so that branches inside the case statement match when the target is the same.
+Add new UnsignedLong methods that we will shortly migrate to. ------------- Created by MOE: http://code.google.com/p/moe-java MOE_MIGRATED_REVID=38454126
+Some changes to counter store      removed dead code      fixed bug on handling display of ethtypes with MSB set      replaced counterkey string processing on every packet-in with tuple keys      removed collection of traffic type per switch-port
+"PDI-11201 - Modified processList, processRecord in NoAuthMongoClientWrapper to allow for null values, added fields to unit test json to validate, deleted dead code"
+"- Moved Address.java in client.http package, did minor changes. - Removed duplicate code for Voice and DataType classes. - Added comments in server code - not completed yet (old comments remaining here and there) but important things are documented now. - Changed class name marytts.client.http/MaryHtmlForm to ""MaryBaseClient"" since it is the base class that all clients use for communicating with Mary server."
+StewartSingularValueDecomposition: re-factor monolithic code and ugly switch statement into multiple methods
+Remove dead code: entity delta gui code (because planning entity's cloned don't equals() true so the Set/Map gets always return null)
+"Entangled Table_Test, partially removed duplicate code"
+Duplicate code is my nemesis...
+Remove duplicate code when handling PING
+Reduce duplicate code and code complexity
+removed dead code moved code about specific elements to the layout factory (link and br) fixed form rendering bug
+ROO-2337: Post 1.1.3.RELEASE code refactor and clean up - opened up type location and removed duplicate code from GwtOperationsImpl
+"Fixed compilation problems - missing dependency for interpreter project. Further implementation of switch statement (""defaultcase"" can be located in any order among case statements)."
+"Removed dead code.  Moved generic read and write methods to FileReader, FileWriter. "
+move some duplicate code in a common place
+Now the compiler supports a switch statement.
+Removed: dead code; increase testing
+Renames the ComplexData classes that will be kept.
+Refactored dead code elimination
+Refactored to use a sensible MantaMetadata class.
+Refactor and removal og duplicate code.
+got rid of some duplicate code in the Goal classes
+" - Merge changes from Pull-Request #6 	 - Fix aggregation generation and cleanup dead code  - Update dependencies versions"
+"Documented depositSchemaProperty, and refactored duplicate code into a single method within BeanSerializerBase"
+"DelegatingPreparedStatement extends DelegatingStatement DelegatingCallableStatement extends DelegatingPreparedStatement => refactoring to remove duplicate code & other general cleanup => getDelegate methods changed signature (return always ""Statement"")"
+"More style stuff; use \n line separator always, unify use of log placeholders, fix unit tests that weren't cleaning up files (MAHOUT-217), remove dead code, redundancies, etc."
+"ISIS-993: factored out LayoutMetadataService, renamed the metadata classes"
+fix duplicate code
+Updated test method names to new API of data classes
+improve test coverage of ParseableQuery and LuxQueryParser; removed some dead code
+refactoring long method hadleException
+NetCDFReader code to be moved into ExperimentalData class
+Remove dead code and optimize boolean filter
+engine: Moving Duplicate Code to Base Class
+"MATH-389 Duplicate code in ""MultivariateRealOptimizer"" and ""DifferentiableMultivariateRealOptimizer"" moved to new interface ""BaseMultivariateRealOptimizer"". New ""AbstractScalarOptimizer"" superclass allow implementations that do not use derivatives. Deprecated ""protected"" fields. ""NonLinearConjugateGradientOptimizer"" changed to make use of the newly added accessors instead of the ""protected"" fields."
+JCLOUDS-826: Add blob operations
+Removed duplicate code.
+Changelog updated and make MetaData class compile
+Removed dead code since DegreeCurricularPlans and StudentCurricularPlans now always have a root group.
+Added new Query Parameters for Content Spec searching. Cleaned property tag code to remove duplicate code.
+Moving setValues() into deserializer as logic shouldn't be within data classes
+Refactored duplicate code into separate method.
+refactor (move duplicate code up)
+refactor some duplicate code
+-Refactored Robot's data class -Added logic to find winner
+Got the first bits of vision working for homing Moved some code around Deleted some dead code
+Moved data classes to a more suitable package.
+Refactor the KeyOutWriter and DailyKeyOutWriter to create a slf4j logger. Remove duplicate code from DailyKeyOutWriter. Add the ability to create a Logback based out writer with size and time based rolling and with no filename on rollover. Update slf4j to the version used by Logback.
+Remove duplicate code by making hierarchy between Indy and Basic interpreting visitors.
+test the default case on the switch statement in tokenComments
+Consolidate database connecting actions reducing code complexity and duplicate code fragments
+Removed duplicate code and put it in a function
+Refactoring to remove duplicate code
+Refactored duplicate code into separate method.
+"Refactored: replaced BigInteger with EntityId, to solve Primitive Obsession"
+DATAGRAPH-564 - Rewriting SD-commons classes to be based on default abstract implementations. Deleting lots of dead code and cleaning up class dependencies.
+fixes #743 made data classes final
+SOC-890 | Improve Code quality - avoid duplicate code
+Camel forge command - Align the duplicate code we have for add/edit endpoint options to use same class.
+Remove dead code related to Elasticsearch utilities
+WFLY-4303 Allow expressions in jboss-ejb-client.xml remove duplicate code and allow expressions for all versions of namespace
+Tons of dead code
+"Some refactoring to lessen class dependencies, reduce number of parameters and duplicate code"
+Lots of refactoring and stripping out dead code. Removed the code dependency on the deprecated EAWT methods Renamed packages and introduced new ones to properly segregate the areas of concern. Added support for preferences.
+"OGM-146 Simplify PackagingRule, second pass: removing dead code"
+"Refactored the Thymeleaf implementation All abstract processors now contain utilities to facilitate the creation of processors Added new processors allowing to write a ""configuring div"" inside a template, just before the table tag. This div allows to configure: exports, callback, extraFile and configuration properties. Comments updated/added in almost all processors Renamed some processors for the sake of consistency Removed all processors related to export and callback (now handled by the new ""configuring div"") Removed dead code Updated integration tests with the new features and cleaned all test templates Closes dandelion/issues#161 Closes dandelion/issues#201 Closes dandelion/issues#202"
+Added StandardTestData class which contains UUIDs of metadata from standardTestDataset.xml Added AbstractPatientWrapper
+Encapsulate core raw + derived data into SlimData class.
+"cleanup, delete dead code"
+"A bunch of inspection changes, including some dead code removal and tightening visibility, removing unnecessary casts"
+#305 Modularize logic / separate from data classes (wip – doesn't compile)
+"Minor fixes: Removed dead code, fixed variable names.\n Also, using normalize method of WeightedIntDocVector when building weighted int doc vectors. We should do the same change to other places in code where there is normalization."
+"EMBRYO-40, EMBRYO-49, EMBRYO-28, EMBRYO-29: cleanup of dead code"
+prevent too much duplicate code beetween Maven2 and Maven3 ProcessFactory
+[PAXURL-242] removed duplicate code
+[duplicate code] Unify scheduling of merge jobs
+[dsx] fixed fields for data class for getOrderStatus method
+Now DocumentHandler uses DocumentProducer instead of duplicate code.
+Major refactoring to remove duplicate code detected by Simian. Just demonstrates the power of the tools for find code that needs refactoring.
+Refactor duplicate code into a method.
+Remove dead code from method visitor and method helper
+REPLACED log4j2 logger with slf4j/logback REFORMATTED code to align with general code formatting guidelines REFACTORED some code with lambda expressions and some duplicate code with method or object replacements
+removed duplicate code by adding a public getPropertiesFile method to obtain the File
+MongoStore: Refactor to avoid to long methods
+Refactoring of core data classes. Implementation of RefactoringRegistry.
+- removed a small piece of duplicate code in QuerySet#get
+ReplacedBlock data class
+minor refactoring to remove duplicate code
+Remove some dead code. ------------- Created by MOE: https://github.com/google/moe MOE_MIGRATED_REVID=103318387
+"removed duplicate code, decrment jar size"
+Duplicate code gathered in one location.
+"Various refactoring & renaming, and JUnit tests. Added surefire and cobertura to the maven pom. Removing dead code and adding Asserts to the mix."
+"[BISERVER-7317] More test cases, javadoc and some dead code removal"
+HBASE-14203 remove duplicate code getTableDescriptor in HTable (Heng Chen)
+"Refactoring: moving ExternalSensorDescriptor and MeasurementLevel to better packages, deleting dead code"
+"Added some unit tests (and removed a bit of dead code) to boost our coverage over 80%;  	found one bug in SaxonTranslator w/treat as in the process re-orged the documentation"
+"MODE-2629 Fixes the issue with too many parameters for the IN clause This commit changes the queries that get sent down to the DB so that when the number of parameters exceeds a certain limit, the IN clause gets broken down into multiple IN OR IN clauses. It also adds Docker support for the modeshape-persistence-relational module so that low level DB operations can be tested against different DBs."
+core: long method refactor
+#NAME?
+"TEZ-444.  Rename *.new* packages back to what they should be, remove dead code from the old packages - mapreduce module (part of TEZ-398). (sseth)"
+convert to switch statement; added document and comment node constructors
+"* Removed a bunch of duplicate code from PictReader * Fixed OpenlabReader to handle openlab/stefan/270508.  Note that this file's images still look wrong (since the file is all kinds of corrupt), but at least all of the images are detected now."
+removing dead code
+Starting to remove some duplicate code
+"Removed dead code. If we aren't needing the page name, no reason to loop around doing stuff to find it. Cleaned up javadocs a bit."
+Bug 372840: [quick fix] Add a quick fix to add the missing default in a switch statement
+Removed duplicate code
+Checked in some dead code recommendations.
+[AS7-462] Cleanup metadata classes
+[CLEANUP] - Split overly long method into smaller chunks.
+callgraph: Remove dead code.
+Refactored the FieldConverter stuff to remove a lot of duplicate code.  Created a BaseFieldConverter class.
+fixed EtcdBasedConfigurator context refresh stacktrace printing and some refactoring of duplicate code
+BEAM 4.7 data model changes: new Mask and VectorData classes
+"feature #907 sprint5 : The user can now view all its suggestions whatever their status. For doing, the identifier of a user can be now passed to the REST web service in the getting of published suggestions. Improve the JQL query construct in JPQLQueryBuilder. Fix some discovered bugs. Clean up dead codes in JS and in JSP."
+Removed duplicate code and added outlines for how to add version to the start log entry.
+ICE-5960 Factored out duplicate code into updateBundle() private method. Clarified boolean tests.
+#NAME?
+moved java metadata classes to a separate package
+cleanup: move data classes to new packages
+webadmin: add disk - cleanup and duplicate code removal
+"Delete dead code that isn't used anymore, as it's now automatically provided by DOM support"
+"added condition set command, cleaned up some unnecessary duplicate code"
+Remove some duplicate code from heterogeneity minor fixes
+"1. Implemented function to modify a loan product. 2. Added security controls so that only administrators can view, create, update, and delete loan products. 3. Refactored loan product controller hierarchy to eliminate duplicate code."
+ItEr22S12CUVistaRecursosTempoPorProxectoItEr21S07: Creating package for resourceload data classes
+"Added back in password parameter to use on SQL data source (whoops), cleaned up output, moved RandomData class to tests."
+oprofile/perf: Remove dead code.
+removed some dead code
+Extract duplicate code into a method
+Made annotator tests extend abstract AnnotatorTestData class
+Removing duplicate code from import/export wizards. JUnits were corrected.
+Less duplicate code ... I think.
+Added bagging approach to handle unbalanced data classification
+Removed duplicate code and added outlines for how to add version to the start log entry.
+REPLACED log4j2 logger with slf4j/logback UPDATED meta data extraction logic by refactoring duplicate code
+Feature #4149 : user account validity - modifying database structure around users - modifying unit tests datasets around users - modifying models and query mechanism around users - adding columns into ST_User for next features - deleted users are retrieved by their state and no more by access level - changing the management of user accessLevel information - removing some dead code - centralizing/refactoring some code
+[SUREFIRE-695] Avoid duplicate code in SurefirePlugin and IntegrationTestMojo
+kie-services-client: Cleaning up duplicate code and packaging
+Bug 335909 - adjusted cfg generation for switch and dead code
+HEAD - removing dead code
+"Instead of initializing imported classes immediately, they are only initialized if constants (heuristic: upper case!) are used. Static method and constructor calls are intercepted by a class-initializing wrapper method, anyway. This makes lazy class initialization effective! It may also allow later to introduce extended scopes (*-imports, same package, statics of super classes) when preloading all classes. All Jangaroo examples and Jangaron have been adapted to work with the new semantics."
+"Removed some dead code, implemented LinearGradientPaintFactory and RadialGradientPaintFactory in preparation for enhanced passthrough gradients, and changed lists of custom graphics to be sorted to improve the UX somewhat."
+"Move *MetaData classes to meta subpackage, rename MetaData to ExchangeMetaData"
+refactor duplicate code
+systemtap: Remove dead code all around.
+"290: Extracted some methods to reduce average method size, and eliminate some duplicate code."
+"XSKINX-29: Refactor duplicate code Refactor JsxAction and SsxAction. Patch from Caleb James DeLisle, applied with minor changes."
+"Added Content Spec filters back after adding Filter Types. Cleaned up the Search views, to remove duplicate code."
+ENH: add labels for all system entities Set EntityMetaDataMetaData.LABEL to required Use simpleName by default in EntityMetaData Consistency: rename *EntityMetaData classes to *MetaData classes
+[changed] common | feature: multi subscriptions - Connection type to MapServerConnection [added] common | feature: multi subscriptions - equals for Data [added] common | feature: multi subscriptions - new SubscribtionData class
+refactored PageData class to now be WeblogTemplate 
+KARAF-1243 First part. Refactoring on trunk to remove duplicate code on mbeans and shell. Bugfix for delayed update not yet included
+solr components working again  removing dead code
+Supplier interface and BuiltLazy class.
+Rename ClientData class to Client
+Added allowInSwitchCase property to AvoidNestedBlocksCheck to allow limiting the scope of variables to one case of a switch statement.
+Fixed unnecessary method and created MockData class.
+UPDATED readme to reflect changes REFACTORED some methods from disk writer to the file handle class to reduce the number of objects to keep as members UPDATED the shutdown of the application as there were cases when the remaining data was not written correctly ADDED hashCode and equals methods to FlippableData class to minimize the chance of randomly appearing further elements in the flipped queue (though this sometimes still occurs for no obvious reason)
+frontend: reduce duplicate code related to run-once capability
+added codemodel switch statement for careRecordType parameter
+Refactor to eliminate duplicate code between Loggers and Handlers
+recognize switch statements that have exhaustive labels for an enum
+Cleaned up SoapSerialization envelope.  Added some rudimentary dot net support so it will work with sites like weatherX etc.. Removed some dead code.
+[MRM-1551] add rest method to delete artifact. reuse service in webapp action to avoid too much duplicate code.
+"Fix stack overflow on long methods bug. See test case for more details. - Convert the problematic recursion (SEARCH of SSA conversion) into an ""iterative"" code (by introducing a stack data structure."
+Test the metadata class with JDO
+"refactor move,rename trade metadata classes"
+"Bug 268036 Revoked the deprecated script method: beforeComputations and afterComputations, since it can't be replaced by beforeGenerations and afterGenerations respectively. Also added new PlotComputation as super class of PlotWithAxes and PlotWithoutAxes, so user can use code assistance in js editor more effectively and chart engine can remove much duplicate code."
+[SHRINKWRAP-12] - Cleaned up some duplicate code from the exporter test cases
+GUI changes due to BEAM 4.7 data model changes: new Mask and VectorData classes
+"Forced metadata classes such as users, roles, etc to go into the metadata cluster to protect them."
+[Bleeding] Add new MaterialData classes for new blocks and update existing blocks with new data
+removed duplicate code by adding a public getPropertiesFile method to obtain the File
+Splits a long method into multiple shorter methods.
+[MCHECKSTYLE-123] refactoring to prevent duplicate codes.
+Various cleanups in tosa-loader to kill dead code
+BEAM 4.7 data model changes: new Mask and VectorData classes
+Added new Metadata class for easy access to core metadata * Enforces 'fail-fast' - if metadata object doesn't exist then exception is thrown
+#675 refactored the Options/Metadata classes so they can be deserialised in AbstractDataStore; so we can killed containers now
+"Refactoring, translation and removing dead code"
+DDF-465: Code clean up. Removed commented out code lines and duplicate code in the tests.
+working up test coverage; minor tweaks; removing dead code; fixing very minor bugs; adding tests
+General cleanup for metadata classes. Moved and overhauled ome.xml test cases. Support for UUID value through re-run of code generation. (ome-xml:r613)
+[PAXEXAM-383] Do not duplicate code for JUnit and TestNG drivers
+"#596 tidied up the code, removed dead code and unnecessary abstractions (as the MQ and HTTP gateways are quite different now)"
+remove dead code
+OPENNLP-175 Removed duplicate code in parser train methods
+Remove duplicate code related to SNMPv1 vs SNMPv2 traps from TrapQueueProcessor
+Better integrate the @ArgumentCollection into the command-line argument parser.  Walkers can now specify their own @ArgumentCollections.  Also cleaned up a bit of the CommandLineProgram template method pattern to minimize duplicate code.
+Avoid duplicate code by extracting inner class.
+"Moved xml document creation into DBMetaData class, from NetKernel accessor."
+"Refactored everything out of SenderOptionsPanel and SenderOptionsPanelController that I could, so adding new sub preferences should require no duplicate code."
+pmd: duplicate code: refactor to minimize dupe code
+#NAME?
+Add a catch clause in the SettingBundle#getString(String) in order to detect the missing required keys. Fixes the missing translations by either adding them or removing them when they aren't more used (dead code)
+"Improve handling of /reload, clean up dead code"
+removed dead code of fee calculation
+Moved as much duplicate code as possible into a different package.
+Cleaned out some dead code that was replaced by Spring Social
+"MONDRIAN  Enhanced support for native evaluation of virtual cubes.  Queries involving dimensions that do not join to all base cubes in the query can now be natively evaluated. This change involved refactoring of SqlTupleReader, HighCardSqlTupleReader and the Target classes used in each to eliminate duplicate code.  "
+"Removed the MGRast export functionality since it's just dead code. Added ISAconverter integration. Some small additions to add, but functionality is there. Improvements are just focused on UI. Closes #12"
+Reduce some duplicate code between the various HTTP providers
+add of blob class with relative cluster management methods.
+Splitting long method to load settings
+Cleans up HtmlApiFilter to reduce duplicate code.
+[CLEANUP] - Refactored some duplicate code and checkstyle.
+Refactored gradebook data classes.
+refactored away some duplicate code
+Removed dead code. Added a bit of clarification.
+QuickCloud: Remove reference to unused code QuickCloud: remove some dead code in ConsoleProxyManager
+remove duplicate code in MetadataApiControllerTest
+Add updateSchema to HBaseMetadata class
+Fix test XmlDecoder (Duplicate code removed)
+"Adding new status attribute to CommentData class to replace the old combined use of approved/spam/pending boolean flags.  Comments now support 4 distinct status options, APPROVED, DISAPPROVED, PENDING, SPAM."
+Cleaned up some duplicate code in preparation for making plugin dir configurable.
+Refactored dead code elimination
+Slightly reduced duplicate code.
+refactor discovery to use the new Pinger; remove a bunch of pointless/dead code and threads... yay!
+Type converters for easy access to XDS meta data classes within routes. Adapted tests to use meta data classes.
+Refactored away some duplicate code
+"[JBIDE-6828] renamed ""Open Management Console"" to ""Web Management Console"", moved duplicate code in ServerLogActionProvider & OpenManagementConsole to CommonActionProviderUtils. Made sure ""Web Management Console"" is only enabled if the server is started"
+"Followup after review of LC code with ELZI - XmlTree is now more flexible in resolving paths, and a lot of duplicate code is removed. Javadoc is consistent with interface."
+Remove duplicate code
+PMD Rule:ExcessiveMethodLength Priority:3 Avoid really long methods . Issue #744
+Now Includes Performance Improvements - All the maps iterators to for-each loops - Removed duplicate code - Other minor changes
+"refactor, add metadata class"
+Reduced duplicate code in CoordinatorCli.
+YARN-1335. Move duplicate code from FSSchedulerApp and FiCaSchedulerApp into SchedulerApplication (Sandy Ryza)
+refactored to remove duplicate code.
+"Cleaning form generator classes, refactoring to remove duplicate code. EasyWSDl is the default WSDL parser because we have a library version problem with Woden."
+"PRD-4379: Metadata classes copyright update; API change AttributeRegistry has a put-semantic, not a classical getter/setter semantic."
+Modified unit test after having removed dead code
+Extract duplicate code into a method
+Reduced duplicate code in ClientConnector.
+remove dead code
+Removed MetaData class. Lots of refactoring.
+Merged duplicate code
+WELD-1784 Remove dead code
+Refactor and remove duplicate code between Movies and Episodes
+Removing some duplicate code.
+Remove dead code ExaminationSolutionInitializer
+"SONARPHP-451 Add parameter for (S107) ""Functions should not have too many parameters"""
+Refactor duplicate code
+define OptionData class 2
+"started refactoring ResourceNameIterator and ResourceStream to make the locale, style etc. available for which the resource was found. Will eventually allow to remove duplicate code e.g. in PackageResource."
+Removed duplicate code from FileHandle
+"Introduced Data interface and TransposableData implementation to replace Data class, added getTranspose method. Further extended Data interface into DataVisualizer interface, its TransposableDataVisualizer and CompositeDataVisualizer implementations, and related DataVisualizerBoundingBox class. Introduced Viewer interface & its DefaultView implementation, Drawer interface & its LineDrawer implementation. Changed dataset type from ArrayList<int[]> into List<Object> for better generality, which slightly impacted all Filters & Readers. Finally, implemented test cases for all new classes listed above.  "
+simplify and remove duplicate code
+ctf: remove duplicate code in array/sequence declarations
+externalized a minor duplicate code section in JestHttpClient's execute method(s).
+refactor discovery to use the new Pinger; remove a bunch of pointless/dead code and threads... yay!
+"Removed dead code, moved testing target into test package"
+Refactor some duplicate code.
+Use a data class for the sonic resultset
+DocSerializer: removed duplicate code
+extracted createArguments() and removed duplicate code
+"Added a zero argument constructor for the NetworkData class and changed the constructor that read from a file to a new method named ""populateFromDisk"".  Updated the unit test to understand this new reality."
+256272: [preferences] Surface new compiler preference for dead code detection: - added quick fixes
+ref: removed duplicate code and useless inner class fix: fixed stateless test
+" ItEr17S10CUCreacionProxectoPlanificacionItEr16S12: Removing Bean sufix to data classes. To avoid name collisions with the components of the same name, Component is appended."
+Code cleanups:   - remove dead code   - rename DocumentModifier => DocumentEdits
+Remove duplicate code from between Movies and Episodes
+DDF-495 removed some duplicate code
+core: Remove duplicate code in HotPlugDiskToVmCommandTest
+factored out some duplicate code
+Eliminated duplicate code between GenericBuiltinGuard and BuiltinSpecializer
+HBASE-14901 Remove duplicate code to create/manage encryption keys
+"- Deleted obsolete / dead code. - Started a heavy refactoring of the ServiceDescriptionFactory class in order to make it a ""fail fast"" factory to avoid any runtime errors due to misconfiguration."
+"Lots of tests for metadata classes, and implement corresponding functionality in mondrian driver. Review org.olap4j.type package, and remove/hide several methods. Add API for creating validator and validating an MDX parse tree. Test that non-unique axis names cause a validation error."
+dynect: replace usage of UnsignedInteger with int and fixed serialized form of rdata classes
+"Rewrite all the possible Blocks for the If, While, For, ForEach and Switch statements. This rewriting handles modifications in the Block type from curly to non-curly ('Alternative') forms of blocks."
+"[CXF-1500] Remove duplicate code from the tools ""Stax2DOM"" thing and move it into StaxUtils.   Allow WSDLManager to have line numbers of elements recorded into DOM that the wsdls schemas use so an error with a line number can be displayed."
+"Increased Findbugs sensitivity and fixed a bunch of minor style issues, removed dead code, ..."
+reorganized test classes to separate expensive syntax/parsing tests from functionality tests fixed Rascal JUnit runner test reporting removed dead code
+Moved MD5 utils from WalkerTest to BaseTest for use by PipelineTests. Moved VariantEval validation from FCPTest to PipelineTest. Cleaned up some duplicate code for writing temp files during tests. Moved FCPTest to playground namespace to match move for FCP.q. Added a basic HelloWorldPipelineTest for the HelloWorld QScript.  Moved duplicated error handling from JobRunners into the FunctionEdge.
+move MAVEN_METADATA_XML constant to MavenMetadata class
+refactored duplicate code
+Refactor GlobalTypeInfo into a data class and a separate pass.
+"new control, remove duplicate code"
+"Introduced path API to deal with resources of both disk and ZIP archives that fixes #52. Classpath and regex support totally reviewed with this API. Also simplify the code, remove useless sample files and dead code."
+MODE-1334 Ported java sequencer from 2.x -removed old OriginalFormatSourceFileRecorder -refactored test code so that the class file and java file sequencers use the same test files -fixed JDT parser so that 1.5 files (and greater) are properly handled -refactored JDT metadata classes
+Put duplicate code in a UTIL class
+WINDUP-523: Fix up some code-style issues and clean up dead code/comments
+"Removed dead code, more coverage"
+"Adding new CloudStackApi class, adding the rest of CloudStack data classes, moving cloudstack data classes into folder models, Starting work on ec2engine revamp with new api"
+Bug 256359 [metadata] Consider interfaces for Metadata classes
+Refactored Long Method
+XWIKI-4906: Includes are not taken into account when renaming a page - Fixed checkstyle warnings and refactored to minimise some of the duplicate code - Added tests
+More flexible EC2 user data classes.
+Bug 374605: Unreasonable warning for enum-based switch statements
+#NAME?
+Refactored call ordering in builder API: extracted duplicate code into method
+#NAME?
+Area data class
+reworked metadata classes
+Flesh out HBaseMetadata class.
+Bug 260913 [metadata] Move concrete metadata classes to an internal package
+"MATH-394, MATH-397, MATH-404 Overhaul of the ""optimization"" package. Removed lots of duplicate code. Removed methods referring to the concept of ""iteration"". Removed interface methods to access the number of evaluations of the gradient and Jacobian. Removed all references to ""OptimizationException"" (replaced by ""ConvergenceException""). Javadoc comments updated."
+[BZ 1089108] File Systems -> Free Space graph off by a factor of 1000. Refactored to a much cleaner solution with no IF logic. Removed some dead code from Measurement helper classes.
+Removed duplicate code and added outlines for how to add version to the start log entry.
+removed dead code and some bugs were fixed
+SOAP-653: Removed duplicate code and fixed compilation errors
+ISIS-1194: removing more dead code (in FrameworkSynchronizer)
+Factorize duplicate code in SnmpConnection
+"SAM-2151 Allow the instructor to include extra calculations within the calculated question Also includes some cleanup and improvements to the calculated question (reduced duplicate code, etc.)"
+Improved ProjectMetadata class.
+"Major refactor. Fiction scripts are now being parsed. There is still some dead code to trim, but now the fiction and parser configuration (vocabulary) are being loaded from the file. I still need to process expressions when verb messages are received."
+Replaced uses of MetadataConstants with the new Dictionary and Metadata classes
+removing dead code
+Remove dead code
+Composite operators now return SopremoModule instead of ElementarySopremoModule to help optimization and remove duplicate code
+"Modify some method calls, so they meet the LimitOffsetQueryData class."
+"Fixed bugs 1022 and 1031 reported by Wiktor.  Thanks for the bug report and the patches.  Little different fix, removed duplicate code Wictor discussed his patch created and moved this code to NotifdConfigManager rather than NotificationManager base class.-David"
+"Refactored the StringData class to simplify its most common use, which is to render a properly quoted string for use in SQL statements."
+Rename subject data classes for brevity
+Finished eliminationg duplicate code
+Refactored Generic CertificateStore + SslUtil and CertificateDialog classes.  Updated API and removed dead code. 
+refactor duplicate code for playing lands from grave
+SONAR-7705 remove dead code and dead sql in purge
+DRY'd up ShrinkWrapUtil.  Removed dead code.
+"renamed Crew and Squad classes, handles Squads now, moved String configs to UpdateMapData class"
+"DDF-1219 Collapsing, normalizing, and refactoring unit tests. There are more opportunities for refactoring, but this represents approximately a 15% reduction in class size and removes much of the duplicate code."
+STS-3056: introduced interface for annotation metadata classes to allow introduction of adapters
+"another pass of data classes, and some cleanup in client code"
+"MONDRIAN: removed dead code, added package documentation for rolap package, activated tests for FastBatchingCellReader"
+Remove duplicate code in new metrics code
+" Rename *.new* packages back to what they should be, remove dead code  from the old packages - mapreduce module - tez-engine module (part of  TEZ-398). (sseth)"
+Add SVM metadata classifier
+Refactored duplicate code into separate method.
+Removed a lot of duplicate code in the CommandManagers Added missing cmds. Removed useless code.
+"Massive update. - Infractions now is split into 3 parts. -- **Base** contains the main, cross-platform data classes that are shared between all implementations. -- **Bungee** is the default implementation as a BungeeCord plugin. -- **Spigot API** is an API that exists to allow for plugins to hook into Infractions from their spigot/bukkit plugins. - It is intended that individual servers will have their own take on Infractions, and thus a mere config file is unsuited for the majority of features (a la the Chitchat plugin). -- In this case, there is no default spigot/bukkit implementation, only an API that exists for accessing/manipulating the data. - Groundwork has been laid for the bungee plugin, various commands will be shared between servers. -- Many of these commands will probably be moved to the spigot API or completely removed (as we want each server to have their own implementation). - A default/barebones implementation for spigot/bukkit *may* exist in the future."
+ISIS-993: optional left and right columns either side of tab groups; tweaks to CSS; HasPath for all elements of the layout metadata classes (working towards support for persistence of widget state and hints)
+RepositoryUtil: Remove dead code found during testing
+rename the TcmSearchData class to TcmInferSearchData class
+remove duplicate code in reports
+Removed duplicate code and added outlines for how to add version to the start log entry.
+Removed duplicate code: MolecularFormulaTest now extends AbstractMolecularFormulaTest
+Fix dead code bug
+"MATH-439 Refactored the ""solvers"" package. Implementations refer to number of evaluation of the objective function (instead of the number of iterations). New interfaces and base classes. ""NewtonSolver"" fits in the design without resorting to a cast. Created class ""MullerSolver2"" to contain the code of the method named ""solve2"" in class ""MullerSolver"". Removed ""UnivariateRealSolverFactory"" and ""UnivariateRealSolverFactoryImpl"". Default solver in ""UnivariateRealSolverUtils"" is explicitely instantiated. ""AbstractContinuousDistribution"": Type of exception thrown changed in ""UnivariateRealSolverUtils"". Factored out duplicate code (in ""GaussNewtonOptimizerTest"" and ""LevenbergMarquardtOptimizerTest""): class ""Circle"" is now called ""CircleVectorial"". Also factored out the ""Circle"" class from ""NonLinearConjugateGradientOptimizerTest"": class is named ""CircleScalar"". Created ""SecantSolverTest"", moving there all the tests for the class ""SecantSolver"" that were located in class ""BrentSolverTest"". Created new interface and base class for polynomial functions solvers (""LaguerreSolver"") so that the function type is now checked at compile time. Removed deprecated exceptions (MATH-441). Javadoc clean-up. Lowered tolerance values in some unit tests. Tests upgraded to Junit 4 (MATH-423)."
+remove dead code
+improved support kotlin data class. #1374
+TEIIDDES-1046 Enabling REST for Procedures that were RESTful in 7.4.2 Leaves the Legacy Tags. Changed the action to enable REST to only enable if there are no new REST extension properties and no old 7.4 REST extension properties. Also now deleting the resource annotation and the model object annotation of no tags remain after a tag is deleted. Refactored the REST actions to get rid of duplicate code.
+refactor EvernoteApi getting rid of duplicate code
+duplicate code refactoring
+Moves yahoo.data classes to yahoo.data.csv package.
+reworked metadata classes
+SolutionDescriptor: extract duplicate code with EntityDescriptor (to assure same behaviour) + merge ClassBrowser into ConfigUtils + allow non-getter read methods for problem facts too
+Improved version: removed the analyse element duplicate code and put it in a method
+Reverted a change from the jcp21 which breaks the data classes API.
+Move some static strings to constants and remove some duplicate code
+Remove NameReferenceGraph and the report which are dead code. ------------- Created by MOE: https://github.com/google/moe MOE_MIGRATED_REVID=127881203
+removed dead code and fixed some TODOs
+Update configurationmetadata classes to lates versions from boot 1.3.x branch
+refactored path metadata to PathMetadata class
+Purged dead code that dealt with compression in JS concatenator
+Refactor some duplicate code to openStream method.
+Divided long method into smaller methods
+frontend: reduce duplicate code related to run-once capability - cont
+partway through refactoring of dictionary data classes.
+Migrate to a common StrategicRouteNegotiationData class
+separate more Data classes 
+Cleaned up how rendering was performed to try and remove duplicate code.
+duplicate code cleanup.
+"Added better support for the case when an optimized instruction can't be resolved due to the object register always being null. It should comment out any dead code following the unresolved instruction (to prevent verification issues, due to the changed method call)"
+added data class
+small refactor to avoid duplicate code
+SONAR-3959 Add NotificationDispatcherMetadata class
+"removing dead code, checking the metadata document"
+PMD Rule:ExcessiveMethodLength Priority:3 Avoid really long methods. Issue #744
+Add base classes for Parser implementations to eliminate duplicate code.  Also add a TokenManager wrapper interface and implementations for each Parser.
+Checked in some dead code recommendations.
+HIVE-17338: Utilities.get*Tasks multiple methods duplicate code (Gergely Hajós via Zoltan Haindrich)
+TEIID-684 repackaging remaining metadata classes to ensure there are no overlapping classes with designer
+"Metadata read only once now, also comparision moved to MovieMetadata class"
+"Keydwords done, and also, moved the last modified functions to a base manager, so, we dont duplicate code everywhere"
+UNDERTOW-842 remove duplicate code
+Remove duplicate code
+"Added a populateFromURL method to the NetworkData class and refactored the code to make it work! Also updated the test code, but the test code does need more work."
+Refactored duplicate code into separate method.
+Fixed bug 338923: get rid of dead code warnings in tests
+"Fixed bug in Main_GUI, removed dead code, created new GUI classes, fixed model logic, and created new 'firm' class.	"
+Move metadata classes to meta package
+Got rid of the deprecated JdbcTemplate#queryForInt & JdbcTemplate#queryForLong methods.
+Cleaning up dead code.
+Removed duplicate code.
+int/long methods.
+ferrit out some duplicate code
+Cleaned up ActionTaks + Monitoring classes.  Added more comments and removed dead code.  Also fixed some bugs regarding sub task management. 
+Added time parameter in clickLong methods
+refactor discovery to use the new Pinger; remove a bunch of pointless/dead code and threads... yay!
+Split long method
+Adds PageFilter#findLayoutPath to reduce duplicate code.
+Removing duplicate code
+Bug 282770: [compiler] Dead code detection should have specific @SuppressWarnings
+#46 Move ssh and jclouds specific option and metadata classes to their own modules.
+Move duplicate code into CmdLineTool#processConfiguration()
+Feature #351 : adding possibility to force a subscription to a user or a group of users - adding possibility to exclude users from notification (with NotificationMetaData class) - refactoring some code
+Refactor to remove duplicate code.
+merge duplicate code
+"Decided to take the pain and refactor the parlor.game and parlor.turn packages properly into client, data and server subpackages. This eliminates a bunch of hackery I had to do to properly handle dead code removal when building the Game Gardens client and games and it simplifies things and sets a good example to follow the standard procedure as much as possible."
+Reduce duplicate code
+"Refactoring DeezerClient, removing duplicate code. Add a method to get an album related albums."
+Add a generic method to calculate percentages to avoid duplicate code.
+"- Moves LabelFinder to hudson.model, as its a core facility, not necessarily a   task or even slave related. - Removes all caching of labels. Slow extensions can cache (see nodetags). - Pulls up common implementations of getAssignedLabels and an immutable   getDynamicLabels facility into Node. getDynamicLabels was previously public,   but never exported. - factored out some trivially duplicated code into Node.getHudsonlabel - changes LabelFinder to return Collection<Label> as that is the data that   higher layers want to work with, and there is no good reason to force lookups   when implementations can and should cache themselves. - Deletes OSLabeler, a disabled version of the LabelFinder extension point -   there is no need for dead code to be keep in the tree."
+Sanitize code - remove commented-out code and dead code
+Corrected spelling and removed some dead code
+Remove duplicate code in WebSocketImpl and WebSocketImplBase
+add code generation for config classes; remove a lot of dead code
+#NAME?
+"Started eliminating the TopologyProvider interface and replacing it with the GraphProvider interface so that the vertex and edge operations are logically separated. Strengthened the object hierarchy for edges and vertices. Moved the ""Simple*"" implementations into the API project to deduplicate code."
+core: Move common duplicate code to a method in HotPlugDiskToVmCommandTest
+hacky code! Added joins and wrote an algorithm to group joins in clusters that don't need intra-fieldsGrouping. One MultiJoin bolt is created per cluster which is essentially a sub-rete-network within the outter rete-network. At the moment there are many static methods in the wrong places which should go into a toolbox for datastructure-operations. There's also some duplicate code that needs to be factored away.
+Make ScpExec extend LoggedCommand2 and delete duplicate code.
+[#2] Removed dead code
+move duplicate code from *PermutationCounter's into a new class AbstractPermutationCounter
+renamed a long method name to copyMetadata
+Deduplicate code
+ISIS-993: renaming of the view metadata classes.
+removed dead code
+"More style stuff; use \n line separator always, unify use of log placeholders, fix unit tests that weren't cleaning up files (MAHOUT-217), remove dead code, redundancies, etc."
+"ISIS-993: metadata classes, facet factory, starting on the wicket component"
+"Expand the coveragedata classes more, and add functions for getting branch and line coverage by line, class, package or project."
+[duplicate code] Unify branch/ref content assist handling
+Improved CoordinateData class. Now it makes kind of sense.
+Refactoring and reducing duplicate code
+"Deprecated TypeID's big list of static fields, replacing it with the FieldType enum, which helps us ensure that all types appear in all switch statements, as well as reducing the number of string comparisons.  This turned up some missing functionality (below). TypeID-based constructs were deprecated, not removed, to minimize impact."
+"CSPACE-520: Provide full details when requesting a single ID generator instance by CSID, with related refactoring to eliminate duplicate code."
+Added the deepCopy methods in all SBOL 2.0 data classes. Removed redundant classes carried from SBOL 1.0. 
+Removed some dead code
+OPENEJB-1788: Consolidate IO code Overall reduction in duplicate code covered by the IO util and Zips
+core: Remove duplicate code
+Add switch statement to Pendrago
+"clean up some problems with opcode stack; in particular, branches for switch statements were being computed incorrectly"
+Factorize duplicate code in SnmpConnection
+Changed tests to use the WeatherReport and Continent interfaces. Created the WeatherReport interfaces. Certain tests are failing because Shards/Hibernate can't handle the notion of an interface on a data class
+The node now holds the data class instead of the port.
+TyrusEndpointWrapper clean up (duplicate code)
+"Began preparing for new Factory style methods - added SessionManager#createSession(Map) and adjusted SessionFactory to support this.  Current behavior is retained, just implemented in a different way.  Added AuthorizingRealm#getAvailablePrincipal utility method to eliminate duplicate code used across many realms.  Cleaned up much JavaDoc."
+avoid duplicate code
+Refactor to remove duplicate code for PokerHands classes
+Remove duplicate code
+Add data class
+Added constructor and data class to ObjectFactory for easy overriding.  Also improved the foreign object creation.
+Breaks a long method into shorter methods. Simplifies source code. Adds comments.
+"Switch to using the coveragedata classes.  It's a pretty big change, but everything seems to be working for me.  It will be easier to clean things up, now."
+Remove duplicate code.
+remove duplicate code in reports
+further removal of duplicate code
+Remove dead code
+Additional dead code via dead code detector
+moved XML metadata classes to a separate package
+"Cleaning up duplicate code, rewriting describeaddresses"
+Refactor: Removed duplicate code from BootupClasses - use generics.
+"Applied patch 1070733 - CPD's Java checker now has an option to ignore both literals and identifiers - this can help find large duplicate code blocks, but can also result in false positives."
+adapted Data class for multiple basedOn keys

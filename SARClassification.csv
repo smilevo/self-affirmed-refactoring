@@ -1,0 +1,1824 @@
+Commit message,Class
+refactor storyreporterbuilder usage to be just-in-time,SAR
+Refactor abstract component classes,SAR
+Refactored for more logical structure,SAR
+support for labels/break/continue  refactored switch blocks,SAR
+Refactor data model to use better names,SAR
+EMAILPLT-70:  Some refactoring to support the DEMO service better,SAR
+Add module  refactory to multiple small packages,SAR
+Refactoring to keep old signatures,SAR
+Refactored out the coloring. Work on the product configuration.,SAR
+Refactor to use pull-shared module.,SAR
+Some refactoring of Check  changed under and over to less and greater  added value name fields for less and greater checks  fixed failed method name reporting  fixed bug in identifier check  wrote unit tests for all Check methods.,SAR
+Monitoring of task status - Refactoring  more tests  fixing some bugs - more TODO,SAR
+[task #8] Refactor: extract common project property modification code into abstract template class.,SAR
+refactored code,SAR
+minor refactor to create marshalString helper method,SAR
+Minor further refactoring of Theory ParameterSupplier setup,SAR
+ added ability to generate/edit control file content - minor refactor - save auth details on lose focus event,SAR
+[MGN-56] Refactor: delete redundant AbstractRedisHistoricalTimeSeriesSource and add appropiate methods to RedisSimulationSeriesSource,SAR
+included review comments and minor refactorings,SAR
+Restructure/refactor package hierarchy,SAR
+refactoring and cleaning up SES UI,SAR
+Refactoring: DesignElement mappings loading is done in Java without PL-SQL,SAR
+Player Event rescue and package refactor,SAR
+refactored method name,SAR
+Refactored ChiIndexUtils to make it package private. Cleans up public API  since it is only used by chi descriptor code. Updated all dependent classes. Moved test code (which needs to be filled in!) as well,SAR
+Small refactoring.,SAR
+Refactor and fix debug according to recent changes,SAR
+Refactored a lot of the other scanner stuff into the partitioner.scanners package and added SQL scanners from Chris Bradford,SAR
+refactor package op to operaton,SAR
+Minor code/package refactoring for EntityProvider structure,SAR
+Refactored EntityMetaDataFactory to EntityTypeFactory,SAR
+graph layout : refactoring (renamed some package and pucshed attribute value classes to values package),SAR
+Minor refactoring  package-level javadoc  pom updates,SAR
+Refactoring from Interface /  Impl package structure,SAR
+Refactored messy UI setup into named methods  renamed variables  general cleanup for readability.,SAR
+Fixing grammars after refactory from a couple months ago. Removing support to # single line comments. Fixing parsing of inline nested expressions.,SAR
+Refactoring to introduce new module,SAR
+Refactoring and testing fix features,SAR
+Significant refactoring of Security related classes.  See the package documentation for org.springframework.richclient.security for details.,SAR
+[refactor] Improve names of integration tests for basic limitations of Tycho,SAR
+refactored into two assemblies  core and app,SAR
+Refactor for clarity,SAR
+refactor and rename tests to prepare for JAXBElements scanning tests,SAR
+Refactored model and fixed tests,SAR
+New feature: - implemented the first time cycle inquiries for all the cycles  and the login warning - refactored the answers hierarchy classes,SAR
+Big refactoring of ParsedResult: now split into ResultParser and ParsedResult classes  per Christian's suggestion. This unifies the parsed results that are produced from various input  simplifying client handling of different types.,SAR
+Finished most of the remaining polling consumers.  Created a few new static utilities. Minor refactoring.,SAR
+IDE-1663 refactoring pulled up methods to base class,SAR
+Refactor: - TextureData to handle Pixmap and Custom TextureType - TextureData consumeCompressedData to consumeCustomData - GLTexture function to uploadImageData to custom mipmap level,SAR
+final test and code refactoring,SAR
+Deploy2. Now with testing and database argument handling,nonSAR
+tests - json - generate html report when data is too large,nonSAR
+An actual semi-working plugin now,nonSAR
+More generic launchers now using IExecutableExtension.,nonSAR
+JSFUNIT-183  getManagedBeanValue() returns shallow objects for Seam conversation scope,nonSAR
+NEW - bug 268743: Gallery example need update to show latest features https://bugs.eclipse.org/bugs/show_bug.cgi?id=268743,nonSAR
+Got Aspect-Orientation-Sample running ... @DanielS will call you and explain ASAP,nonSAR
+NEW - bug 308214: Allow bundle selection via features in OSGi launch configuration https://bugs.eclipse.org/bugs/show_bug.cgi?id=308214,nonSAR
+Inital timer service implementation,nonSAR
+A generic jdbc probe  with a mysql and a postgress probe,nonSAR
+JBIDE-5048 - preparation for step 1  getting some APIs in order,nonSAR
+MultiSound -> MultiClip; uses SoundBoard.,nonSAR
+BUG-13358 site conf validation,nonSAR
+316382: support a more strict SSL option with certificates ,nonSAR
+ldapadmin - testsuite,nonSAR
+Bug 235586 - Code templates: Include guard not unique Patch by Jens Elementhaler,nonSAR
+Track whether a dependency is user specified and use that information to log (or not log) warnings for unsupported/private modules,nonSAR
+Upgraded TestNG to 5.0,nonSAR
+Modified URL sharing and View sharing to work with drag and drop.  Also started listeners automatically.,nonSAR
+Depoyed plugin abstract.,nonSAR
+[Unit Tests] Organise tests into Fragment plug-ins,nonSAR
+this really bothered me! :D,nonSAR
+Only ignore certain nbt tags on the first compound level,nonSAR
+[PLINK-561] - Michal - Security Context and Level Support.,nonSAR
+[SPR-6017] updated DBDR and BDPD to allow for overriding of namespace-specific methods,nonSAR
+Multi module maven,nonSAR
+reorg some test support files,nonSAR
+fail-fast impl. for new client module,nonSAR
+JUnit test threads with GroboTestingJUnit,nonSAR
+DataCiteConnector: don't rely on handles.,nonSAR
+XWIKI-4970: Issues converting a macro from 1.0 to 2.0 Syntax when it contains quotes XWIKI-5252: Converter does not takes into account escaped velocity macros/variables,nonSAR
+Pass module to output listener methods,nonSAR
+Correct thread start synchronisation to cope with threads that fail to initialise.,nonSAR
+[Aldwych] IR future option vol surface construction: passing underlying maturity information into the volsurf construction routine,nonSAR
+PDF-529 updated the line and line arrow tools to correctly write out line pobjects.,nonSAR
+put the Application and State classes in a new class : AppDetails,nonSAR
+Protect entry points methods in expenses sheet window,nonSAR
+Test code adaptation. No tests passing yet,nonSAR
+Updating the usable methods.,nonSAR
+revised the Comments interface,nonSAR
+JBIDE-21776 - Cannot deploy docker image to OpenShift with manually entered details,nonSAR
+"thread safety: 	use local ErrorListeners 	construct new X*Compilers as needed 	pass Evaluator to functions via ErrorListener.setUserData, not URIResolver",nonSAR
+inserted new methods in domain classes and services were corrected,nonSAR
+XWIKI-3225 Allow rendering engine to look up for macros from differents sources,nonSAR
+[JBIDE-6880] queried wiki page may now contain multiple keys/values.  Unfortunately still bugs present,nonSAR
+"For convenience, generate SdtPr/Tag as a non-inner class.",nonSAR
+#307 #322 yet another revision with many inconsistencies corrected,nonSAR
+Asserting more security policies on the outbound side,nonSAR
+RealFullNameValidator now rejects first name consisting of a title such as 'Mr' or 'Mrs',nonSAR
+Implemented bundles and games tab in GUI. Bundles and games are detected automatically when artifacts are installed,nonSAR
+Worked on experimentation scripts,nonSAR
+Database initialization in ETLBaseTest,nonSAR
+Refactoring. Introduced a plugin interface. 2 advantages: * both the plugin and the plugin API can implement it and thus don't have to copy paste the Javadoc (except here the mailsender plugin was not implemented following the rule that the API must delegate its calls to the plugin proper) * allows to clearly see what's the plugin API and even create links to it in the documentation.,SAR
+massive refactoring for better names  added spring test for archives,SAR
+Refactor code to prepare for custom label attributes. #39,SAR
+Refactor of some test method names.,SAR
+Refactored classes to util package.,SAR
+refactoring: rename method,SAR
+Some refactorings and cleanup  namely: - Moved all relevant null checks into Resource - Made create firewall use FirewallOptions instead of a Firewall obj - Consolidated a lot of the HttpRequests in the expect tests to allow for reuse (in compute),SAR
+Refactoring package structure,SAR
+Major Refactor  change Spoutcraft to Client,SAR
+Refactoring and cleaning,SAR
+refactored code to ease understanding: extracted methods interpolate<type>Field,SAR
+refactor-rename of some methods to simplify and clarify (2),SAR
+ Refactor changes and remove testprotoversions  This change refactors the PerChannelBookieClient to provide support for request types other than Read and Add entry requests. The bookie protocol has been changed to use unique transaction ids per connection.,SAR
+Great Refactoring for managing Geocoding and Reverse Geocoding Event,SAR
+JBMAR-75 - heavy refactoring  add ExceptionListener interface  make sure river unmarshaller has comprehensive and correct trace info,SAR
+Refactor name of utility class.,SAR
+More refactoring to accommodate security updates.  The end goal is to push more of this common code further down so that we are not repeating it all over the place  but this current revision still has it at the top layer for now.,SAR
+refactoring for better readability,SAR
+Refactoring tests: moved helper classes around,SAR
+minor test refactoring,SAR
+Renaming and refactoring of authorization classes.,SAR
+refactor the compilation stuff into a separate package,SAR
+IMPROVE: Refactor package for avoid server client dependency IMPROVE: Remove client classes from final war,SAR
+Refactoring to streamline injector creation and provide consistent logging.,SAR
+Refactor for significant speed boost for checking for permissions to view activity. Added Organizations to advanced search,SAR
+Refactoring to have an independant handler manager,SAR
+refactoring the main method. Now it just looks for the anagram in the cache map and request the generation for the non-cached ones,SAR
+Refactor: RecoverHoles extract a function that recovers one image,SAR
+refactor and rename session manager to session store,SAR
+refactor(migration-test): project structure,SAR
+Refactoring and enhancing the GUI,SAR
+Ugly XPath fix refactored into a new method,SAR
+Refactored voidedNotification to voidNotification to fit recurlys object.  Also fixed ability to parse the void_payment_notification webhook.,SAR
+Resource adapters were slightly refactored. An IHierarchyAdapter was created.,SAR
+code formatting  refactoring & comments,SAR
+Refactor to allow InputStream as database input as instead of String.,SAR
+refactoring to extract browser-dependent tests into a separate profile.,SAR
+Refactor common code to abstract Disks class,SAR
+refactor super class to allow sub adaptors to override function,SAR
+MX-8 cleaning up the refactored selection panel,SAR
+Unit tests and refactoring.,SAR
+added preference page to select a source parser - refactored the debugging engine manager to use the base classes it helped spawn - made the selector implementations more generic - synced language implementations with required changes,SAR
+refactor the package name,SAR
+Refactorized profile classes in order to better complain d20 system.,SAR
+[TACHYON-1199] Refactor the code about extracting mLineageWorker to super class,SAR
+Preparing to refactor and retrofit regression tests.,SAR
+refactoring of the spring projet to use cleaner package names,SAR
+Moved all of the files to a new package structure to facilitate further refactoring.,SAR
+More refactoring  including a few bugs introduced in earlier commits.,SAR
+Refactor Packages and add ignore for bin folder.,SAR
+inheritance of namespace declarations for nested bundles,nonSAR
+Experimental versions of downsampler and Ryan's deduper are now available either as walker attributes or from the command-line.  Not ready yet!  Downsampling/deduping  works in a general sense  but this approach has not been completely optimized or validated. Use with caution.,nonSAR
+converted all request executors to request builders,nonSAR
+All working. Also filters fields in configuration (scidata.xml) that contains all the possible comments by the section a user attempts to enter a field from.,nonSAR
+Make PutLargeFileTest thread safe,nonSAR
+OGM-615 Avoiding superfluous read prior to deletes,nonSAR
+update more commons ,nonSAR
+Support write the date of Java script data type into report document,nonSAR
+some correction for the help system,nonSAR
+get put semi-functional for a test,nonSAR
+basic marshalling working.,nonSAR
+Beta Release,nonSAR
+work checkpoint before switching to another branch,nonSAR
+SONAR-2084 draft of new page 'Password encryption',nonSAR
+MIFOS-3318: code review - remember to unmap mapping for static pages from GenericController so mapping for viewOfficeHierarchy goes through controller and form binding for checkboxes works correctly.,nonSAR
+FUSETOOLS-1940 - prepare support for camel community versions (#648),nonSAR
+Implement RFC7232 precedence algorithm for preconditions,nonSAR
+[MOD] XQuery  API: various updates to finalize RESTXQ,nonSAR
+core: Do not pass VdsNetworkInterface as user overrides.,nonSAR
+implement missing timelowerbound method,nonSAR
+"Factored out ""center"" functionality from showFrameCentered functions",nonSAR
+Reorganisation of IPlatformRunnable: Bug 48285 repackage IPlatformRunnable,nonSAR
+Aggregate exceptions from concurrently running tasks in the group,nonSAR
+handle PrintFlsStatistics combined with PrintTenuringDistribution (#127),nonSAR
+[NEW] update rendering,nonSAR
+Migration from other code source,nonSAR
+Correctly handle duplicat attribute and ontology terms,nonSAR
+[snipmatch] Bug 444353: Make Snipmatch editor extensions discoverable,nonSAR
+Factorize code which handle translation keys in AbstractStrategy,nonSAR
+CLOUDSTACK-6697: bigswitch networking plugin update,nonSAR
+Fail fast when plugin is used with an unsupported version of Gradle,nonSAR
+retrieve/place orders for logged in user,nonSAR
+Updated validation for the new interfaces.,nonSAR
+Updates to also publish to ANU when publishing to ANDS.  Updates to provide a more fully fleshed Dublin Core.  Also includes some updates for PAMBU,nonSAR
+amend UserDefine rule part,nonSAR
+Allow empty password in scm cvs url with pserver protocol. It's for anonymous connection,nonSAR
+Update MapsManager on TreeModel updates,nonSAR
+PLAN 4303: Symbol transparency persistence,nonSAR
+use parm container pool instead of weakbuses,nonSAR
+HEAD - 172345 (enable failing tests and make them safe: console log),nonSAR
+support a file path to load tomee embedded configuration,nonSAR
+Unify fetch and receive ObjectChecker setup,nonSAR
+#59 provide standalone distribution,nonSAR
+SONAR-8901 New users are members of default organization,nonSAR
+ARS is now working  it just needs new schematics  a little polish and a lot of testing,nonSAR
+Line codes for line items,nonSAR
+Started to implement read-back from cache,nonSAR
+"Working on thread safety of RollingAppender  related to LBCLASSIC-142  	 ",nonSAR
+Only show warning dialog if save fails due to save participant.,nonSAR
+SB-674 Sort out issue during testing where OrientDb exits the JVM when it runs out of ports to open,nonSAR
+Reload and document,nonSAR
+CAY-926 Refactoring class generator classes,SAR
+refactoring (changed package name to guru.drinkit  fileNames),SAR
+Fix style issues and refactor some code.,SAR
+core: Refactor of setting disk attributes.,SAR
+Refactoring of packages,SAR
+config refactoring  add new config properties for kod device,SAR
+Minor refactorings required for the perf project,SAR
+refactored count and constructor to querydsl-hibernate made HqlSerializer use String.format templates instead of operator string + operator position,SAR
+Some refactoring and compressing of data before sending,SAR
+Refactoring: moving classes to appropriate packages,SAR
+Refactor export  add CSV Links export and add other changes on DAO and DbIterator,SAR
+Small refactoring But DataSnaphshot were it belongs,SAR
+use List in Argument model. minor refactoring,SAR
+Refactor - more consistent naming of actions,SAR
+Small refactoring in load profile. Corrected bug that was considering millisecons as seconds,SAR
+refactored test classes and service extenstion as well,SAR
+#694 - Refactor - Rename IdGenerator to PlatformIdGenerator ... with a view to support customer Id generators,SAR
+Refactored some of the injection point metadata bean code.,SAR
+Refactor filefilter directory to remove dependency on lang,SAR
+did not like the fact that the method was getting big; refactored my logic to a private method to increase readability,SAR
+[Refactoring] Tests refactoring for taking into account the new infrastructure based on Restlet + JAX-RS + JAXB,SAR
+Refactor TmfTrace and dependencies - minor changes,SAR
+refactored code to get Groovy dependency from project dependencies,SAR
+refactored data layer project structure,SAR
+Refactor Periods to increase coverage,SAR
+General cleanup and refactoring.,SAR
+Refactoring: adding better service/finder methods  removing code from REST endpoint,SAR
+Code maintenance for refactoring by Emanuel Graf  bug 234348.,SAR
+refactored and cleaned up stmt builder interfaces,SAR
+Refactor code  put current distro manager into default plugin,SAR
+Refactor the strutter again to something that makes more sense,SAR
+lots of refactoring. Made Traverse step able to do in/out patterns. Added self loop filering.,SAR
+major refactoring and bugs corrections in the logic of type inference and type reification,SAR
+Removed unused methods  moved startup page code to RWTStartupPageCreator - bug 340927: Cleanup and refactor HtmlResponseWriter https://bugs.eclipse.org/bugs/show_bug.cgi?id=340927,SAR
+Refactored service registry package structure and class visibilities to prepare central service registry instance caching and sharing,SAR
+Refactored to use annotations instead of inheritance.,SAR
+Refactor and add more core UI utilities,SAR
+Refactored to make sendRequest readable,SAR
+Refactor unit tests because of refactoring of Interfaces,SAR
+KERN-1720 Refactored finder tests to enable non better control over non comliant drivers (memory and cassandra). Modified the setup of the test to ensure that if the tests fail in batch they also fail when run alone.,SAR
+Refactoring of JML test execution functionality,SAR
+Refactor daysUntil to allow more control for exit condition,SAR
+model code refactory,SAR
+"AMEC-1943  AMEC-1877 refractored the code to display the correction article citation in the article correction box the refactoring affects the ""download citation"" page as well",SAR
+refactoring and cleanup,SAR
+extract delete tag refactoring into a reusable static method,SAR
+#586 - Refactor the UUID ScalarTypes (Native  Varchar and Binary) to have a common base,SAR
+New feature: added the QUC Coordinator report and results view - refactored existing renderers - create a new class for the global comments on UC (and it's prepared for the comments on the teachers),SAR
+Refactor: Moved packages to comply with the backend package name conventions.   * p.i.ff.pstm -> p.i.ff.b.j.pstm   * OJB related classes moved to p.i.ff.b.j.ojb   * dml.runtime moved to the backend package   * Code Generators moved to p.i.ff.b.j.codeGenerator   * DB related classes moved to p.i.ff.b.j.repository,SAR
+UI refactoring  changes and fixes,SAR
+Hide jobid column on startup,nonSAR
+Cleaned up integration test for Seam Security,nonSAR
+[#4151] FOR UPDATE .. OF doesn't allow qualified column names,nonSAR
+MNG-5639: Support resolution of Import Scope POMs from Repo that contains a ${parameter},nonSAR
+Switching machines.,nonSAR
+FUSETOOLS-2038 - do not allow Route to be dropped on a route (#633),nonSAR
+That's right  plugin.yml  who needs you for commands? Too much effort.,nonSAR
+Implemented Version description,nonSAR
+flog support for rubyMetrics almost complete,nonSAR
+Make class name depending of the filename.,nonSAR
+PHP scanners: test files updated,nonSAR
+Completed processing of array construction.,nonSAR
+Writing memory now uses wait() notify(). Report mode now starts automatically.,nonSAR
+Android app terug werkend,nonSAR
+Upgrade to clear text support,nonSAR
+PLFED-129: make STSClient configurable and make private instance var protected,nonSAR
+JAAS login integrated in Questionnaires UI,nonSAR
+Start work on customized ObjectReader  CsvObjectReader  to support better error handling,nonSAR
+dependency tree flattened  no dependencies recursively amongs java DU. Excluded maven dependencies are now ignored,nonSAR
+Support a feature of distinct value on data set rorw.,nonSAR
+Reports display elements sorted by name,nonSAR
+updating prov-sql to QualifiedName,nonSAR
+tmf: Support folders in package import,nonSAR
+Finished trend graph portlets.,nonSAR
+1 use 443 to connect xapi 2. update Java binding to xenserver-5.6.100-1.jar,nonSAR
+Brought back the stupidly large test.,nonSAR
+RF# group roles validation,nonSAR
+* better use of PacketHandlers,nonSAR
+HSEARCH-2139 Avoiding superfluous field initializations and repeated looping,nonSAR
+481006 - SSL requests intermittently fail with EOFException when SSL renegotiation is disallowed.,nonSAR
+Supported more question types,nonSAR
+implemented SeparatedClassLoader,nonSAR
+updated alignment.Link types  according to v3 proposal,nonSAR
+Rewrote getClassKey() with more transparent logic.,nonSAR
+PRD-4652: Actively managing repaint offers nearly 60FPS,nonSAR
+Trades History working,nonSAR
+Bug 298671 Implement enough compatibility to bring up a simple view,nonSAR
+Start with testing activiti 5 unit tests with activiti 6 engine for backwards compatibility,nonSAR
+TOMEE-1832 avoid useless locking in dbcp2 + TOMEE-1833 ExceptionSelector to activate or not failover,nonSAR
+[PLAT-3015] Update OG-MasterDB to ThreeTen,nonSAR
+Done GSA-515 Nanoscheduler / GSA-557 V3 nanoScheduler algorithm,nonSAR
+[JBIDE-19048] implementing connection wizard(s),nonSAR
+Update content APIs,nonSAR
+ItEr23S03ContornaItEr22S03: Doing defensive copy of array parameters,nonSAR
+Updater: hide Dropbox URL handling behind Util methods,nonSAR
+can access other user's public bubbles,nonSAR
+NXP-2330  NXP-2319: Don't copy history when copying a document,nonSAR
+FUSETOOLS-1981 - Integrate CXF Code First Templates (#653),nonSAR
+Abstract Inventories & Inventory Components.,nonSAR
+Test for the toString part of JAXEN-160,nonSAR
+further refactoring; experiment.save() method; fixed DataReleaseService,SAR
+small refactoring of the Unity3dBUilder,SAR
+Sample refactoring  moved the event and command classes to the api package,SAR
+Refactor - tidy up - better error responses,SAR
+refactoring for Gipps  Krauss and Newell: model parameter dt is now taken directly from the simulation update timestep which is fix for one simulation,SAR
+Refactoring of query parsing creating new OSQLTarget class to get the target. Now it's cleaner and parses correctly nested contexts. Contexts now are structured as a tree.,SAR
+Refactorings  mainly package renames. Example code.,SAR
+Delete duplicate AllTest.java file and refactor abtest package name,SAR
+Finish refactoring the config to be a single hash instead of a large collection of classes,SAR
+Project refactored: package changed from net.pbernard.flattr to com.flattr4android,SAR
+Feature #5157 - refactoring of album view page (adding some string templates) (modifying homepage) (modifying the view of a photo) (fixing search result display problems),SAR
+further unit test refactoring,SAR
+Refactored and improved loading of inventories and item schemata,SAR
+Refactoring  import bug fixed.,SAR
+Refactored package names,SAR
+Refactor to clearly delineate generated and custom code in case we need to re-generate due to database changes,SAR
+Refactor using standard interfaces,SAR
+Refactor into packages,SAR
+refactoring + clean code,SAR
+Refactor to create primitive package,SAR
+Refactor to improve readability of comparisons,SAR
+Refactoring to tidy up resolving and combine object factory and manager - complete - released to DSFA 14/7/05,SAR
+[TEST] Refactored package name - moved all tests from “org.pentaho.test.platform” to “org.pentaho.platform”,SAR
+XWIKI-4619: Refactor rendering submodules to sort by syntax instead of by parser/renderer,SAR
+Refactored case handling packages,SAR
+refactored base test classes for our own internal test suite,SAR
+Refactored packages  updated Update and Stop form handlers.,SAR
+Refactor code for clarity,SAR
+Refactor demos for readability  better comments and configuration,SAR
+[SHRINKWRAP-263] Refactor methods name from addDirectory to addAsDirectory and addDirectories to addAsDirectories,SAR
+Refactoring/cleaning up some things in preperations for the delta-importer-2 over http integration. In particular:   * generalizing the notion of the control file   * restructuring code to have a publishers directory   * getting rid of the metadata utility which was largely duplicated code   * getting rid of the integration utility which was an odd mix of util functions basically   * made a utils file to temporarily store odd util functions,SAR
+major refactoring of BootstrapDeployer,SAR
+package structure refactored,SAR
+refactorings & cleaning,SAR
+Refactored and improved performance of validator generator,SAR
+Refactored config distribution in parts of HA. Made unfinished transaction cleanup threshold use client lock timeout (as resolved by HaConfig).,SAR
+Refactor tests  test switching in class as well.,SAR
+Refactoring some admin functions to remove code we dont need anymore,SAR
+refactoring: moved duplicated code to prepare sources and classes directory to AbstractModelloJavaGeneratorTest,SAR
+refactoring prior to introduce better modifier support,SAR
+Refactor how entity skins are set Remove entity manager Update EntityInformation as needed Expose API to set entity skins,SAR
+refactored  moved common subclass methods to upper class,SAR
+Refactor package name to reflect the 'eduzen' origin.,SAR
+Refactoring to support new test cases in localdiscovery (new) test bundle,SAR
+Lots of cleanup and refactoring and testing.  Arrays are solid,SAR
+refactored method names inside the entity config,SAR
+Huge refactor of how SetupTeardown proxy talks to the nodes before during and after session. This should prevent a lot of thread locking when video start/stop/update happens.,SAR
+Refactored some interfaces and abstract classes,SAR
+minor refactor to put the language POJOs into a separate package,SAR
+Remove more deprecated methods and refactor them out of existing code,SAR
+Make chunk size an argument. Default is -chunk_bits 24 -> 16MB.,nonSAR
+Also handle application  image  video  audio content parts,nonSAR
+TAJO-746: Implements function COALESCE. (hyoungjunkim via hyunsik),nonSAR
+Assure ResponseHandler is called once and only once,nonSAR
+Cleaned up unit tests and @should in OrderService,nonSAR
+OFC-736 Check all schema objects name uniqueness in context,nonSAR
+BT ingest: write everything at the end of ingest.,nonSAR
+Comment-out failing test.  See bug #1600.,nonSAR
+backed out stupid experiment,nonSAR
+KARAF-424 use maven 3 dependency resolution using aether. Require maven 3,nonSAR
+mogelijkheid om text/html te specificeren,nonSAR
+NXP-14879: impl getAggregates results,nonSAR
+Allow `new URL(String)` with nested JARs,nonSAR
+ACCUMULO-3599 Get (un)secure ITs running against mini/standalone,nonSAR
+Updated all modules to new api  some settings are still missing,nonSAR
+HttpClient resource management API made compatible with Java 7 'try with resources': HttpClientBuilder to return CloseableHttpClient and CloseableHttpClient to return CloseableHttpResponse objects which implement java.io.Closeable; made ClientChainExec interface and related classes package private,nonSAR
+QPIDJMS-191: initialise the SslHandler before the connect attempt begins  ensures certain config issues fail fast without attempting a socket connection,nonSAR
+clean-up warning view; make sure list re-inits on grid switch,nonSAR
+migrated/corrected use of ServerConfig,nonSAR
+Cleaned up some errors in voice import and related classes,nonSAR
+"PDF geht auch... -> Testbutton als Lehrer unter Klasse ""Passwortliste...""",nonSAR
+Straightened out ValueSerializer and ValueComparator,nonSAR
+Expose endDate and startDate properties of TaskElement as IntraDayDate,nonSAR
+commit step 1 of YQL switch,nonSAR
+Balancing tests pass for a single page.,nonSAR
+Parameters of translation are a collection instead of an array,nonSAR
+CAMEL-2357: when using mocks you can not decide whether its when received or done for more fine grainend control.,nonSAR
+matching the new db schema in the code,nonSAR
+BZ1269333: Result of searching Assets in Business Central's 'Full Text Search' includes duplicate records,nonSAR
+slowly upgrading everything for XDI2 library..,nonSAR
+Core module in org.kercoin.magrit.core,nonSAR
+Asynchronous annotation,nonSAR
+HBASE-7462  TestDrainingServer is an integration test. It should be a unit test instead (Gustavo Anatoly),nonSAR
+Reimplemented alternative costs a little (converted to interface),nonSAR
+Starting new Atom Protocol impl,nonSAR
+Load resoureces from classpath when using JUnit  load them from filesystem when using CLI,nonSAR
+[SPARK-8673] [LAUNCHER] API and infrastructure for communicating with child apps.,nonSAR
+SONARJAVA-1889 Raise issue when accessing null array (#1040),nonSAR
+Einfache Zeitverwaltung anhand von Audiobeiträgen erstellt (Basis für kommende TimeLineElemente) (CRUD Operationen),nonSAR
+Reconciler provides cached AST if possible,nonSAR
+JBPM-5530 - Combine new forms API into jbpm-wb-forms modules (#606),nonSAR
+Flow for group management,nonSAR
+ItEr33S14CUCreacionUnidadesPlanificacion: When a task constraint is violated  it's notified to the task component,nonSAR
+PropertiesUtils now support traversing.,nonSAR
+Let us default to ALL when no keys are specified,nonSAR
+/Show off to make everyone jealous  or whatever,nonSAR
+Support Dropbox oauth2,nonSAR
+make test more easy,nonSAR
+SWITCHYARD-590 messageComposer setting ignored on Camel composite service bindings.,nonSAR
+Wallet: expose the calculateAllSpendCandidates method as public.,nonSAR
+More refactoring  Schimmy implementation.,SAR
+refactor cards to use supertype enum,SAR
+refactoring : move audi behaviours into the audit subpackage and interceptor to aop subpackage,SAR
+Begin refactoring SymbolTableEntry,SAR
+Refactor code to make it more flexible and easier to understand.,SAR
+Massive refactoring of the cache loader strategies,SAR
+Refactored MessageBox  adjusted code to match new formatting guidelines,SAR
+Refactored message transformation into reusable class,SAR
+Fixed a bug in Extract Function refactoring.,SAR
+Finally refactor Initializer away.  Cleaned up CollectorInterface and CollectionSet just a little,SAR
+Refactored code.,SAR
+refactored programs related to template builder,SAR
+core:refactor: Refactor code to be reused in future patch,SAR
+Refactor Main test class to have higher abstraction,SAR
+Emails Refactoring    - Creates Messages at Vigilancies instead of Emails    - Changed createNewRecipient to newInstance (name convention),SAR
+rename and removing routes refactored,SAR
+refactoring done:  Now is possible to redefine serviceArgs...,SAR
+refactored project structure - api moved to impl  folders renamed,SAR
+refactored the split tests to remove code duplication,SAR
+Refactor SyncBeanManager to use type names and not types themselves for lookups.,SAR
+More refactoring of dynamock package,SAR
+EMBRYO-22: more package refactoring. Also enabled AIS feature for dma user again. ,SAR
+Major refactoring of FormModel related code: * Reorganized interfaces and implementations * Reorganized package structure * Improved JavaDoc * Introduced validation abstraction * Removed dependency on Rules for validation * Dirty tracking now works for unbuffered form models * Dirty tracking now fires property change events * Revert now works for unbuffered form models * Improved unit test coverage to about 80%,SAR
+minor test refactorings for type-related tests,SAR
+Minor change: - refactored some code about the deletion method and its validation  to give more explicit messages and reuse code,SAR
+[refactoring] Separate in more methods to make easier to use for different use cases,SAR
+*renamed packages structure *refactoring *connecting setup and serverSocket,SAR
+Refactored to make it easier to test with multiple MQTT client providers,SAR
+Refactor database helpers to work with history,SAR
+refactored common helper methods for working with cxf into a cxf-utils helper jar,SAR
+refactor persisting code into the provision service,SAR
+Refactored listeners into separate package,SAR
+Refactoring core package naming to make function more obvious.,SAR
+big refactoring including data set based plugins  adapter first approach;,SAR
+Reflecting the user interface refactoring in the rest of the code base.,SAR
+Refactor the CustomerStateRequestProcessor to use the session-based customer until that Customer has been persisted. Once persisted  the Customer is removed from session and on subsequent updates the CartState is also refreshed.,SAR
+Refactored Message to have a subType property Made getType and getSubType abstract in Message Implemented getType and getSubType in ChatTextMessage Made RosterMessage abstract and implemented getType to return 'ROSTER' Created RosterAddedMessage  extending RosterMessage and implementing getSubType to return 'ADDED'  also added a userName property Created RosterRemovedMessage  extending RosterMessage  and implementing getSubType to return 'REMOVED' Created RosterContentMessage  extending RosterMessage  and implementing getSubType to return 'CONTENT' Refactored PresenceMessage due to Message refactoring Refactored ConcreteConversation to implement new roster message types,SAR
+refactored a whole bunch of the foreign source and requisition stuff around to use the new Requisition object in place of the ModelImport object,SAR
+Refactored BearScript - now script is run in a single thread for each session (draft).,SAR
+Refactoring of packages structure for managed beans.,SAR
+refactoring of hermes classes Public API for JMSConnectionHolder can be used in groovy to access queues and topics,SAR
+refactor method name,SAR
+o code refactoring o changed error message to debug o improved error messages,SAR
+Correction after refactoring Rest service method,SAR
+refactorings wegen geänderter packagestruktur,SAR
+Refactoring of filters to make better use of inheritance hierarchy.,SAR
+Refactor (simplify) interfaces,SAR
+cleanup  refactoring,SAR
+- refactored packages to minimize package cyclic dependecies - removed XmlConditionConfigurationException -> use XmlConfigurationException instead,SAR
+- Big refactor of the QuickJournal:   - Move it to it's own package org.apache.activemq.store.quick   - Brought in all the latest JournalPersistenceAdaptor enhancements   - It now uses the AsyncDataManager as the Journal implemenation which has better rea,SAR
+Simple  but better color dialog.,nonSAR
+Linked file support  experimental proxy support,nonSAR
+CAY-1452 EJBQL query scalar result is not supported,nonSAR
+relocate little method,nonSAR
+[MRM-430] configuration adjustments and tests,nonSAR
+classifying tests 12% I still need to work on handlers,nonSAR
+updated distribution configuration,nonSAR
+HBASE-2353. Batch puts should sync HLog as few times as possible,nonSAR
+JC-2141 Different unsubscribe links depends what entity user subscribed for,nonSAR
+backing out of the resource manager idea and reimplementing the old gc chain for 1.0,nonSAR
+starting to use wro4j native xml parser,nonSAR
+remote-kie-tests: COMPILING,nonSAR
+Make LoggerStubFactory more versatile.,nonSAR
+Obey the -Dandroid.device=... and <device>...</device> parameters for all adb commands.,nonSAR
+Still allow online playing with the test mode checkbox activated.,nonSAR
+start using FibonacciHeap in CLE,nonSAR
+Allowing IR future option surfaces to be defined as prices as well as implied volatilities,nonSAR
+[SHRINKWRAP-308] Throw FNFE when attempting to find a URL from ShrinkWrapClassLoader pointing to an Asset that does not exist,nonSAR
+first working example,nonSAR
+NXP-4147: NXQL queries on tags with ecm:tag,nonSAR
+Implemented support for partial message processing on annotated beans. Got rid of EndpointWithConfiguration class now that the endpoint has getEndpointConfiguration() method.,nonSAR
+show border for unknown tags on all opened vpe pages by clicking 'show border for unknown tags' button on toolbar (https://jira.jboss.org/browse/JBIDE-7383),nonSAR
+Resolving: MNG-684,nonSAR
+made method names consistent from getCyWhatever to getWhatever,nonSAR
+[JBIDE-19828] Reenable import wizard(s) for OpenShift,nonSAR
+closing feature #3904,nonSAR
+Updating requesting system,nonSAR
+Update ListExercises.java,nonSAR
+provide a method to pass in the attributes to fetch to work around problem with describeResults,nonSAR
+ACT-221: implemented task listeners + tests,nonSAR
+request status enum iig oruullaa,nonSAR
+some more clean-code,nonSAR
+System settings now shows the system administrators - fully functional,nonSAR
+integrate scheduling extensions,nonSAR
+isome valid code for import,nonSAR
+[AS7-2439] Intermittent failures in EnterpriseDeploymentTestCase,nonSAR
+Now allows retries and timeout,nonSAR
+use fund instead of int.,nonSAR
+delete project service call and panel update,nonSAR
+servicios resumenes,nonSAR
+Make conditional optimizers mutually exclusive.,nonSAR
+Return the uuid by specific mediatype,nonSAR
+now also works for less files with imports,nonSAR
+Started batch insertion implementation,nonSAR
+mantis 35849 35824 35813 35811 35805,nonSAR
+Lots of work on Zeiss LSM metadata population - most metadata (Objective  Laser  LogicalChannel  etc) should be correct now.,nonSAR
+Show Origin and People tabs recursively.,nonSAR
+Solve name clash for ZipFiles between collect-core and collect-server,nonSAR
+[SPARK-9709] [SQL] Avoid starving unsafe operators that use sort,nonSAR
+BOOKKEEPER-174: Bookie can't start when replaying entries whose ledger were deleted and garbage collected. (sijie via ivank),nonSAR
+[refactored] and removed factory classes for extended identifiers; instead use abstract base class for concrete implementations like ICS identifiers,SAR
+Refactor to an ordered chain of bootstrap steps when launching the service,SAR
+Refactored mouse event handling to reduce code duplication and fix bug with MouseWrapperSWTBridge (calling certain Swing methods from SWT thread was causing execution to hang inside native method calls).,SAR
+Refactor packaging to prepare for splitting into smaller jars,SAR
+Refactor: we don't need the queuedSubscriptions set in ChannelManager at all. We just need to resubscribe to all of the channels in channelNameToChannelMap whenever we get the connected callback. This ensures that all subscriptions are resubscribed (with a fresh auth token) after each connection bounce. Added an end to end test for this scenario.,SAR
+refactor(cycle): renaming packages in cycle-tests,SAR
+Small refactoring and code formating change to make the class easier to read and understand.,SAR
+Refactored main and test packages to be shorter. Added modernizr .js file to repo,SAR
+Refactoring to the credential test cases.,SAR
+refactored some classes into new packages. Added new Operations classes,SAR
+minor refactoring of cycle API in order to display file type (content-type) information in the UI  made ContentType an enum and added a ContentType property to ArtifactType,SAR
+Massive refactoring of classic IO HTTP data receiver and transmitter classes resulting in 4 fold performance improvement on byte and line read operations,SAR
+Refactored the code to set it up in CI environment provided by travis,SAR
+Issue 830: refactored MediaClient to not require href arg; refactored VmApi  VAppApi  VAppTemplateApi to use urn,SAR
+A little refactoring so that it's easier to override and avoid the construction of a multi-part request when in an environment with another filter that's consuming the request stream.,SAR
+Refactorings. Implememented subsampled reading for non-compressed imaga data (untested  no test data).,SAR
+Major refactoring to SceneElement classes concrete in uilayer-core,SAR
+Refactored: removed classes that are not needed after dropping GData and changed query builders to depend only on RestTemplate and not on AbstractGoogleOperations. Added JavaDoc.,SAR
+Reworked the rest of the code and examples after the Scala refactorings,SAR
+Lots of refactoring  - Moved unit tests around  - Added support for object expansion  - Additional code clean up,SAR
+Refactoring mostly for readability (and small performance improvement),SAR
+Refactor SAGU for easier testability,SAR
+major refactoring and support to web forms.,SAR
+code review comments  minor functionality simplifications and refactorings,SAR
+Refactored the SSH API and JSch implementations into two projects.,SAR
+Refactored filtering code into its own class.,SAR
+refactor method name,SAR
+Minor refactoring to clarify intent,SAR
+Applied refactoring of DiscoverableServer and Activator to HEAD,SAR
+Refactor method getSpreadIndirectAdvanceAssignmentWithSameType to be used in more places,SAR
+Refactoring of functionality used to code generate Java specific methods,SAR
+minor refactor of Processor.onExchange() -> Processor.process() which matches the interface name a bit better (and is less exchange-y),SAR
+some minor refactoring; the previous PollingConsumer wasn't really an accurate implementation of the EIP PollingConsumer  so I've renamed this ScheduledPollConsumer  then PollingConsumer is the correct name for the 'synchonous request*() methods' type consumer (rather like the sync API in JMS),SAR
+refactor the server plugin test code so its easier to install different test mbeans for different server plugins,SAR
+major refactor of RAPTOR code,SAR
+Refactor validation function report category edit. <wenjing&sl>,SAR
+Refactored public enum names: BorrowType -> BorrowPolicy ExhaustionBehavior -> ExhaustionPolicy LimitBehavior -> LimitPolicy TrackingType -> TrackingPolicy,SAR
+Cleanup and refactoring for consistent usage of ArrayView in AST.,SAR
+Further refactoring of Relay functionality,SAR
+Refactor a bit to help reduce redunancy from #110,SAR
+Refactoring of core Table component to not build list grid on construction Move to explicit table configuration lifecycle Fix the rest of the list grids that were not extending Table,SAR
+extensive url tests  slight refactorings in the code base,SAR
+Lots of refactoring  should have committed more often,SAR
+Minor code refactorings and basic validation of 'entry/feed' tags.,SAR
+Cleanup and refactor notifd (code formatting  use Java 5 generics and for loops  use dependency injection in BroadcastEventProcessor  add test to ensure that regexp in BroadcastEventProcessor compiles correctly).  brozow will review,SAR
+fixed unit tests after refactoring of microchip potentiometer impl,SAR
+Refactoring and minor fixes,SAR
+Refactored the way the configuration panel works on SecurityChecks,SAR
+Slight refactor  stubbed out remaining substance entities.,SAR
+refactor code to reuse the code for getting pattern,SAR
+Implementing via points for API only  no UI. Integrating #147,nonSAR
+Apply Symbian (Lars & Bala) patch for Shared Tool Options support,nonSAR
+more Datatable updates,nonSAR
+More MVP in WCS dialog (not builds),nonSAR
+164779 [actions] Opening project should be easier,nonSAR
+Abstract message patterns,nonSAR
+Minor tweaks to the themes and caching performed by the feed reader tag.,nonSAR
+ generate the content in factory and render them in presentation.,nonSAR
+SONAR-8751 drop Owners group for personal organizations,nonSAR
+Bug 300441 -  [ui] flaky 'Next' and 'Finish' behavior when you un/check items after a failed install resolve,nonSAR
+OpenID: POST message support for AX attacks,nonSAR
+option for cns worker to take access credentials from properties file instead of casssandra,nonSAR
+Starts with search in record data management,nonSAR
+Make sure SMTPClientFutureImpl is thread-safe in all cases ,nonSAR
+refs #108 - multi-modules now,nonSAR
+More tests; era seems to cause issues  so check this separately,nonSAR
+I don't get spring-batch :|,nonSAR
+SOAPUI-4483  Make sure that you can run the unit tests and integration tests independent from each other,nonSAR
+propagation of encryption to Pool and graphFactory,nonSAR
+Gopal | #0 | Modified the logic to include both cases and flws to be included in table names.,nonSAR
+fuzzy matching in normalizer,nonSAR
+implement untested osc package,nonSAR
+Bug 446075 - [GTK3] [GTK 3.10] Garbled bold text when used with icons,nonSAR
+Post method hanging and enable file based configuration.,nonSAR
+HBASE-5203 Group atomic put/delete operation into a single WALEdit to handle region server failures. (Lars H),nonSAR
+Use a DataStore for Team configuration rather than the team object directly.,nonSAR
+First Commit for the new version scalable. Working but needs test,nonSAR
+Stream downtimes are not critical anymore. There is a downtime threshold,nonSAR
+[news] implementing interfaces,nonSAR
+Initial TRIMESH support via GIMPACT,nonSAR
+Reads are now realigned to the most likely haplotype before being used by the annotations.,nonSAR
+adapted fc-server to the new fc-commons,nonSAR
+Fine-tuning tests,nonSAR
+mv hbc-twitter4j-v3 to hbc-twitter4j,nonSAR
+server web socket,nonSAR
+Tweaks needed to better support universal binaries,nonSAR
+ManelSim using Maven2,nonSAR
+area bean on abstract,nonSAR
+[PLAt-2779] Test log collection,nonSAR
+Perspective Editor now generates perspectives,nonSAR
+word context from wiki api,nonSAR
+Document the functions,nonSAR
+[JGRP-719] - Allow ReplicatedHashMap to delegate to any ConcurrentMap,nonSAR
+[CXF-5606] Optionally translating WADL docs into Java docs,nonSAR
+Prune long record MVVs - bug 945244,nonSAR
+DataTable Filtering Integration Test update.,nonSAR
+#POULPE-381 JcommuneHttpNotifierTest test,nonSAR
+SONAR-4304 close manual issues marked as resolved,nonSAR
+makes write-coalescing configurable,nonSAR
+Update to new API version (see 61d91bf49763d87e8971303f1a21b3d640995a1a in api-java),nonSAR
+Refactor issue search stack in order to remove dependency with SearchRequestHandler,SAR
+Minor refactoring and cleanup.,SAR
+Massive refactoring to support different HTTP containers.  Added GrizzlyServlet and GrizzlyComet adaptors.,SAR
+Refactors package names and structure to hs-hannover.de domain (including license headers  procedures  pom.xml  etc.),SAR
+significant refactoring to reorganize modules and allow for native implementations of common key formats,SAR
+Implementing some basic collision detection logic. Lots of refactorings and simplifications on classes thanks to that.,SAR
+code assist refactoring: - added MRU history for right hand sides of class instance creations   - also adds remembered types to zero-length-prefix type completions - added more information to JavaContentAssistInvocationContext - streamlined java proposals based on core CompletionProposal,SAR
+Improved Remove Unused Declarations refactoring.,SAR
+Refactored module structure. Spring conversion.,SAR
+Removed poor coding practices from Backup/Restore code and loosened up tight restrictions on metadata schema versioning files.,SAR
+"Improve naming consistency. Remove ""checker"" from our vocabulary.",SAR
+Improve naming consistency and remove dump() from PredictiveModel interface,SAR
+Further cleanup to try to eliminate any direct usages of IDBConnection.connect().,SAR
+Cleanup the logging stuff so it's simpler and more coherent at the default verbosity level.,SAR
+add a ValueWrapper class and use that in ParmsWrapper for displaying parameter values; clean up the trap handler tests and add some more tests.  remove some more duplication,SAR
+Refactor data model to use better names,SAR
+ACCUMULO-3320 Some cleanup and add IT suffix to test name.,SAR
+ROO-2928: Post 1.2.0.RC1 code refactor and clean up - changed ItdTypeDetailsBuilder.addMethod calls to use MethodMetadataBuilder objects rather than MethodMetadata variant to avoid the unecessary conversion from MethodMetdata to MethodMetdataBuilder which happens regardless,SAR
+more url building cleanup.,SAR
+build cleanup,SAR
+changing CreatedResources to be a Map indexed by key to make lookup easier based on creatable definition includes: - updates to all the tests and samples affected by this - tested and passing - some cleanups of the affected samples for better efficiency  simplicity and coding patterns - simplification of the CreatedResourcesImpl,SAR
+Misc cleanup,SAR
+minor cleanup,SAR
+Code cleanup to prepare for merge to test siri caching via memcached on dev,SAR
+Added comments. Code clean up.,SAR
+ACT-1553: Refactor BpmnParse to use separate handlers for each bpmn element (first cut  working  but needs some extra cleanup love),SAR
+some cleanup/simplification in realtime consumer and its analyzers,SAR
+Lots of little cleanup items for Planet app ...,SAR
+AddTopicController: more cleanup,SAR
+added the view rename method. onItemChange -> onItemRenamed for consistency,SAR
+Changes made: 1. Automated test case for modifying properties file for load  update and read. 2. Bit cleanup around junits.,SAR
+code cleanup of VJSObject.,SAR
+Code cleanup.,SAR
+Protocol cleanup Temporarily removed protocol events until we can organize them properly Signed-off-by: Windwaker <wjcrouse913@aim.com>,SAR
+MAGNOLIA-2542  - Renamed UUIDLink to link and cleaned up the implementation. - Cleanup of methods in LinkUtil - Simplified link browser handling and made LinkTransformerManager configurable.,SAR
+Some minor cleanup to TerritoryAccess source code.,SAR
+small code cleanup  a couple of little changes to SSGGenotypeCall,SAR
+Atlas Standalone: NetCDFGeneration changes.  I think this is an acceptable first draft of the rewrite that should be ready for some preliminary tests.  I'll start looking into this next week.  This all needs extensive documentation and unit testing.  There is probably a lot of SQL cleanup that needs to be done on the DAO too.,SAR
+More nick -> user cleanup,SAR
+Cleanup EncodingUtil,SAR
+cleanup CDT extensions interfaces,SAR
+Refactored messy UI setup into named methods  renamed variables  general cleanup for readability.,SAR
+Cleanup and slight API changes to create less objects,SAR
+CDB improvements:   - Added AbstractParameterCommandDescriptorBlock and AbstractTransferCommandDescriptorBlock  - Updated CDB's to extend the correct abstract CDB  - Fixed member names to reflect specifications  - Fixed getters/setters for all CDBs  - Other minor refactoring/cleanups,SAR
+Moved EventExpander and EventUtil classes that require JDBC into Eventd to remove dependency on database in the opennms-config-model and opennms-config packages. Moved the old Capsd model objects (Db*Entry) back into Capsd to remove opennms-model dependencies on the database. Added an opennms-config-api JAR to contain interfaces for opennms-config implementations. Updated Spring dependencies to use the Spring EBR versions of the main Spring JARs so that they have Karaf-compatible OSGi metadata. Added more Spring exclusions to the ActiveMQ dependency list.,SAR
+SGF-154 - Remove dependency cycles in function execution packages,SAR
+issue 71: added a possibility to generate a trivial PDF report; some refactoring and cleanup; updated Guava to 14.0 because of the Splitter.on slowness bug,SAR
+Finish TocTest and clean up toc.xml until it passed,SAR
+Clean up commands system + add support for Sponge feature/commands branch changes,SAR
+Cleanup some TVScan code and added Range and EpisodeRange,SAR
+Finished initial work on nio like API over JSch.,nonSAR
+YARN-3695. ServerProxy (NMProxy  etc.) shouldn't retry forever for non network exception. Contributed by Raju Bairishetti (cherry picked from commit 62e583c7dcbb30d95d8b32a4978fbdb3b98d67cc),nonSAR
+"start time for triggers (""leave blank to start now"")",nonSAR
+Issue 12: The bug of f:url() in case of url mapping.,nonSAR
+HZN-1016: Make NodeMapsApplication work with new geolocation resolution,nonSAR
+Further WIP on valiation/reading.,nonSAR
+HTTPCLIENT-1384: Expose CacheInvalidator interface Contributed by Nicolas Richeton <nicolas.richeton at free.fr>,nonSAR
+Group blogging: support for LIMITED users,nonSAR
+Exclusion filter configuration in build path dialog,nonSAR
+"names of test class should end  not begin with ""Test""",nonSAR
+work in progress,nonSAR
+o named the docbook module incorrectly,nonSAR
+423048 - Receiving a PING while sending a message kills the connection,nonSAR
+"More work on the metadata tests. - better protect against test interaction issues by using explicit ""AfterClass""   stand-in tests for each subclass. - work on PluginManagerBeanTest such that it registers plugins to be enabled   before trying to disable them.   - Not passing  maybe a real problem?",nonSAR
+ACCUMULO-3167 Lift some repeated stuff into AccumuloClusterIT. Pass down env information from property file to cluster,nonSAR
+Adjusted a test case for bug 268704.,nonSAR
+Re-factoring/development.,nonSAR
+support mixing fetch histories from multiple sources (hbase  WBM).,nonSAR
+"override equals() on path and inode; test ""."" and "".."" inode navigation",nonSAR
+QUA-27 Implémentation de isToBeAnswered dans Conditon et classes filles Implementation de DataComparator MultipleCondition Mise en place de la liste de Condition Implementation de ConditionBuilder et ConditionFinder et dépendances dans QuestionnaireBuilder  QuestionnaireWalker  QuestionBuilder  QuestionnaireFinder... Test unitaire,nonSAR
+Coding done  need to work on UI and unit tests,nonSAR
+Pages now have titles and menuName/menuPriority and the StaticRepo can produce a map of menus from existing pages,nonSAR
+update server proxy to get project list etc. properly,nonSAR
+Finishing the sync of a vme observation  including updates. ,nonSAR
+make http async client implementation be more pluggable,nonSAR
+Issue #668: It's impossible to search all the terms in an ontology using the ontology access APIs Done.,nonSAR
+[DROOLS-952] eagerly initialize declarations needed by a RuleTerminalNode,nonSAR
+restapi: 'detail' in 'Accept' header ignored (#750785),nonSAR
+Bug 502090 - [Cocoa] Bridge support files should be updated to latest macOS supported version,nonSAR
+using bindings bean in tutorial 6,nonSAR
+GenericConversionService prefers matches against inherited interfaces over superclasses (SPR-6297),nonSAR
+Getting ready for service!,nonSAR
+expose lucene analyzer to be configured,nonSAR
+NXP-14974 integrated redis sentinel pooling,nonSAR
+Auto-request and apply of completions,nonSAR
+#340: early commit (the user guide and migration guide will follow),nonSAR
+FACES-1980 Develop alloy:importConstants tag handler,nonSAR
+CAMEL-6453 share the common code between NettyEndpoint and NettyHttpEndpoint,nonSAR
+Modifications to partitioning,nonSAR
+#SB-350: Make it possible to copy an artifact from one repository to another,nonSAR
+SWITCHYARD-1277 update to AS console v1.5,nonSAR
+closing feature #3688 Petites annonces : liste enrichie - ajout photo annonce,nonSAR
+Tolerate less 'singularity' in matrix inverses; up the number of writes between rebuild in local mode  but  don't try to recompute a model in the middle of an ingest as there's more value in just waiting for all the data.,nonSAR
+#anyway the cake is great  it's so delicious and moist#,nonSAR
+Implementation of Mark Resolved in the new API for 1.6  1.7,nonSAR
+Sketch of SimpleBuildStep and its usage; not yet tested.,nonSAR
+[GSCOLLECT-1239] Eliminate usages of iterator from iteration patterns in FastList  HashBag and UnifiedSet.,nonSAR
+SecurityUtils becomes ExternalSchemes,nonSAR
+working on album page,nonSAR
+WL-3170 Promote methods to SignupEmailBase,nonSAR
+add Optional/clean up vacuumd-configuration,SAR
+[NTI] Clean up remaining static fields in JSType. Fixes #2004 on github.,SAR
+Code cleanup  reimplemented lock picking.,SAR
+[CLEANUP] Cleanup for BACKLOG-17100: Trimmed the work item status log message to only the interesting pieces and cleaned up lifecycle phase enum,SAR
+PoolManager: Clean up interface of PoolMonitorV5,SAR
+get caldav reports working again. all but a couple multiget  freebusy  basicquery and timerange reports pass. introduce a DavCalendarResource base class for DavEvent (and eventually DavContact etc) that gives access to the ical4j Calendar for a resource. remove some redundant ical4j parsing and generally clean up a bit.,SAR
+[CLEANUP] - Refactored code to facilitate creation of unit tests - Set security helper as PluginService instance dependency instead of global static variable access - Set document builder as PluginService instance dependency instead of global static variable access - Refactored access to metadata plugins list to a separate service,SAR
+renamed for consistency,SAR
+Tarus cleaned up eventconf.xml and old included event files so this test now passes (with a small cleanup to eventconf.xml).,SAR
+Finished up lens calibration code. Moved the majority of it into a new class to clean up the camera class. Switched ReferenceCamera image transforms to use OpenCV  speeding things up. Fixes #226.,SAR
+minor cleanup,SAR
+minor refactoring and code cleanup,SAR
+[AS7-4527] rollout plan tasks cleanup,SAR
+Moved as.core.server to as.core.server.internal  as thats where those classes will reside. Moving to a cleaner API which can be opened up logically and more easily extended.,SAR
+some cleanup  removed obsolete classes,SAR
+dcap: cleanup  in gss/gsi tunnel,SAR
+Cleanup roaring integration code,SAR
+API cleanup,SAR
+API cleanups.  * Removed node.traverse() deprecations since the new traversal API is only tentative and might change in upcoming releases.  * Replaced org.neo4j.graphdb.traversal.Position with org.neo4j.graphdb.Path since Positions don't do anything Paths already do.  * Added Path.lastRelationship() to support using Paths instead of Positions.  * Removed the tentative node.expand() methods for now  they might be introduced in a later release.  * Removed the Expansion interface that came with node.expand()  * Cleaned up naming around TraversalDescription:    * Renamed TraversalFactory to Traversal  to give the nice pattern of {{{TraversalDescription traversal = Traversal.description()}}}  * Added an iterator() method to Path for iterating over both nodes and relationships (interleaved) (Path extends Iterable<PropertyContainer>)  * Renamed SourceSelector to BranchSelector  since that name better describes the role and purpose of that interface.    * Renamed ExpansionSource to TraversalBranch to match this    * Renamed SourceSelectorFactory to BranchOrderingPolicy to match this and to further clarify the role of an object implementing this interface.,SAR
+HIVE-5395 - Various cleanup in ptf code (Edward Capriolo via Brock Noland),SAR
+Clean up main window. Add feature for activating/disactivating display of eos. Read table.,SAR
+Cleanup. Added check if the bed of this player is in this world.,SAR
+Some refactorings and cleanup  namely: - Moved all relevant null checks into Resource - Made create firewall use FirewallOptions instead of a Firewall obj - Consolidated a lot of the HttpRequests in the expect tests to allow for reuse (in compute),SAR
+Fixed REST tests  minor code improvements,SAR
+Cleanup in NestedTransactionTest ,SAR
+Exception cleanup.  All our non-runtime exceptions should extend from StingException  StingException needs to be lower in the tree to build.,SAR
+more cleanup Issue number: Obtained from: Submitted by: Reviewed by:,SAR
+OOZIE-1985 support dropping hcat dataset in coord rerun with cleanup option (ryota),SAR
+181758 [clean up] CUR should use its own working copy owner,SAR
+More code cleanup,SAR
+core:StorageHelper Cleanup  method name standard(11).,SAR
+more post-api cleanup  plus fixing bugs from testing.,SAR
+slight cleanup,SAR
+HBASE-2922  HLog preparation and cleanup are done under the updateLock               major slowdown,SAR
+Implement ElementInterface and cleanup Betfor headers,SAR
+Code cleanup:  Score function should work in doubles to avoid wrapping on longs for long distances;  Minimum distance we care about was too high;  Removed link between Geo Only and Lucene+Geo path;  Removed some dead code that was commented out,SAR
+prepare VMs area for further options and some cleanup,SAR
+119414: [clean up][J2SE50] Failing test case in CleanUpTest#testJava5005,SAR
+Tablet fixes. Goal is to get tapping on a file to display its details. Does not work yet - WIP. Also code optimization: Make FileDetailFragment less complex by passing in a OCFile directly instead of reconstructing it.,SAR
+code cleanup + started to add user auth,SAR
+Remove dependency on httpclient,SAR
+Large documents no longer causes exceptions in MongoDocumentIO's cleanup.,SAR
+Change the logging for hibernate because it was seriously slowing down queries Change the progressBar refresh rate back to two Clean up the services a bit,SAR
+Cleanup the dynamic forms.,SAR
+core: cleanup in create vm,SAR
+Trying to clean up how all of this is really going to work.,SAR
+chore(engine): code cleanup,SAR
+clustering module code cleanup and formatting,SAR
+"Make app tolerant of look and feel issues  log an error if not available and then roll with default. Clean up the pom somewhat to reduce hard coding  same for app name and settings dir. Make it work like a mac app on the mac  mostly  still needs more work  but this fixes the issue I was seeing with graph size  an Apple JVM/L&F bug... Remove ""App"" from main class name  it was too tacky...",SAR
+FORGE-2279: ShellUtil checks for system property for option names,nonSAR
+Mark AbstractWidgetLCA as deprecated,nonSAR
+I think I've got the coordinates for the transects done  I just need to figure out how to do a line perpendicular to and crossing other lines.,nonSAR
+*** empty log message ***,nonSAR
+Docs on index support,nonSAR
+XRENDERING-191: Have one Maven module per syntax * Separate TWiki syntax,nonSAR
+implemented event bus send reply failures,nonSAR
+some updates to the file importer   still non functional,nonSAR
+Getting only case handlers,nonSAR
+COMPAT mode for IE11: (#1010),nonSAR
+almost have game of life automatically running,nonSAR
+Got the javabean naming wrong,nonSAR
+Language hinzugefuegt,nonSAR
+Images for the tempo increase/decrease and pause/resume.,nonSAR
+First hack at clojure script generation.,nonSAR
+Test cases for BigDecimal detector (for RFE 2891944),nonSAR
+Algo combinaison doublon et couleur.,nonSAR
+Updater: make XMLFileReader more object-oriented,nonSAR
+Java 7 source compatibility updates,nonSAR
+HV-1385 Adjustments on the metadata API following BVAL-655,nonSAR
+[SONARPLUGINS-823] simpler stax parser for gallio reports,nonSAR
+method for checking if evaluator is internal or external,nonSAR
+Simpler names for standard HTTP GET and POST classes,nonSAR
+Bug 497348 - Drag and drop of overflown editor tabs is broken ,nonSAR
+putting tests back,nonSAR
+HBX-638 support null in query parameters view,nonSAR
+[AS7-1981] WriteAttributeHandlers for server-group's profile and server-config's group attributes. Affected servers are put in the restart-required state,nonSAR
+* Filled in implementations of IMetadataConfigurable methods. * Updated Leica LEI reader to respect MetadataOptions when parsing metadata.,nonSAR
+distributed update and commit,nonSAR
+Bug #3624: History cache should be stored in Java DB,nonSAR
+core: Standardize NetworkCluster,nonSAR
+updating the javascript example,nonSAR
+ading support for swagger response message and test updates,nonSAR
+Strict pool can starve on discard,nonSAR
+return the last modified date properly (avoids icon flickering in IE),nonSAR
+more hacking and cleaning,nonSAR
+configurable lookup directories,nonSAR
+(deliverMessage) ProxySuppliers do not catch exception Disconnected anymore. instead the calling PushToConsumerTask destroys the ProxySupplier.,nonSAR
+FileSetChecks are now responsible for filtering out the files they are not interested in  as discussed on the checkstyle-devel list,nonSAR
+Factorisation: traduction (respect de la norme).,nonSAR
+srmclient: consolidate credential expiry  don't use RuntimeException,nonSAR
+more tests for regular expressions and array literals re-write of regexp scanning to conform closely to ECMA-262 (with the exception of unquoted slashes in character classes which compc does not support) allow empty expressions in array literals (which allocate a slot with value undefined) allow trailing comma in array literals in ECMA-262  a trailing comma is allowed in object literals  too - but compc does not allow that (both Flex 3 and 4),nonSAR
+https://issues.jboss.org/browse/JBIDE-11490 don't copy jboss-app.xml for Seam 2.3,nonSAR
+Updated architecture.,nonSAR
+tomcat launcher (in progress),nonSAR
+Experimental PostgreSQL support,nonSAR
+enabled search in working copies,nonSAR
+store and load separate mipmap resolutions for each setup,nonSAR
+Making the code a wee bit more self-descriptive.,nonSAR
+Test help message with options.,nonSAR
+cleanup on getName,SAR
+162045 [clean up] (with format) on dirty file saves file,SAR
+Code cleanup - Organized imports (removed unused ones) - Moved static helper to place of usage - Renamed variables and types for better meaning,SAR
+cleanup work,SAR
+Added liquibase. preffix to properties. Reduced liquibase dsl to 0.7.0  working with multiple files again correctly. Some cleanup  moving files  fixing imports,SAR
+Cleanup: Removed ISiteComponent and SiteView,SAR
+clean up test,SAR
+Cleanup on properties,SAR
+userportal: cleanup - extract method,SAR
+Sensor Node code cleanup.,SAR
+Additional support on jdbc and csvjdbc. Starting code clean up.,SAR
+"Revert ""Mercurial Integration is now done with java native library hg4j. Refactoring to clean up the code and to allow easy adoption of other java native libraries in the future. Some unit tests added and classes moved to dedicated packages for better maintainability""",SAR
+Documentation and cleanup.,SAR
+115661 [clean up][code style] New indirect static access and qualify static field access clean up,SAR
+add Factories cleanup struct and samples,SAR
+Cleanup of ExpiryICacheTest.,SAR
+Code cleanup (patch from Sean Bright),SAR
+executor clean up and adding tests for coverage,SAR
+MONDRIAN:  Consolidated duplicated code in RolapNativeSet.  Also added minor enhancement to strip redundant set braces when checking crossjoin args for native eval.,SAR
+api cleanup and a refactor of some getCallbackScript methods. its now much more obvious what to call and what to override when you want something. (success or failure scripts),SAR
+Test cleanup and improved documentation,SAR
+"Starting to move from ""optimization phase"" to ""fixing bugs phase"". Done some general  cleanup  a few more optimization changes and a lot of bug fixes. Here is a summary  of the changes:",SAR
+phone call information added to the first form. UI clean up required,SAR
+Clean up project code and fix typo,SAR
+ROO-2745: Post 1.2.0.M1 code refactor and clean up - move injected PersistenceMemberLocator to super type,SAR
+clean up un used classes,SAR
+[nobug] general warning cleanup,SAR
+map delayed store & eviction re-write cleanup,SAR
+Cleanup of RemoteResponseHandler,SAR
+Request managing bei peer + cleanup,SAR
+Code cleanup complete (documentation upodate still missing),SAR
+Resource Ancestry (Disambiguation) Work Incorporate feedback into design and perform some refactoring to clean up impl. - Keep Name and Ancestry fields simple with only linked resource names displayed - Enhance hover values for both Name (with type info) and Ancestry (with hierarchy and type info) - Move more logic to AncestryUtil for simplified Impl. Use standard Record   attributes  defined here  across Ancestry using datasources and views. - Remove Ancestry and in some places  Type as DS fields. These should be DS   fields  only  if necessary  ListGrid fields. - Add Ancestry to AlertDataSource and its users - Fix issue with the Ancestry hover for Assigned resources in Resource   Selector. - Added Resource filtering prior to gwt serialization for Alerts.,SAR
+Test directory cleanup,SAR
+submission cleanup #8,SAR
+fix quality flaws,SAR
+Cleanup and move to Maven,SAR
+Updated accurev plugin to remove non-recommende advanced settings  include reftree usage  remove workspace usage  use port and name for all calls  add display of depots and streams  clean up ui  allow users to only build if changes in particular directories,SAR
+More minor cleanups as I'm working thru all the rules,SAR
+Made Context.getUserContext throw an error if a session isn't open to prevent memory leaks Added cleanup methods to the openmrsclassloader Explicitly closed all jdbc statements to prevent any leakage Ran the formatter and organize imports on the test and web src packages,SAR
+Another clean up #168,SAR
+jetty-9 javadoc and code cleanups,SAR
+Various code improvements based on IntelliJ IDEA inspections,SAR
+Clean up of names in unit tests,SAR
+Tiny bit of documentation/naming clean up in Rectangle. A slightly nicer test for vertical lines intersecting  Rectangles.,SAR
+[95336] clean up ModelQuery extensions to make them easier to reuse,SAR
+Cleanup. Added JSR-305 annotations to enable null checks in IDEs/Findbugs.,SAR
+[cleanup] Applied codestyle  fixed compiler warnings  fixed typos  added missing JavaDoc,SAR
+Refactor filefilter directory to remove dependency on lang,SAR
+CSPACE-2542 Modified the handling of Authorities to support range of specifiers for authority and item  across operations. Modified authorities that support contact sub-resources to support all specifier forms for the authority and item  across operations. Refactored the AuthorityResource classes for the authorities that support contact sub-resources  to simplify code and ensure consistent support.,SAR
+Cleanups and minor optimizations,SAR
+Debug model skeleton,nonSAR
+Prevent the managed container from starting an AS7 instance if one is already running,nonSAR
+Organized table of times,nonSAR
+Widgets now refresh off the EDT,nonSAR
+Closes OOZIE-85 Incorporate review feedbacks,nonSAR
+differentiate oauth1 vs oauth2 [i.garanina],nonSAR
+TrackMate_: 1st step in transition JGraph -> JGraphX,nonSAR
+test(engine): unignore test case,nonSAR
+Separate out offset-based SubVector from 0-based Vector ,nonSAR
+Make `test-modules` scheme available to compiled code.,nonSAR
+Avoid deprecated nonfunctional method,nonSAR
+Serialize the JSON node only if there is content,nonSAR
+Allow adaptors to specify an internal handler package,nonSAR
+Pull up formatting and hover info related bits from props editor,nonSAR
+make params class concrete,nonSAR
+CLOSED Task for WMS Get Capabilities Management for CSW,nonSAR
+Ok  we are parsing something correctly (if you ignore half the spec),nonSAR
+Work on my own things,nonSAR
+RHQ-1315 - subsystem view for alert definitions   implemented all functionality listed in corresponding description of JIRA; ,nonSAR
+"TESB-3156 ""Automated start / stop of Routes and Data Services""",nonSAR
+Beginning of second round of candidacies,nonSAR
+HIVE-243. ^C breaks out of running query  but not whole CLI (George Djabarov via Ning Zhang),nonSAR
+"http://code.google.com/p/mybatis/issues/detail?id=618 :	Reflector doesn't find correct getter method when using generics",nonSAR
+Make publication date Optional,nonSAR
+more code + integration test,nonSAR
+fun with base64 url encoded data,nonSAR
+Communication to the Console is now unicast TCP.,nonSAR
+HIVE-13392 disable speculative execution for ACID Compactor (Eugene Koifman  reviewed by Wei Zheng  Alan Gates),nonSAR
+make annis-service compile with salt simple,nonSAR
+*** empty log message ***,nonSAR
+#4 Visualize content in a report,nonSAR
+XWIKI-3240: 'style' attribute of <font> tag discarded when cleaning html,nonSAR
+BeanParam supports annotations on fields and methods,nonSAR
+(Re-)activated 'shared' clones.,nonSAR
+choose the location of the unique sandbox,nonSAR
+[MONDRIAN-1785] Pulls up a couple methods form ImpalaDialect into HiveDialect regarding quotes and quoting characters.,nonSAR
+major grammar overhaul,nonSAR
+DATAMONGO-1050 - Explicitly annotated Field should not be considered Id.,nonSAR
+Incorporated internal review comments,nonSAR
+*** empty log message ***,nonSAR
+SONARPLUGINS-2868 Do not fail analysis if embedded mode and xdebug not installed,nonSAR
+#171 Visual cue for initialiser sections (display initializer annotation only when cursor is inside body),nonSAR
+On my way to NIO. Checking in to save the work. Migrating more classes. below 200 errors. Now I can see progress,nonSAR
+*** empty log message ***,nonSAR
+The refresh got sometimes stuck because countdown was zero,nonSAR
+Support for grouping of froms  in imports with pep8,nonSAR
+Reestruturação dos testes no projeto mix e upgrade de versão no dbehave.,nonSAR
+tightened implementation of the abstraction of the graph configuration.,nonSAR
+refs #358 - polishing in process...,nonSAR
+factor inner classes out of ThriftStructMetadataBuilder,nonSAR
+[ISPN-585] (cleanup the Lucene Directory implementation) trunk,SAR
+API cleanups.  * Removed node.traverse() deprecations since the new traversal API is only tentative and might change in upcoming releases.  * Replaced org.neo4j.graphdb.traversal.Position with org.neo4j.graphdb.Path since Positions don't do anything Paths already do.  * Added Path.lastRelationship() to support using Paths instead of Positions.  * Removed the tentative node.expand() methods for now  they might be introduced in a later release.  * Removed the Expansion interface that came with node.expand()  * Cleaned up naming around TraversalDescription:    * Renamed TraversalFactory to Traversal  to give the nice pattern of {{{TraversalDescription traversal = Traversal.description()}}}  * Added an iterator() method to Path for iterating over both nodes and relationships (interleaved) (Path extends Iterable<PropertyContainer>)  * Renamed SourceSelector to BranchSelector  since that name better describes the role and purpose of that interface.    * Renamed ExpansionSource to TraversalBranch to match this    * Renamed SourceSelectorFactory to BranchOrderingPolicy to match this and to further clarify the role of an object implementing this interface.,SAR
+relationship configuration  cleanup,SAR
+Drop CleanupChannelGroup  close #1176,SAR
+Add comments  format code and clean up,SAR
+CleanUp Code,SAR
+ftp: Clean up path computation,SAR
+chore(engine): clean up historic case instances deletion,SAR
+master / slave fixes for hb 2.1.3 and 2.1.4  and more cleanup,SAR
+cleanup; added functionality to select on collection associated fields - rjrjr,SAR
+"Now StackAbilityView has sourceCard. Added displaying source card for abilities. Fixed arrows offsets. Added ""source"" blue arrows (target arrows are red). Fixed NullPointerException happen for AbilityPicker. Fixed random order of spells in stack. Code clean up.",SAR
+Cleanup DataInput and Fix AS7-912,SAR
+Polishing code,SAR
+lots of cleanup; working on issue #90,SAR
+cleanup of Encapsulation class,SAR
+Code cleanup from intellij inspections,SAR
+ChanServ: medium cleanup,SAR
+NOJIRA code clean up,SAR
+Accounting-Integration module code clean up,SAR
+Cleanups: - Remove obsolete option checkCaja - Remove checks that were only done if checkCaja was on. - Simplify a call to CombinedCompilerPass. ------------- Created by MOE: http://code.google.com/p/moe-java MOE_MIGRATED_REVID=62690700,SAR
+Misc logging-cleanup/refactoring * CrawlerJournal.java     improve exception logging     combine writeLine() methods to use varargs * FrontierJournal.java     improve exception logging * ArchiveUtils.java     replace ignored  count parameter with meaingful boolean one * CrawlURI.java     use updated ArchiveUtils method,SAR
+General cleanup and refactoring.,SAR
+http://jira.sakaiproject.org/jira/browse/EVALSYS-666 Cleanup of producers to ensure no user perms checks are being done without using services EXCEPT for the assign producers and the hierarchy producers Also removed some direct usage of sakai services,SAR
+Code maintenance for refactoring by Emanuel Graf  bug 234348.,SAR
+test plugin cleanup,SAR
+Activiti Cycle: code cleanup  finished implementation of the cycle component infrastructure  added some javadoc for the annotations.,SAR
+Removed unused methods  moved startup page code to RWTStartupPageCreator - bug 340927: Cleanup and refactor HtmlResponseWriter https://bugs.eclipse.org/bugs/show_bug.cgi?id=340927,SAR
+Fix quality flaws,SAR
+Lots of cleanup and minor bugfixes all over the code,SAR
+webadmin: DataProvider.java cleanup (2/6),SAR
+general cleanup and improvements,SAR
+Minor clean up: parameter order consistancy,SAR
+Begain faces integration  will need some cleanup though,SAR
+e2e tests - adding missing packages  minor cleanup,SAR
+slight cleanup  reformatting for better readability,SAR
+more clean up GTalkAuth and general account setup,SAR
+demo cleanup wip,SAR
+#232: Cleanup after merge of #225,SAR
+Added title to LifecycleMappingDialog  cleanup to LifecycleMappingProposal,SAR
+JBIDE-19335 - cleanup and move activator to internal package,SAR
+javadoc cleanup and minor code cleanups,SAR
+minor tests cleanup,SAR
+Test cleanup :),SAR
+XPMAIL-5: Allow setting of Reply-To  Sender (and other) headers Patch submitted by David Ward Reviewed and substantially modified by Vincent Massol: * Added new MailConfiguration class * Added unit tests * Cleaned up some code (still a lot to clean up  especially all error handling),SAR
+Atrack protocol code cleanup,SAR
+Major cleanup.  Moved the resrouces out of the source tree and  fixed a problem where we were not terminating debug sessions. Also removed a bunch of unused stuff.,SAR
+Restructured packages Fixed grammar Separated cookbook into its own test Other cleanups as() and distinct() are now separate methods,SAR
+refactoring and cleanup,SAR
+ACCUMULO-1024 Address user management API for built-in users and clean up broken javadocs associated with security-related commits.,SAR
+Miscelaneous runtime detection code cleanup  re-org of API,SAR
+WebDAV: Make use of RedirectedTransfer,nonSAR
+[#2351] Relax ConnectionProvider contract  allowing acquire() to return new Connections even before release() is called,nonSAR
+http server request illegal state exception check,nonSAR
+un peu de refacto pour préparer la suite,nonSAR
+Broken  but before I confuse myself any more...,nonSAR
+pass toolkit as 1st parameter in constructor instead of overriding abstract method,nonSAR
+Update to SpoutAPI. Signed-off-by: Chris Sanders <zidane@outlook.com>,nonSAR
+TAJO-87: Integration of tajo algebra module and SQL parser,nonSAR
+Let list facets cache their intermediate results in the database object. These results are shared among different users of the same database.,nonSAR
+javadoc parsing works,nonSAR
+Better API now  for using XPaths,nonSAR
+*** empty log message ***,nonSAR
+Bug 362602 - [target] Target persistence for contributed locations is incorrect,nonSAR
+Program files loading with prologparser library.,nonSAR
+Initial version of Aspirin QoS package.,nonSAR
+constructCloneCollection by instanceOf: fail-fasts + generics,nonSAR
+FALCON-731 Lineage capture for evicted instance is broken. Contributed by Sowmya Ramesh,nonSAR
+json project configured,nonSAR
+Portlets can now be placed with a tool.xml or configuring a standard one  these only need to be in the portal war.,nonSAR
+More work on HRecord values,nonSAR
+Bug 498369 - Xdebug: Variables view displays outdated values (bad refresh),nonSAR
+core: VDS implements BusinessEntity,nonSAR
+widgets plugin take care of widgets hierarchy,nonSAR
+Freezable is now SMSPersistable,nonSAR
+BLC-58 - Allow friendly names in the polymorphic type dropdown in the admin screens,nonSAR
+The naming service is now a model view. More idiomatic way to manage element naming,nonSAR
+New names for the core elements:  - Binding  - TypeConverterBinding  - ScopeBinding  - InterceptorBinding  - InjectionRequest  - StaticInjectionRequest  - ProviderLookup  - Message,nonSAR
+Use a location obj to fill data from location file,nonSAR
+KS-2166 - KS-2178: Leverage UIBaseForm for FAQ's portlets,nonSAR
+Make bitcoinSerialize() return a copy by default  provide an unsafeBitcoinSerialize() method for high performance applications that are willing to deal with the extra API complexity.,nonSAR
+feat(cmmn/REST): manualStart  disable  reenable via REST API,nonSAR
+Polish StoragePolicy API and tests,nonSAR
+CRUD operations for Abonent & Phone entities,nonSAR
+Prepared registration of entrypoints by path in EntryPointManager - bug 365633: Register entrypoints by path instead of name https://bugs.eclipse.org/bugs/show_bug.cgi?id=365633,nonSAR
+new config mechanism and better marshaling,nonSAR
+Bug 255614 - NPE while building my workspace,nonSAR
+Issue #383: Support for remote lookup repositories,nonSAR
+[SPARK-8269] [SQL] string function: initcap,nonSAR
+log more info in debug mode; mark this branch as 1.2.0-SNAPSHOT,nonSAR
+HBASE-5840 Open Region FAILED_OPEN doesn't clear the TaskMonitor Status  keeps showing the old status (RajeshBabu),nonSAR
+One thing for STS-660  using Extension.Packages,nonSAR
+335711 read lifecycle mapping metadata from maven-plugin artifact,nonSAR
+CAMEL-10026: HealthCheck API,nonSAR
+Import latest billing sample (7ec85a9b619fc5f85023bc8125e7e6b1ab4dd69f),nonSAR
+Finish medialpalyer on sliding,nonSAR
+Updated the Mobile ESP java class for mobile device detection,nonSAR
+[ENG-151] Ability to get risk out of db  for testing purposes,nonSAR
+Intermediate step,nonSAR
+[JENKINS-17681] Set up a test which passes on Unix but fails on Windows when symlinks are enabled on the platform but disabled for the current user.,nonSAR
+Allowing raw images to be read from a stream.,nonSAR
+Minor cleanup and expansion of the RecalDatum unit tests,SAR
+Upgrades and changes to LeftAlignVariants  motivated by 1000G consensus indel production: -- Added ability to trim common bases in front of indels before left-aligning. Otherwise  records may not be left-aligned if they have common bases  as they will be mistaken by complext records. -- Added ability to split multiallelic records and then left align them  otherwise we miss a lot of good left-aligneable indels. -- Motivated by this  renamed walker to LeftAlignAndTrimVariants. -- Code refactoring  cleanup and bring up to latest coding standards. -- Added unit testing to make sure left alignment is performed correctly for all offsets. -- Changed phase 3 HC script to new syntax. Add command line options  more memory and reduce alt alleles because jobs keep crashing.,SAR
+234984 [clean up] Code cleanup conversion to a for each loop makes the assigned variable final when it shouldn't,SAR
+Fix quality flaws,SAR
+Minimal cleanup of map implementation related tests.,SAR
+OGM-1064 Several cleanups/optimizations for the Redis dialects,SAR
+Clean up context to match ui tier version.,SAR
+more cleanup of core api,SAR
+Cleanup of ASTNeoUpTreeVisitor,SAR
+Minor cleanup,SAR
+Clean up and reorganize some JDT test bits,SAR
+Aquamar: SummaryCSVTool                   Clean Up,SAR
+[MRM-1025] remove database cleanup consumers and centralise functionality in RepositoryListener Note: this commit requires that a following work item be completed to add a service for scanning metadata and cleaning up if a file is erased. Workflow will be documented first.,SAR
+Minor clean up  turn Part into an interface,SAR
+XWIKI-4689: Previewing a new form-based document does not set the right document syntax * also done some related cleanup and bulletproofing,SAR
+cleanup  unify extension initialization,SAR
+Add IFD.getIFDTextValue convenience method; clean up a few IFD calls.,SAR
+Cleanup v1 vestigaes and simplify v2 api,SAR
+Minor queue cleanup,SAR
+A bunch more API cleanup,SAR
+Test clean up,SAR
+Misc cleanups to FindBugs GUI for installing and enabling/disabling plugins. Also small modification to Plugin to allow installing Cloud plugins. May not be best solution but works for now.,SAR
+No bug - code cleanup,SAR
+DATAMONGO-1176 - Cleanup.,SAR
+KS-2168 : more cleanup and unit testing,SAR
+Cleanup of QueryServiceTable,SAR
+[KARAF-3671] Clean up karaf-maven-plugin goals,SAR
+bug fixes  ui cleanup  and other small changes,SAR
+Some more code clean up and fixed a bunch of typo's,SAR
+core: Login comands - clean up authenticateUser,SAR
+Simplify code sample settings,SAR
+BaseAdapterDecorator cleanup  deprecated methods and added alternates,SAR
+Clean up and organize code.,SAR
+Ranking by qualification adjustments + cleanup of cost comparison  bug 269321.,SAR
+More work on SocketIO: Cleanup  add support for normal AtmosphereHandler support (any application will works with SocketIO client),SAR
+More cleanup,SAR
+vagrant: Warnings cleanup.,SAR
+Updates and cleanup for className inclusion for map/collection on embedded elements Support for 2d indexing.,SAR
+HBASE-1013 Add debugging around commit log cleanup,SAR
+cleanup,SAR
+Clean up.,SAR
+AS7-3772 Cleanup up interface criteria expression resolution,SAR
+Clean up CompilerTestCase.,SAR
+Cleanup more of AVFoundation (#611) by cleaning up some CoreMedia (#683).,SAR
+cleanup everything :-),SAR
+Code cleanup,SAR
+Additional JavaDoc and comment cleanup. Make string comparision locale independend and factor out safeClose().,SAR
+Clean up HiveMind code  added log4j  removed OSWorkflow 2.8  added OSWorkflow support classes.,SAR
+Some refactoring & cleanup,SAR
+Minor cleanup of the annotation tab  also extended the help text.,SAR
+Produced GTFS feed without the shape.txt,nonSAR
+Finished off the skeleton network code.,nonSAR
+[JENKINS-17067] Updated story 6 test,nonSAR
+Bug 405117 - Ease specification of version range bounds that match the least/greatest version in a given branch,nonSAR
+SEAMSECURITY-119 update testsuite structure,nonSAR
+Updates to Zipkin 1.29 (#465),nonSAR
+HSEARCH-2689 Retrieve the EntityManagerFactoryRegistry through injection only,nonSAR
+Support for selenium integration tests.,nonSAR
+adicionado teste de busca generica,nonSAR
+Detect consumer parent/child relationships on child's register.,nonSAR
+STS-118: Allow sourcePage to be encrypted. The _sourcePage parameter is always encrypted before it is written. Easy access to the plaintext value is provided by the new ActionBeanContext.getSourcePage() method.,nonSAR
+Notification messages implemented,nonSAR
+completed basic modelling,nonSAR
+JCLOUDS-281: Support Nova Block Device Mapping v2 Boot,nonSAR
+Updates to commands and god mode,nonSAR
+handle abnormal case,nonSAR
+allowing pulling up types,nonSAR
+"Revert ""Revert ""making it work with Jetty and spring MVC""""",nonSAR
+make sure to always use \n as line terminator when we send messages to the server,nonSAR
+3.0 initial map.size impl.,nonSAR
+Fake simulation of turbine processes - see issue #7,nonSAR
+HIVE-11133: Support hive.explain.user for Spark (Sahil via Xuefu),nonSAR
+refresh whole repository.,nonSAR
+The WorkflowProcessor is processing,nonSAR
+Bug 298671 Implement enough compatibility to bring up a simple view,nonSAR
+Cleaned up dependencies across generators,nonSAR
+473533: update markup to allow adjacent/nested span blocks,nonSAR
+SONARJAVA-576 InstanceOf operator returning always true,nonSAR
+Better tests,nonSAR
+JENA-1059: Optimize insert and delete of constant triples/quads.,nonSAR
+"Habe nach Absprache mit lplotni alle in Methoden und Variablen vorkommenden ""ID""s in ""Id"" umbenannt. Bitte auch in Zukunft auf Konsistenz achten! Konnte BenutzerServlet nicht committen  da kam eine Fehlermeldung.",nonSAR
+Alluxio-1509. v3,nonSAR
+switch to full int types instead of shorts  implement .equals(...),nonSAR
+Translated 'troedel' parameter to 'slowdown'.,nonSAR
+First cut on using a dynamic Resource to expose Hibernate 2LC stats,nonSAR
+Put the generation of a GATE doc in a separate method GATEProcessor.generateGATEDoc and use it in the GATECorpusGenerator,nonSAR
+Implemented signature method.,nonSAR
+flatten nested concatenations,nonSAR
+CAMEL-6359: Bindy now supports enums. Thanks to Daniel Lorych for the patch.,nonSAR
+UF-225 Skipping unlock when RuntimeException is thrown in AbstractIOService.endBatch(),nonSAR
+Story 2171  import API work. Work in progress.,nonSAR
+final touch-ups  security config  and tonr2,nonSAR
+DROOLS-7 Initial Working Phreak,nonSAR
+Begin process of migrating to GraphProviders,nonSAR
+reimplementation of context control tab,nonSAR
+core: [Import|Export]RepoImageCommandTest runners,nonSAR
+Allow to set scope from plugin,nonSAR
+HADOOP-1730 unexpected null value causes META scanner to exit (silently),nonSAR
+Show octocat spinner when loading,nonSAR
+[WICKET-5909] Session style is not taken into account when loading mounted resources.,nonSAR
+Even more cleanup,SAR
+"Removed destructive ""all"" view from all ResourceProviders  added ""doNotSort"" flag when only UUID query is executed in SearchCommand  added session timeout to Jetty configuration  some other performance optimizations and code cleanup.",SAR
+TURMERIC-1601: Increase code coverage and some code cleanup.,SAR
+green bars all around. fixes supercol  batchmutation  some keyspacetest cleanup,SAR
+improved the management of managed scopes making a callback to the originating context to properly cleanup the contextual instances,SAR
+Renamed package from as.core.packages to as.core.modules Moving to a cleaner API which can be opened up logically and more easily extended.,SAR
+minor cleanup and more syslog parser work,SAR
+cleanup + unittest,SAR
+cleanup  moved more methods from questmanager,SAR
+more list cleanup,SAR
+Clean up CmdFactionsMotd,SAR
+Trace clean up removing dbgp parameter.,SAR
+cleanup and rework of core engine,SAR
+[SMALLFIX] Rename UserCleanup to UserCleaner per review comments,SAR
+TRUNK-4906 - Cleanup API for expanded cohort details,SAR
+general code cleanup and rules compliance,SAR
+story 1097: Persistence Storage for UIM : Javadocs & Code Improvements,SAR
+"cleanup modcluster screens and move to ""web""",SAR
+Implemented method 'isIn(Object...)' for all assertion classes. Some minor code cleanup.,SAR
+cleanup; towards 94519: Infer Type argument cause NPE,SAR
+Clean up element-related interfaces to not refer to IOS,SAR
+Fixed SystemLogService. Merged updates from 2.0 branch. Cleanup.,SAR
+Regenerate activity service helpers  clean up,SAR
+MAGNOLIA-2993 cleanup and javadoc; also added support for TemplateCollectionModel where directive parameters are converted in List<String>,SAR
+added method to cleanup weak references,SAR
+Fixed Package Name  little bit of cleanup,SAR
+More cleanup in the impl area,SAR
+code cleanups  more convinience functions  bugfixes and tests,SAR
+Added checkstyle extension and rules  started to cleanup/format/document code based on rules,SAR
+unit test reorg by expression type   some cleanup and fixing warnings,SAR
+Little code improvements,SAR
+cleanups in hotfolder,SAR
+Fixes issue #161 Cleanup notification of UnitOfWork is now always done after outer UoW commit notification.,SAR
+junction: cleanup TestBillingApi,SAR
+more code cleanup  exporter is now even simpler due to composition,SAR
+More cleanup in the impl and test area,SAR
+some more cleanup  mainly better naming Issue: WICKET-3161,SAR
+cleanup on handlers and fixed examples  movde things around etc,SAR
+core: VdsManager - cleanup,SAR
+Removing the EscapeUtils/UnescapeUtils classes  and making StringEscapeUtils the replacement. Writer variants of StringEscapeUtils are dropped - instead you hit those via the translator objects. Some javadoc/testing cleanup needed. ,SAR
+CAMEL-4047. Remove dependency on jsr-223 scripting engines in camel-core. Thsnks dkulp for patch.,SAR
+CHRON-13 Check that resources are cleanup on windows,SAR
+Javadoc cleanup. Method rename. getInputStream -> getAsInputStream,SAR
+Code clean up and formatting.,SAR
+Cleanup of java compiler,SAR
+clean up cursor handling in ChatView,SAR
+datasource refactoring. works now. more cleanup with tests etc.coming,SAR
+cleanup KCL to Kotlin,SAR
+Refactored config distribution in parts of HA. Made unfinished transaction cleanup threshold use client lock timeout (as resolved by HaConfig).,SAR
+PP-6 + PP-7 + PP-31: some refacoring cleanup  plus be able to call score from either endpoint.,SAR
+Jetty tests are running with Weld,nonSAR
+BOOKKEEPER-331: Let hedwig support returning message seq id for publish requests. (Mridul via sijie),nonSAR
+Order_DetailsPK test passes (with properties  not yet with links),nonSAR
+implemented getHyperlinkText() and getTypeLabel() for ModelElementHyperlink,nonSAR
+JBQA-8017 Size rotating handler test rotate-on-boot attribute,nonSAR
+FlatOpcXmlImporter constructor which takes an InputStream,nonSAR
+AWS Toolkit for Eclipse: v201710231659 Release.,nonSAR
+LANG-1034: Recursive and reflective EqualsBuilder (closes #202),nonSAR
+AutoTune update - repackage tests and sort profiling xml entries,nonSAR
+Typed BindingPathElement Support for setBindingValue() in BindingPathElement,nonSAR
+Netty provider sends parts twice over https  port a29f682024b220438c55c4091010e1009e6936a3 to master,nonSAR
+CLOUDSTACK-301 Nexus 1000v DVS integration is not functional,nonSAR
+"Bug 301144 - [LinkedResources] ""File and Folder Import"" dialog polishing",nonSAR
+mais anotacoes e principio do login,nonSAR
+[SYNCOPE-665] Implementation completed,nonSAR
+rewrote the metamodel model to use an acyclic directed graph with automatic garbage collection,nonSAR
+Exposing the rest of the fields in the Step object.  Next thing: display them!,nonSAR
+Abstracted NodeID,nonSAR
+Avoid potential deadlocks in repositories view,nonSAR
+Handle for/of the same as for/in in NameAnalyzer,nonSAR
+[autotools] Prevent MalformedURLException when setting remote working directory.,nonSAR
+continuing internalization,nonSAR
+Use actual remote fingerprint rather than cached one,nonSAR
+"CAPEDWARF-10 Querying the datastore with filter ""Entity.KEY_RESERVED_PROPERTY equals someKey"" never returns any results",nonSAR
+SONAR-8402 Purge should delete queued task when deleting a project,nonSAR
+Decorators fully dynamic.,nonSAR
+modularized JCR in its own module finally,nonSAR
+allowing field inclusing/exclusion,nonSAR
+BaseRepositoryExtension.,nonSAR
+communicator --help now list types of messages,nonSAR
+Test for No-Defensive-Copy of Maps,nonSAR
+make joined vectors use standard componentCount,nonSAR
+cleaaning cached discovered info on OK,nonSAR
+"We need to sort cleaned reads ourselves (instead of letting SAMFileWriter do it) because the SAM headers are often screwed up and claim to be ""unsorted"".  While here  I broke off the module from the SortSamIterator in case someone else wants to use it.",nonSAR
+Clarify the difference between a loaded body and a valid body,nonSAR
+show after saving a displayValue and not the saved value. this is used for selection fields,nonSAR
+Prototype of an R package to call Renjin from within GNU R,nonSAR
+WIP Db Migration compound keys,nonSAR
+usable for human vs human,nonSAR
+Partitions should remain unavailable until services commit/rollback,nonSAR
+HADOOP-11201. Hadoop Archives should support globs resolving to files. Contributed by Gera Shegalov.,nonSAR
+HIVE-6690 : NPE in tez session state (Sergey Shelukhin  reviewed by Gunther Hagleitner),nonSAR
+CLEREZZA-191: In typerendering: rendering mode can now be regex and renderlet definitions are cached. Headed-page adjusted,nonSAR
+Looking swellio,nonSAR
+[FIN-10] Modularised hibernate code for the securities. See BeanOperation and instances thereof.,nonSAR
+Support for authority / host with http2,nonSAR
+navnet om pakke fra familiehub til eplan,nonSAR
+Math functions: update round function to support two arguments (second being dp),nonSAR
+support for android keys,nonSAR
+HDFS-7056. Snapshot support for truncate. Contributed by Konstantin Shvachko and Plamen Jeliazkov.,nonSAR
+Cleanup and documentation.,SAR
+cleanup and fixes,SAR
+Bug 397169 - Conflict resolution transformer can remove dependency completely from tree,SAR
+code cleanup and some renaming,SAR
+* code cleanups + Tcl keyword  parser extensibility,SAR
+ODEDeployer: clean up the code a bit and improve error reporting on missing archive locations when using dirs,SAR
+- kie-remote rest API documentation/readability (REST/JAX-RS annotation clean up),SAR
+core : Code clean up,SAR
+naming improvements and packaging improvements,SAR
+cleanup and renaming,SAR
+clean up on remote client implementations,SAR
+API cleanup and XML binding using XmlPull,SAR
+major work on persistence integration testing; cleanup of project configuration,SAR
+Cleanup of stream reading,SAR
+clean up the xsd with the comments from Eugene.,SAR
+PT-2414: Add tests for the family locking module Cleanup  smaller tests  better test names,SAR
+core: minor cleanup in migration related classes,SAR
+More property cleanup,SAR
+clean up of the parser; tests need to be updated,SAR
+Code cleanup: Fixed some warnings.,SAR
+Some command code cleanup.  Replaced /sms repl with /sms edit.,SAR
+Naming cleanup and added TimeLimitedJoin,SAR
+Small cleanup of MapStore related tests.,SAR
+Added the LockExercise and some cleanup,SAR
+Test clean up,SAR
+Bug 253979 - [About] Remove dependency on update manager,SAR
+Cleanup code : * Add utility class for log * Move constants into separate interface,SAR
+Cleanup and change of how custom data sources are given.,SAR
+cleanup of logging error messages  general logging,SAR
+Big UIKit cleanup (method name changes  global value wrappings  notification helper classes...) #478.,SAR
+Cleanup: renamed files for better understanding in future :),SAR
+altpay cleanup - Remove references to payer_{id first_name last_name},SAR
+various cleanup of the test plugin,SAR
+[CLEANUP] - Added unit tests for installed version deserialization,SAR
+Lots of cleanup and refactoring and testing.  Arrays are solid,SAR
+153755 [clean up] Extension point for the clean up wizard - allow to specify default options,SAR
+Fixed bug 153755: [clean up] Extension point for the clean up wizard,SAR
+Detach templated beans and cleanup TemplateWidget mappings on destruction.,SAR
+Even more code-cleanups in Events.,SAR
+Tweaked to reduced exposure to issues spotted by FindBugs. Content is no longer java.io.Serializable  as XML is the only supported serialization. Also made the build script clean up the test reports.,SAR
+clean up some code,SAR
+Cleanup after code review to add tests.,SAR
+clean up project creation mechanism,SAR
+src cleanup  adding OWASP LDAP escaping,SAR
+Clean up chest shop code.,SAR
+Package structure cleanup,SAR
+Minor cleanup of HttpLoadTest due to (misleading) private baseRul property.,SAR
+MAGNOLIA-2245 moved i.m.cms.beans.config.Bootstrapper to i.m.importexport (+ a bit of cleanup),SAR
+Cleanup: moving test into sub-package impl,SAR
+[SYNCOPE-231][SYNCOPE-289] * Fixing UserService * Removing RestTemplate dependencies from IT tests * Code cleanup,SAR
+Order sprint0_4 tests in packages.,nonSAR
+ldapadmin - testsuite,nonSAR
+First implementation of #SPC-704,nonSAR
+478372 - JavaUtilLog setSourceClass and setSourceMethod,nonSAR
+Work in progress  intermediate commit.,nonSAR
+[ANA-250] [ANA-34],nonSAR
+Poprawione wysylanie miali  problem z konfiguracja ustawien serwera poczty.,nonSAR
+Now using correct class ITypeDeclaration,nonSAR
+Switched CTabFolder/CTabItem to the protocol. - 351945: Migrate widget LCAs to write JSON responses https://bugs.eclipse.org/bugs/show_bug.cgi?id=351945,nonSAR
+DOXIA-364:  Guarantee the state of sinks and parsers impl,nonSAR
+MNGECLIPSE-1701: artifactid/groupid validation,nonSAR
+Altered the JVM Agent to allow for dynamic attach,nonSAR
+Internalize some CTF APIs,nonSAR
+getHasChilds() -> hasChilds().,nonSAR
+*** empty log message ***,nonSAR
+MiniMaven: download() can download to a different name now,nonSAR
+categories working,nonSAR
+initial compiling implementation of writing xml,nonSAR
+Able to reconnect after a network loss,nonSAR
+refs #123 - polished for qulice 0.1.7  not finished yet,nonSAR
+log error listener,nonSAR
+TrackMate_: segmenters can now be tuned separately,nonSAR
+migrated filter-settings to fxml,nonSAR
+Sessions are now wired through to the front-end from the back-end. They are being saved in the filesystem and are accessed via web service calls. ,nonSAR
+[misc]Porting 1/2 of CommentTest.java from Selenium1 to Selenium2,nonSAR
+Ability to run bot output to a channel through an arbitrary !pipes expression.,nonSAR
+ISPN-5630 Port tests from enty retriever to distributed streams,nonSAR
+HandlebarsViewResolver should provide a registerHelper method #93,nonSAR
+Better handling of erroneous manual commands.,nonSAR
+Still pulling everything together conceptually,nonSAR
+bug 230314 - open generator to subclassing,nonSAR
+98316: re-organize the behavior of output-master-page/output-master-margin/floating-footer.,nonSAR
+#29 MGCP stack now checks wether CRCX requests are WebRTC or not  by looking at the LocalConnectionOptions (L).,nonSAR
+feat(rest): fetch variables specified in the filter properties,nonSAR
+[MONDRIAN-2438] (2) Invalid SQL Generation when using Calculated Members in Compound Slicer with Distinct Count Measures,nonSAR
+WeakProfileContainer now wants a plugin reference.,nonSAR
+fallback to OWB API - otherwise we need to take some logic on out side which will not be possible soon. Can break some AppComposer tests but we were really broken anyway and in all cases.,nonSAR
+#516 some optionals (#536),nonSAR
+Undo previous chnages regarding BusEvent,nonSAR
+Security finished. Started to code application logic,nonSAR
+Reporting locations of macro-definitions in macro-explorer  bug 23540.,nonSAR
+HSEARCH-1317 Optimize tail recursion in NRT IndexReader reopening,nonSAR
+solve cache issue,nonSAR
+export operation code and export cli command,nonSAR
+TEZ-2224. EventQueue empty doesn't mean events are consumed in RecoveryService (zjffdu),nonSAR
+*** empty log message ***,nonSAR
+Cleaned up EC2 separation of concerns and config,nonSAR
+Annotate first 500 lines of TestYearMonth,nonSAR
+[BISERVER-11433] report designer updates for encoding/decoding/reserved chars,nonSAR
+Minor progress with parser,nonSAR
+ACCUMULO-802 Cleanup from previous rebases,SAR
+* Fixed compilation issue with Hazelcast 3.5 * Fixed dropped future in async mode of SyntheticTest * Made usage of IWorker to get rid of ThreadSpawner and atomic operation counter in SyntheticTest * Cleanup of SyntheticTest and StringStringSyntheticMapTest> to increase checkstyle compliance * Improved JavaDoc of IWorker,SAR
+Remove dependency between Request and Route,SAR
+moved TaskInvolvementType to interface plus a bit of cleanup,SAR
+webadmin: cleanup in DisksAllocationModel,SAR
+[nobug] Code cleanup  organize imports  etc.,SAR
+[cleanup] apply codestyle,SAR
+CHANGED: Reduced the number of File objects held in memory by FileFactory. CHANGED: Added an additional check when saving a file to payload directory of a bag to make sure it is actually saved there. NEW: Added a StopWatch class for measuring time elapsed between its start and stop method calls. Provides basic performance metrics for tasks that use it. NEW: ThreadPoolService now accepts cleanup tasks that are executed during @PreDestroy method. Updated TagFilesService to schedule a write all tag files to disk during cleanup. UPDATED: All storage event tasks to use StopWatch class.,SAR
+[cleanup] Applied codestyle,SAR
+API cleanup and XML binding using XmlPull,SAR
+Added forced cleanup of LeakingApplication in ThreadLocalLeakTest,SAR
+(from Wonder 2.0) bunch of fixes/cleanups/etc to stream utils  including nio-based file copying,SAR
+Transaction cleanup,SAR
+continued cleanup  made tables joined inheritance and matched nullable/sizes,SAR
+[cleanup] Applied codestyle,SAR
+Clean up packages,SAR
+API clean up almost ready,SAR
+more cleanup and obsolete code removal,SAR
+[resolves #1080] Remove dependency on wildfy security from core feature pack,SAR
+Bug fixes and support for mutually exclusive options.  Still a bit rough  but will be easier to clean up after a walker refactoring.,SAR
+SHRINKWRAP-323 Cleanup for classpath resolution,SAR
+Cleanup test for JUnit 4 compatibility.,SAR
+Lots of cleanup / improved exception handling,SAR
+Preload backgrounds during population overview gen. Extract common preload functionality into sps-gamelib. Move preloader UI elements into sps-gamelib. Cleanup unpackaged game source code files.,SAR
+Source cleanup: Update copyright headers  remove JavaDoc tags @author and @version.,SAR
+Fix module structure.,SAR
+Do a bit of cleanup on Boolean/boolean and Long/long parameters/return types,SAR
+code cleanup/review,SAR
+checkstyle cleanup,SAR
+HBASE-2520 Cleanup arrays vs Lists of scanners,SAR
+added SPI extension point for global initialization and cleanup,SAR
+fixing default package support - classloader cleanup,SAR
+Clean up layers a bit,SAR
+core: cleanup - Fix InActive typo,SAR
+Small code cleanup,SAR
+Cleanup of the tachyon.metrics tests.,SAR
+fredsa had some cleanup advice for the unpack goal in bug #8,SAR
+Fixing timing issues AbstractListenersOnReconnectTest and clean up,SAR
+Clean up several scala examples,SAR
+Extensive clean up of the code base Implement (but not enable until more testing done)   + direct naming for GSP  + queryString operations directly on the dataset URL itself  + get on datset -> quads.,SAR
+Cleanup CsvFileReader (now uses input stream instead of dangerous files),SAR
+Clean up samples,SAR
+EventCollector: cleanup ingestion flow,SAR
+Gazetteer matcher overhaul;  use of getClass() for invoking loggers  fewer static instances of loggers;  Extractors: added cleanup() method  as each extractor may have temp artifacts or a shutdown routine.,SAR
+CSPACE-5271: Store type in UriTemplates. Establish initial pattern for returning multiple registry entries from resource base classes. Lots of miscellaneous cleanup.,SAR
+fix(engine): changes in history cleanup logic:,SAR
+ONYX-1549 * Added support for non repeatable output parameters * Code clean up of InstrumentLaunchPanel * Multiple measures is now also supported with manual instruments,SAR
+CHANGELOG: updated for 1.1.1 FileAide: Added to assist in common file tasks DemoPSMerge  Diff  CSVtoRDF  Smush  SPARQLTranslator  XSLTranslator  CSVtoJDBC  DatabaseClone  InitLog  XPathTool  ArgList  JenaConnect  RecordHandler  TextFileRecordHandler  RecordHandlerTest: removed VFS use for FileAide NLMJournalFetch  PubmedHTTPFetch: WebHelper -> WebAide NormDamLevDist  NormTypoDiff: MathHelper -> MathAide Match  PubmedScore  Score  GlozeTranslator  Runbibutils  SPARQLTranslator  SanitizeMODSXML  XSLTranslator  Merge: no longer requires config files Match  GlozeTranslator  SPARQLTranslator  RunBibutils  XSLTranslator  Merge: constructor cleanup Score: lowered info message for no temp-model to debug Transfer: lowered warn message on no output to debug  check for valid output changed and added remove from nothing check GlozeTranslator  SPARQLTranslator: updated to modern input/output with Overrides DatabaseClone: uses streams rather than FileObjects now JenaConnect  RecordHandler  JenaConnectTest: removed File and FileObject constructors... use String path constructor TextFileRecordHandler: uses stream closing rather than FileObject closing,SAR
+executor clean up and adding tests for coverage,SAR
+Implementation of DKIM authorisation for iSchedule. Rearranged stuff to keep private keys private. ,nonSAR
+Server reseting stream,nonSAR
+update the query api,nonSAR
+doubling equiv. rules,nonSAR
+use demoservice and tiles templates,nonSAR
+Working on skillanimations,nonSAR
+Make all services implementen Validatable,nonSAR
+WFLY-2863: allows usage of EE Concurrency Utilities without an EE Component in context,nonSAR
+made this plugin ES v0.90.0 compatible,nonSAR
+Enabling unit tests for WELD-333.,nonSAR
+Transfert de tout ce qui permet la gestion des fichiers dans le package Util,nonSAR
+Test MVC now starts test then dumps state out.,nonSAR
+updating the android client.,nonSAR
+Permission's Reconstruction for next Reconstruction. Ultrabans now requires vault.,nonSAR
+HBASE-14987 Compaction marker whose region name doesn't match current region's needs to be handled,nonSAR
+rhino packages was in the wrong place.,nonSAR
+Pull  up field 'primaryKey' from the TableFacadeImpl classes to AbstractTableFacade,nonSAR
+Various updates related to hnm analysis,nonSAR
+Unit tests for undirected graphs.,nonSAR
+Starting the implementation of destrantiating. First simple working example.,nonSAR
+"Revert ""More neat cleaning up  working with files.""",nonSAR
+New generalisation interface for entering and leaving the programming mode.,nonSAR
+Work to Denizen Core.,nonSAR
+Updated matching algorithm in StateMachine,nonSAR
+made tunable UI a bit nicer for export  forcing users to first select a format  then a file.,nonSAR
+make example queries more beautiful,nonSAR
+Title: parallel actions tests Description: @bug W-1704178@ @rev goliver@,nonSAR
+Finish with the issues for version 0.1.2.,nonSAR
+XCOMMONS-994: Failure to register a Converter with a nested type,nonSAR
+PLANNER-491 locator prototype (unfinished),nonSAR
+finalization of the c module.,nonSAR
+Demo starts to take some shape,nonSAR
+Updating demos  gf provider tests to latest API,nonSAR
+[PDM-45] Support to generic POJOs  Collections  Arrays and Maps,nonSAR
+Implement real-er plugin description file,nonSAR
+Per Zendesk's request  s/ZenDesk/Zendesk/g (part 1),nonSAR
+filter out noise before building graph,nonSAR
+QUA-30 Modifications sur les questionnaires Impléemntation de l'ExternalAnswerCondition qui permet de tenir compte d'une CategoryAnswer d'une question dans un autre questionnaire pour poser une question,nonSAR
+pull common configuration code up in abstract test class,nonSAR
+CSPACE-5518: Updating ServiceContext factory methods to accept a UriInfo rather than             MultivaluedMap<String  String> queryParams = ui.getQueryParameters();,nonSAR
+[KARAF-3524] Features on conditionals are not installed,nonSAR
+EHO-62 Detailed report data now has locked flag,nonSAR
+Much more modular,nonSAR
+New and noteworthy screen progress,nonSAR
+Bug 385187 -Users bundles are too complicated,nonSAR
+use a plain Message rather than TextMessage,nonSAR
+Use Real{Vector Matrix} in LeastSquares interfaces,nonSAR
+logowanie  rejestracja  dodawanie albumu oraz listowanie,nonSAR
+ACCUMULO-196 prep shell for new shell servlet,nonSAR
+list update via a scalar index,nonSAR
+238828 [clean up] Add 'this' qualifier removes necessary NON-NLS tag,SAR
+cleanup  locking  key paths now work as expected,SAR
+Another cleanup of GCS.,SAR
+Cleanups  drop backup bug fixed  tests revised,SAR
+Major cleanup of archetype.,SAR
+LOG4J2-1274  TextEncoderHelper cleanup,SAR
+Code cleanup for CheckConformanceUtil,SAR
+Synced Nexus-Indexer@7417 with trunk in ASF Maven-Indexer and cleanup.,SAR
+Start main class cleanup 1/?,SAR
+Added function-executions element to gfe-data namespace plus more cleanup,SAR
+Package cleanup of WaitNotifyServiceImpl; also removed hard dependencies,SAR
+o Intermediary commit before starting a big cleanup and change to new approach. o Added a JAXB driven handling of Maven POM parsing. o A simple ServiceManager for service lookup.,SAR
+Code cleanup with a lot of core changes,SAR
+First cut at transaction confidence levels. Expose a TransactionConfidence object that is updated by peers and wallets  which tracks how many peers have announced the transaction and the height of the transaction in the best chain (if any). Unit tests that check it does the right thing with re-orgs. Various small cleanups and simplifications in the tests.,SAR
+Improved supprt for planar data types. Made some classes static. Did some cleanup. Made notes on testing limitations. ,SAR
+HBASE-3789  Cleanup the locking contention in the master,SAR
+search.AbstractTest.tearDown() should clean up indexes in other namespaces as well,SAR
+JBPM-3223 Clean up system outs in jBPM5 codebase,SAR
+Cleanup in entitlement/subscription/bundle json models,SAR
+Cleanup  all jai utility in imageUtilities  all io ones in ImageioExt (old methods deprecated  not removed),SAR
+document and cleanup of SecureHashUtil,SAR
+some cleanups,SAR
+"- Added support for removing cursors; - Some UI-related fixes  row labels were not always directly shown and   scrolled sometimes; - First approach for ""rainbow"" colors on channels; - cleanups.",SAR
+Parsing template instance. Some minor cleanups.,SAR
+cleanup / interrupts,SAR
+renaming and cleanup,SAR
+Move to Maven based repository  including lots of moving file around. Upgrading to newer versions of dependencies  with eve update largest impact. Some fixes to the site working towards cleanup of code. New version of jquery-ui custom theme,SAR
+cleanup custom bean impl,SAR
+Javadocs - cleanup - better support for irc commands - Start for multiple channel support,SAR
+Some cleanup and rename of a class,SAR
+cleanup  refactoring,SAR
+o general cleanup o add the ability to deal with test resources,SAR
+Cleanup of AwsProvisioner construction. Pulled out common method to load SimulatorProperties file to SimulatorUtils.,SAR
+[cleanup] Checkstyle passes on patient-data-impl,SAR
+Cleanup of the duplicate handling in the InvocationMonitor,SAR
+redis: general cleanup  more fault tolerant of redis errors,SAR
+clean up TimeSpent app for inclusion,SAR
+clean up javadoc wizard,SAR
+Bug 250883 Extension point cleanup,SAR
+Clean up Navin's abstraction over Hibernate Core  clean style issues  apply back changes from my original fix patch,SAR
+Fix a regression bug and clean ups.,SAR
+MODE-2613 Adds better repo cleanup between tests and fixes some profile issues,SAR
+TOMEE-1805 clean up security context clientIdentity on request.logout(),SAR
+Wee! warnings cleanup,SAR
+* added testcases for StartTime  StopTime  Timeout * code cleanup,SAR
+HBASE-18303 Clean up @Parameter boilerplate,SAR
+Cleanup of unified Near Cache get tests,SAR
+When executing a statement  we want to make sure any previous state was cleaned up  so the code was calling close().  This additionally set a closed flag which would throw exceptions later saying that you can't call various methods because the Statement is closed.  It's not actually closed  so split the internal cleanup routine to clear() and make close() something that only a user should call.,SAR
+Optimizations for the RecalDatum to make BQSR (Count Covariates) much faster.  Needs some cleanup.,SAR
+General package cleanup,SAR
+HIVE-12765: Support Intersect (distinct/all) Except (distinct/all) Minus (distinct/all) (Pengcheng Xiong  reviewed by Ashutosh Chauhan),nonSAR
+1) Different format for LoadBalancerCommand. 2) When apply lb rule for domR  resend all lb rules belonging to the lb network,nonSAR
+HSEARCH-2510 Avoid the extra iterable instantiation in CollectionHelper.iteratorFromArray,nonSAR
+More tests for GBM/DRF model serialization.,nonSAR
+"Revert back to the package name ""org.kohsuke.stapler"" to avoid backward compatibility issues",nonSAR
+Destroying/Cleaning up spawned process properly,nonSAR
+#54 provide a google datastore repository implementation,nonSAR
+Switch to JUnit. Got all tests running on GF3 remote.,nonSAR
+snapshot resolution. commented out due to issues surrounding pom/artifact pairing,nonSAR
+Migrate from .properties to .ini file,nonSAR
+Edit Starters dialog working complete,nonSAR
+Use Java SE's PrimitiveIterator instead of Troves custom definition.,nonSAR
+- Single messages are now also parsed in TP.receive(); this allows receiver socket handler to reuse buffer if possible [https://issues.jboss.org/browse/JGRP-1998] - Set BasicTCP.use_send_queue to false by default - TcpConnection reuses (and grows) receive,nonSAR
+actions patch from dms,nonSAR
+SWS-517 - Soap response validation errors after update to 1.5.7,nonSAR
+Allow to configure any field for filtering - Closes #41  Closes #50 - Make some Elasticsearch link 0.90 version specific.,nonSAR
+"#SB-226: Sort out the duplicate classes with the same name ""ConfigurationManager""",nonSAR
+redirects to the security error page when you don't have enough role rights,nonSAR
+Bug 268916: Support genReport -help to show help document in command line Bug 268915: [Accessibility]Provide engine supported optionName/configName list in genReport help,nonSAR
+Prepare to use stained glass for materialisation instead of ice,nonSAR
+HDFS-7476. Consolidate ACL-related operations to a single class. Contributed by Haohui Mai.,nonSAR
+Update to Spring 4.x and major version upgrade of spring-integration and spring-ws modules,nonSAR
+TAJO-1109: Separate SQL Statements from Catalog Stores. (Jihun Kang via hyunsik),nonSAR
+Parse dimensions beyond 2 but ignore them.,nonSAR
+[JENKINS-31421] Make y-axis label configurable.,nonSAR
+test AdminLogin and prevent systemAccount login,nonSAR
+Path annotation ignored when endpoint not set on caller,nonSAR
+Updated PostgreSqlNode,nonSAR
+WS-A Support in Send Only activities,nonSAR
+Arguments to methods made final,nonSAR
+" issue 65:	 Queue map  lock  topic...proxies have to be Serializable. Now Hazelcast queue map instances can be Serializable. It is serialized by reference not data!",nonSAR
+time dependent nodes are marked dirty in an exported network.,nonSAR
+*** empty log message ***,nonSAR
+ Now the indexing and statistics engine fetch the different indexation and statistics provider of a given Silverpeas component by its qualified name from CDI. Integrate the last version webstart online edition application  signed with the current valid certificate,nonSAR
+Support several backends. Still struggling with Guice and Spring.,nonSAR
+getSelf instead of getB,nonSAR
+452323 - Start --list-config makes no hint on transitive enabled modules,nonSAR
+Exposed truncate draw method  javadocs.,nonSAR
+GenerateUpdateMaql reflects dropped fields and generates corresponding MAQL DROP statements,nonSAR
+another prerelease interface polishing,nonSAR
+"reverted to ""disable JxBrowser"" for mac",nonSAR
+Tidied up recent commits a bit.,nonSAR
+support for all types that can be converted to strings,nonSAR
+new extraDimensions API,nonSAR
+[US 4] Updating plugin container code for translating from structured to raw.,nonSAR
+Try to speed up database tests,nonSAR
+Update method locations in TestPaxChronology,nonSAR
+Require method.  Always use version 170.  Method for applying a js function.,nonSAR
+"Activiti Cycle: implemented ""Overwrite technical model(s)"" action",nonSAR
+PDF-73 Upated annotation factory build annotation call to properly handle annotationState paramater.  Also had to update the Annotation State api with a new restore call that will copy and apply the annotation state to a annotation passed in as a parameter.,nonSAR
+Cleanup for Broadcaster,SAR
+Cleanup and change of how custom data sources are given.,SAR
+jetty-9 starting to cleanup websocket and client,SAR
+Update release notes  minor cleanup,SAR
+cleanup the icons,SAR
+closes #3  connection not closed after database exception  is now fixed. Also did some cleanup.,SAR
+Fix quality flaws,SAR
+Various interceptor cleanups,SAR
+XWIKI-11940: Make internal the classes and interfaces of the LESS Module that should not have been public and refactor bad designed code.,SAR
+Minor naming cleanup. Added AudioInputStream constructor to WavPlayer.,SAR
+Cleanup existing SplitBrainHandlerService implementations,SAR
+added internal provider and resolution context and leveraged to clean up and speed up circular dependency handling,SAR
+some additional cleanup for JBIDE-13212,SAR
+[MOD] A few cleanups.,SAR
+Pre-demonstration cleanup,SAR
+Cleanup AbstractGeoDnsService.addTargetHost,SAR
+CAY-1883 - Clean up Cayenne maven structure - get rid of aggregate modules,SAR
+API cleanup and XML binding using XmlPull,SAR
+Generic ScoreModel for all embedded scoring models Cleanup ScorecardModel  and tests for same.,SAR
+Fix quality flaws: nested if/for statements,SAR
+SONARJS-627 Fix quality flaws and add comments,SAR
+cleanup and generalize unit tests,SAR
+EVALSYS-104 Merged views related to removal of items added ability to remove items (not just template items) fixed issue with the locking system (locking was not working correctly) major cleanup of items views,SAR
+LW-75: CleanupStorageTask Error while removing old entries from storage,SAR
+Cleanup of the Swift UFS source.,SAR
+add authz check to see deployment info. clean up the ui a bit to make it have a consistent l&f like the other bundle views,SAR
+Code cleanup. More steps to I/O redirect,SAR
+added latest guava libraries for better whitespace detection - this library should definately used be more often.. rewrote CleanupTextTransformer to be more readable and better expandability split up tests and corrected some inconsistencies,SAR
+Lots of refactoring  - Moved unit tests around  - Added support for object expansion  - Additional code clean up,SAR
+CTL-1220: Clean up the exporters code,SAR
+Eliminate pre-emptive digest for output stream  network objects. First segment is retained instead to enable digest on demand. More cleanup could still be done to eliminate redundancy in what state we are keeping/methods.,SAR
+More AVFoundation cleanups (#611).,SAR
+cleanup Protostuff module,SAR
+Lookup classes cleanup  all available in org.jboss.reddeer.swt.lookup,SAR
+Added license notices for GPL 2 (or later) to all java files. Some cleanup and removal of  unused classes.,SAR
+Further cleanup of callbacks,SAR
+Cleanup / Javadocs / Integrated lang,SAR
+Major test-case cleanup. - Removed JMock dependency  tests rewritten to use Mockito for stub/mock - All test should now be using JUnit annotation-style tests - All modules should now depend on same JUnit version - Rewrote a few tests to better utilize JUnit annotations - Fixed a few broken tests - Code style changes,SAR
+Code Cleanup,SAR
+* Cleanup of MemberWorker and some related classes. * Pulled TestContextImpl  WorkerCommandRequestProcessor and WorkerSocketProcessor out of MemberWorker. * Hid thread of PerformanceMonitor within class. Renamed PerformanceMonitor to WorkerPerformanceMonitor. WorkerPerformanceMonitor is now lazily started at first run command and stopped after run phase. So performance.txt files don't contain empty data from warmup and verify phases anymore. Prevented creation of files for tests without performance monitoring.,SAR
+cleanup  toStrings  hashcodes...,SAR
+Better logging and some clean up in SeqRes2AtomAligner,SAR
+Create tables and clean up code,SAR
+Small work on IMAP over HTTP Proxy. Need to clean up code and comments.,SAR
+ROO-2337: Post 1.1.3.RELEASE code refactor and clean up - simplified accesing Identifier attributes,SAR
+minor code improvements,SAR
+more terminology cleanup,SAR
+Cleanup: fixed some warnings.,SAR
+ROO-2337: Post 1.1.3.RELEASE code refactor and clean up - opened up type location and removed duplicate code from GwtOperationsImpl,SAR
+more API cleanup (mostly partition types),SAR
+Initial work on a remoting based EJB receiver,nonSAR
+[jira] [HBASE-5744] Thrift server metrics should be long instead of int,nonSAR
+RESOLVED - bug 243575: [xslt][editor] Content Assistance for Call Templates https://bugs.eclipse.org/bugs/show_bug.cgi?id=243575,nonSAR
+Integrated Jetty+Jersey,nonSAR
+Android: If not licensed  pop up dialog if less than 100 credits left.,nonSAR
+Trocado bloco para não obrigatório de acordo com o a documentação,nonSAR
+More on entity model,nonSAR
+call instruction now executing calls through existing call infra,nonSAR
+vishnu  amir | #121 | throwing exception rather than silently failing,nonSAR
+allow components to check whether they are in an event loop,nonSAR
+Updated tests for mixing with 2013 test data.,nonSAR
+contextupdates are now smartlines,nonSAR
+integrations for matlab OMS,nonSAR
+Rebase NewLTTngProjectWizard on TMF,nonSAR
+Enable toggling of debug print statements using DEBUG flag.,nonSAR
+[JENKINS-21576] NPE NullPointerException in DiskUsagePlugin,nonSAR
+Done at last for now...,nonSAR
+defect 15090,nonSAR
+verifying user input,nonSAR
+Don't throw a ParseException when the lookahead parser produces a warning.,nonSAR
+AVRO-50.  Implement JSON data codec in Java.  Contributed by Thiruvalluvan M.G. and cutting.,nonSAR
+[NGRINDER-69]  Integration test,nonSAR
+Support for @ResourceFilters.,nonSAR
+Give an option to repeat alert notifications (#3536),nonSAR
+Disable more flappers,nonSAR
+CAY-1882 Porting to OSGi environment,nonSAR
+Implement cascading functionality for triggers,nonSAR
+Project cleaning and re-organizing,nonSAR
+more progress on new maven indexer version,nonSAR
+in operator (unoptimized)  (very) preliminary implementation of scan,nonSAR
+Optimise glEnable/DisableVertexAttribArray,nonSAR
+#14 - Shapes and weight in the affinity matrix,nonSAR
+Closes #393: Pass spark context as argument in Input Citation/Document Readers,nonSAR
+Reports now support arbitrary tags  not just stories and features.,nonSAR
+Bugzilla 196757,nonSAR
+FrameworkField TODO deletion,nonSAR
+updates to discovery client,nonSAR
+[NGRINDER-9] Finish the system framework and develop script management module,nonSAR
+allow multiple collections,nonSAR
+Auto configuration of AgiScripts,nonSAR
+SONAR-8192 set root flag in UserIdentityAuthenticator,nonSAR
+Dropping messages from self with DONT_LOOPBACK set from table in NAKACK2 and NAKACK (https://issues.jboss.org/browse/JGRP-1823),nonSAR
+generated charts for internal and external evaluator comparison,nonSAR
+Bug 94726    [osgi] ensure osgi packages follow eclipse API rules,nonSAR
+Migrate FOREACH_VARIABLE,nonSAR
+Give command handlers consistent names.,nonSAR
+Mavenize Action_Bar,nonSAR
+releng: Make use of Tycho POM-less functionality,nonSAR
+Comment-out failing test.  See bug #1618.,nonSAR
+Update Automounter to again support mounting expanded and update the URLStreamFactory call in VFS to place org.jboss.vfs.protocol last,nonSAR
+core: cleanup in RemoveVmCommand class,SAR
+cleanup the protocol client API,SAR
+Clean up AbstractClientTest,SAR
+New and changed icons  work on menus  perspective  startup configuration and code cleanup.,SAR
+114544: [clean up] clean up does not convert static accesses as promised,SAR
+keep a boolean dirty flag instead of the doc contents + misc cleanup,SAR
+ROO-2745: Post 1.2.0.M1 code refactor and clean up - made MonitoringRequestEditor typesafe  fixed trivial bug with parsing blank values  wrote unit test for setAsText method,SAR
+More cleanup. I think *all* costly reflection is now done only once per-class type (per mapper),SAR
+Documentation and cleanup of code for new button bar date range editor.,SAR
+some more cleanup and refactoring,SAR
+cleanup and splitting out logic,SAR
+Add in a base abstract plugin object so we can skip hooks we dont need to muck with in a plugin  also clean up imports,SAR
+replace SimpleDaemon.cleanup with onStart/onStop,SAR
+HADOOP-2357 Compaction cleanup; less deleting + prevent possible file leaks,SAR
+Initial conversion of all Codex implementations. Various cleanups.,SAR
+[246110] XPath UI plugin clean up.,SAR
+SONAR-9802 Fix quality flaws,SAR
+Bug 188864 Cleanup CodeFormatterUtil,SAR
+cleanup failed 'Task<A  B>' implementation,SAR
+BOOKKEEPER-457: Create a format command for Hedwig to cleanup its metadata. (sijie via ivank),SAR
+API cleanup: removed bind(),SAR
+Clean up of ES6 versions of compute escaped and live variable analysis. Both of them only take in a function scope.,SAR
+Cleanup of partition.impl package.,SAR
+Deck editor. Simplify code,SAR
+"Plugin Manager: massive cleanup regarding ""PluginData""",SAR
+misc todos and cleanups,SAR
+Cleanup / format.,SAR
+More refactoring to clean up the clustering display examples,SAR
+cleanup for publishing events,SAR
+Cosmetic cleanup,SAR
+Clean up meta processing.,SAR
+delete test and clean up units,SAR
+various minor cleanup; minor bug fixes; updating caliper to latest release,SAR
+Remove dependency to com.sun.jersey.core.impl.provider.xml.LazySingletonContextProvider,SAR
+Add MSYS2 support for managed build. A few Qt cleanups on Windows.,SAR
+Minor cleanup of mini-cluster code/tests,SAR
+"Starting to move from ""optimization phase"" to ""fixing bugs phase"". Done some general  cleanup  a few more optimization changes and a lot of bug fixes. Here is a summary  of the changes:",SAR
+Avoid creating too much custom subclasses for proposals + cleanup,SAR
+ROO-2745: Post 1.2.0.M1 code refactor and clean up - deprecated static method MemberFindingUtils#getMethod(MemberDetails  JavaSymbolName  List<JavaType>) in favour of instance method,SAR
+Atlas-analytics: Clean up of factory/builder classes for acquiring RServices to allow extra validation of the R environment (local/remote/biocep) prior to startup.  Added tescases to double check all this code  seems to be working but DirectJNI.getInstance() call fails with an unrecoverable error if R isn't installed/env properties are missing.  Also tweaked archetype to insert a default R environment file.,SAR
+Re-code and clean up,SAR
+[PLAT-3306]  [PLAT-3309] still some clean up to do,SAR
+Cleanup and refactoring for consistent usage of ArrayView in AST.,SAR
+Teiid 773 - cleanup and refactoring so that the assumption is there will be 2 datasources required in order to run the test.    ,SAR
+More checkstyle cleanup,SAR
+"Initiated as a fix for stack overflow in BugGroup.equals(). A long needed cleanup of ""priority to bug rank"" refactoring in 2.0.0. Cleaner UI separation of confidence vs rank. Different icons for rank and confidence  consistent icons for annotations in editor ruler and bug elements in bug explorer.",SAR
+cleanup quality notifications test,SAR
+clean up opcode stack for some weird cases,SAR
+Enable some ignored tests and clean up some related bits,SAR
+clean up and refactor,SAR
+Cleaned up import code some.,nonSAR
+HBASE-8877 Reentrant row locks (Dave Latham),nonSAR
+Closes #405; JSON query for !web.,nonSAR
+[276825] - outstanding patch attached,nonSAR
+JBIDE-9910 Proposal info for message bundles in code completion for EL,nonSAR
+HBASE-17374 ZKPermissionWatcher crashed when grant after region close (Liu Junhong),nonSAR
+Results handing now common to all 3 test classes.,nonSAR
+draft version issue 17,nonSAR
+Print TX values in Wallet.toString(),nonSAR
+[DROOLS-599] kjar archertype,nonSAR
+WELD-1329 Make InjectionPoint injectable into observer methods,nonSAR
+Handle unicodes and radix better in parseInt,nonSAR
+svg based shapes.xml,nonSAR
+JBActor no longer subclasses JLPCActor.,nonSAR
+Bug 302582 - [planner] P2 does not pick up higher version of already installed plug-in from dropins,nonSAR
+Start of app framework,nonSAR
+Updated new configuration loading mechanism,nonSAR
+Timer Boundary Events must stop when end date is reached,nonSAR
+Adaptation du modele au nouveau script d'import + Utilisation unique de Jongo,nonSAR
+consolidation of all operation signatures,nonSAR
+final part of new structure,nonSAR
+Migrated AS component to use Red Deer.,nonSAR
+#SB-335: Implement deletion of versions for metadata,nonSAR
+Implement fare breakdown,nonSAR
+modifications to do with format types. Format choose on new rule wizard.,nonSAR
+Stub tests for 8.3  make basic context abstract,nonSAR
+Generalize the FakeReader code.,nonSAR
+JBIDE-7121 - updating launch config UI to more fit user expectations,nonSAR
+Updated views. Implemented musicbrainz api limit for get requests. Started musicbrainz api tests.,nonSAR
+dirty implement task 11 score strike with strike followed,nonSAR
+Tidy def breakpoint setting,nonSAR
+More PC names,nonSAR
+OOZIE-2273 MiniOozie does not work outside of Oozie (rkanter),nonSAR
+[DROOLS-1497] implement RuleEventListener (#284),nonSAR
+done read flow,nonSAR
+overdue: update tests to new conventions,nonSAR
+Dodano aplikacj? android,nonSAR
+Use Guava TypeToken instead of Guice TypeLiteral,nonSAR
+updates in preparation for reviews,nonSAR
+TaskRunner implemented,nonSAR
+tests same name,nonSAR
+new method to copyMessages,nonSAR
+HBASE-1551 HBase should manage multiple node ZooKeeper quorum,nonSAR
+servicio para clasificacion,nonSAR
+Make Runner subclassable and Arguments configurable,nonSAR
+Support transitive importing of bundles :),nonSAR
+basic search working from the wiki page,nonSAR
+SONAR-9616 Load Branch settings in CE,nonSAR
+HBASE-840 More options on the row query in REST interface,nonSAR
+OGM-891 Polishing,nonSAR
+LoanCalculationTest cleanup and turning back on tests which now pass.,SAR
+Refactoring and cleanup.,SAR
+Some misc formatting and cleanup,SAR
+Documentation cleanup.,SAR
+fix: issue 1  random crashes when removing columns change: moved popup menus code to PlaylistTable  code cleanup,SAR
+Test cleanup :),SAR
+http://bugs.sakaiproject.org/jira/browse/SAK-8294 Switching to the new forms helper for Portfolio property forms. Also some cleanup on texts and moving them into bundles.,SAR
+Misc cleanup,SAR
+engine: Backend bean clean up,SAR
+Totally rewrite the FreeEMS binary decoder  ready for file parsing and integration of all types  not just current type. Add OLV Line Count variable to all logs. Remove old hack for LA decoder. Clean up source that I touched a lot.,SAR
+SOC-899: Upgrade to GateIn-3.1.0-CR01 (Fix build failed  add Clock missing gadget  cleanup  refactoring),SAR
+cleanup method for filter,SAR
+Cleanup and refactor notifd (code formatting  use Java 5 generics and for loops  use dependency injection in BroadcastEventProcessor  add test to ensure that regexp in BroadcastEventProcessor compiles correctly).  brozow will review,SAR
+More sonar cleanup,SAR
+Refactoring and style cleanups for PolymerPass to make things more manageable. ------------- Created by MOE: https://github.com/google/moe MOE_MIGRATED_REVID=115406177,SAR
+updated deployment-descriptor  cleanup,SAR
+Test cleanup: replaced corner_cases with extra_features,SAR
+Bug 330974: Clean up non-stop runControl services.,SAR
+More Task cmdline fun + JDBCTest fun + cleanup,SAR
+added CustomDirectoryProvider in Directory chooser module  added Desktop Neo4j module responsible for menu registration as well as Neo4j custom directory  some cleanup,SAR
+Remove static Spring Context and LAZY context holder + come cleanup.,SAR
+RootFolder: cleanup + deprecate,SAR
+Another Zell Depot patch: - refactoring query construction; - modified collection lookup to first look up the matching primary keys  then check the cache for hits then look up the remainder from the database; - other small renamery and cleanup.,SAR
+Cloner - flesh out the prototype: clean up,SAR
+further clean up and refactoring of content assistance.,SAR
+jetty-9 cleanups and fixes after merge,SAR
+HDFS-8751. Remove setBlocks API from INodeFile and misc code cleanup. Contributed by Zhe Zhang,SAR
+Some Cleanup for the tabs.,SAR
+XWIKI-4166: API refactoring/cleanup for the Rendering module,SAR
+Cleanups.  For example  enumification of AccountState.,SAR
+Refactor issue search stack in order to remove dependency with SearchRequestHandler,SAR
+Some misc. clean up.,SAR
+improve(engine): code clean up,SAR
+introduce beginning of atomizer API and cleanup code,SAR
+Minor refactoring and cleanup.,SAR
+"JSEC-39  JSEC-44 - Began extensive clean up to consolidate Filter and Interceptor behavior in a generic Web support hierarchy.  Removed WebUtils as respective util methods are now more ""OO"" in proper abstract classes.  Removed ThreadUtils by consolidating these methods in ThreadContext (api was previously too noisy w/ little benefit).",SAR
+More work on partition cleanup,SAR
+Merged instance cleanup  offloaded process undeployment  cron-based runtime data cleanup,SAR
+  *  Added support for a GpioController.shutdown() method to cleanup terminate all Pi4J threads and executors.      https://github.com/Pi4J/pi4j/issues/9   *  Added support for a user-definable ExecutorServiceFactory to allow user program to provide the implementation      for executor service instances and managed thread pools.        https://github.com/Pi4J/pi4j/issues/10   *  Fixed 'java.util.concurrent.RejectedExecutionException' issue where there were not       enough default thread in the pool for concurrent tasks.      https://github.com/Pi4J/pi4j/issues/31   *  Fixed issue where SerialDataMonitorThread was not shutting down on program exit.      https://github.com/Pi4J/pi4j/issues/33   *  Fixed issue where hard-float ABI was not detected properly when using Oracle JDK 8 early access edition.      https://github.com/Pi4J/pi4j/issues/26,SAR
+further cleanup of operation templates,SAR
+HSEARCH-436 Code cleanup,SAR
+Cleanup merge op to better handle cherry-pick  error conditions,SAR
+Plugin Manager: clean up utilities.Downloader,SAR
+[1.8] Further cleanups during review of deep encoding of type annotations,SAR
+1. Consider that document entry class code is required in ITI-63 requests 2. Small code cleanup in XDS data model,SAR
+more tests and some cleanup for variable and function lookup,SAR
+Cleanup of iso and generic metadata code,SAR
+Cleanup configuration objects.  Use complex types where appropriate (proxy list  advertise address  excluded contexts  etc.).  Avoids unnecessary string translation in AS7. Cleanup poms.,SAR
+cleanups for #1581 ,SAR
+Cleanup of SpringPropertyProxy and JavaDoc throughout.,SAR
+Solves also [TACHYON-1096],nonSAR
+Réorganisation des paquetages,nonSAR
+solve concurrency issues,nonSAR
+only care about orphaned pseudo-FluxtreamCapture channels,nonSAR
+SONARIDE-338 Make it possible to configure the marker severity associated to Sonar violations,nonSAR
+Integrate Sven updates,nonSAR
+*** empty log message ***,nonSAR
+SONAR-5389 New dependency API,nonSAR
+HTML-547 - Support for calling arbitrary javascript depending on the selected value of an obs,nonSAR
+Proactive rollback pruning - in progress,nonSAR
+integ tests now passing,nonSAR
+IconLabels: Better label rendering of text when the icon has focus. ,nonSAR
+Engine: KVM v2v - no need to ask for ovf for KVM vms,nonSAR
+Basic structure of @Load process now in place.,nonSAR
+KS-1135 Watch my Topics and replies options,nonSAR
+srm: tidy up SRM CopyRequest and CopyFileRequest classes,nonSAR
+No longer need to clear the module cache manually,nonSAR
+Single tabs can be shown and updated during runtime,nonSAR
+Make item displays load later.,nonSAR
+Updates to the Items logic api and impl stub,nonSAR
+[MOD] Adapted QName to Brackit QNm and included dependency on brackit in parent-pom. Necessary because we want a tight integration and furthermore we want to use the Path-class. [MOD] Some further adaptions regarding the path summary.,nonSAR
+Updated the APIDAO to return a byte array since we can use that for both  updated the legacy to sort of work,nonSAR
+Randgen implementation,nonSAR
+made PhpTest more checkstyle conform not ready yet,nonSAR
+Extension points can be now sorted.,nonSAR
+Implemented background mode on Composite,nonSAR
+breakup destination screens,nonSAR
+finalized functionality and tests,nonSAR
+Documentation upgrades abound,nonSAR
+Implemented parsing of statistics  dynamic loading of the JDBC-driver etc.,nonSAR
+Things and more Things,nonSAR
+CAMEL-11140: pulling ReactiveStreamsCamelSubscriber out of internal engine,nonSAR
+Deduplicate code in InterpretedByteCode,nonSAR
+core: do not instantiate vm-manager when not needed,nonSAR
+Corporate agreement,nonSAR
+Do not repopulate filled arrays,nonSAR
+interpreter visitor,nonSAR
+HIVE-11602: Support Struct with different field types in query (Jesus Camacho Rodriguez  reviewed by Hari Sankar Sivarama Subramaniyan),nonSAR
+SPR-5237:  Default value for @RequestParam,nonSAR
+TFile implementation,nonSAR
+made it actually work instead of sit disconnected and broken.,nonSAR
+Treat timed out connection as HTTP status error 503,nonSAR
+[CXF-7096] Make sure everything is cleaned up if the destination sequecne times out,nonSAR
+Deprecating old versions of FX option Black pricing functions,nonSAR
+Git Maintenance,nonSAR
+Allowing dispatch soruces to be re-targeted,nonSAR
+"82231	[build path] Hard to find type restriction compiler problem preferences",nonSAR
+First working version of bubble set,nonSAR
+ODE-27 Deployment using an Axis2 service works. Still have to figure out how to get a process zip in a clean way for tests.,nonSAR
+Ported capture interface to Hibernate,nonSAR
+Test cleanup: class doesn't override equals or hashCode,SAR
+cleanup of DeePluginImages  now using DLTK helper,SAR
+Add command to reload RE classes and some cleanup.,SAR
+Cleanup ContactStore and WebModule injection,SAR
+CXF-4139 more code cleanup and restructuring to simplify RMConfiguration usage,SAR
+package cleanup,SAR
+XWIKI-8579: Properly handle multilingual documents (translations) in Solr - Set up field aliases to ensure that  at query time  when quering for a multilingual field  all its variations (title_en | title_ro | title_fr | etc...) are queried as well. This is configured in solrconfig.xml. - Added schema.xml configurations (field types and dynamic fields using the field types) for various languages (default supported ones provided by Solr). More configuration of the language resources is needed. - Updated the metadata extractors to use the new field layout. - Attachments/objects/properties are now indexed for all languages  making sure that they are not skipped on searches. Before  they were only indexed for the language of the original document  causing searches in the language of a translations to not hit these entities. - Updated schema.xml and solrconfig.xml files with some of the changes in the Solr default ones  though some cleanup might still be necesary to remove unneeded components.,SAR
+Moved files around to clean up,SAR
+Improve code quality,SAR
+Clean up key publishing to move up hierarchy.,SAR
+topic: code enhanced type: other module: deegree-core  deegree-services  deegree-tools description: Major cleanup of WPVS configuraton: outfactoring 3D datasources (batchedmt / renderables).,SAR
+Adding included features that aren't in site.xml to repos + General cleanup.,SAR
+Minor test cleanup in opservice.impl,SAR
+added generics and some minor code improvements,SAR
+HSEARCH-2637 JSR-352: use an actual Session in EntityReader,nonSAR
+using commons-httpclient for login request. bypass manual encoding handling,nonSAR
+Updated connection routing,nonSAR
+HBASE-15477 Purge 'next block header' from cached blocks,nonSAR
+Rearrange test-webapp sources.,nonSAR
+Using weak references instead when storing activities so that memory is freed whenever an activity is not needed anymore,nonSAR
+CDITCK-408 Container lifecycle event methods invoked outside of extension observers,nonSAR
+impr(engine): update ldap module to use new encryption API,nonSAR

@@ -1,0 +1,1045 @@
+Commit message,Class
+Deduplicate code in InterpretedByteCode,code smell
+[1120417] Break up transaction of updatePluginConfigurationDefinition into smaller pieces Another pass here given some oracle test failures in the CI env. - Fix an issue with PropertyDefinitionSimple.removeEnumeratedValues.   An unexpected problem brought out  I guess  by the Tx reworking    must be careful not to replace hibernate proxy dealing with   orphanRemoval. - remove unnecessary REQUIRES_NEW that could lead to locking issues - remove some dead code - start shortening xxxInNewTransaction to xxxInNewTx  purely for selfish reasons.,code smell
+Added a FoldedData class for cycling through training,code smell
+EST-610-add-display-order-to-property: Removed the @Nullable annotation  which was causing build errors. No longer sorting the allProperties() by default. Moved duplicate code in the moveUp/Down functions to a general move function. Removed secondary ordering by name. Since the allProperties() doesn't sort by default  several sorts are performed inside the PropertyOrderingViewModel,code smell
+Code cleanup:  Score function should work in doubles to avoid wrapping on longs for long distances;  Minimum distance we care about was too high;  Removed link between Geo Only and Lucene+Geo path;  Removed some dead code that was commented out,code smell
+Introduce Writeback to reduce duplicate codes,code smell
+rename and remove dead code,code smell
+Camel forge command - Align the duplicate code we have for add/edit endpoint options to use same class.,code smell
+ISIS-1711: removes dead code  renames method,code smell
+move duplicate code to common method loadEntryWithCacheHints(),code smell
+refactoring of Abstract*DataSet to delete duplicate code,code smell
+Moving some duplicate code into AttachmentUtil,code smell
+- Bugzilla Bug (s) Resolved: 284870 284794 - Description: remove and merge duplicate code in multiple places,code smell
+Remove dead code.,code smell
+embellish DuplicateBranches detector to look at switch statements. TODO: Need to convert relative offsets to absolute offsets so that branches inside the case statement match when the target is the same.,code smell
+Add new UnsignedLong methods that we will shortly migrate to. ------------- Created by MOE: http://code.google.com/p/moe-java MOE_MIGRATED_REVID=38454126,code smell
+Some changes to counter store      removed dead code      fixed bug on handling display of ethtypes with MSB set      replaced counterkey string processing on every packet-in with tuple keys      removed collection of traffic type per switch-port,code smell
+PDI-11201 - Modified processList  processRecord in NoAuthMongoClientWrapper to allow for null values  added fields to unit test json to validate  deleted dead code,code smell
+- Moved Address.java in client.http package  did minor changes. - Removed duplicate code for Voice and DataType classes. - Added comments in server code - not completed yet (old comments remaining here and there) but important things are documented now. -,code smell
+StewartSingularValueDecomposition: re-factor monolithic code and ugly switch statement into multiple methods,code smell
+Remove dead code: entity delta gui code (because planning entity's cloned don't equals() true so the Set/Map gets always return null),code smell
+Entangled Table_Test  partially removed duplicate code,code smell
+Duplicate code is my nemesis...,code smell
+Remove duplicate code when handling PING,code smell
+Reduce duplicate code and code complexity,code smell
+removed dead code moved code about specific elements to the layout factory (link and br) fixed form rendering bug,code smell
+ROO-2337: Post 1.1.3.RELEASE code refactor and clean up - opened up type location and removed duplicate code from GwtOperationsImpl,code smell
+"Fixed compilation problems - missing dependency for interpreter project. Further implementation of switch statement (""defaultcase"" can be located in any order among case statements).",code smell
+Removed dead code.  Moved generic read and write methods to FileReader  FileWriter. ,code smell
+move some duplicate code in a common place,code smell
+Now the compiler supports a switch statement.,code smell
+Removed: dead code; increase testing,code smell
+"Extracted the administrative methods from the services and into a separate ""ServiceAdministrator"" component.  The use of composition rather than inheritance allows each service to reuse the service management functionality without having to extend a base class.  ",internal
+Make bitcoinSerialize() return a copy by default  provide an unsafeBitcoinSerialize() method for high performance applications that are willing to deal with the extra API complexity.,internal
+tightened implementation of the abstraction of the graph configuration.,internal
+Fix bad URL rewriting during CSS inspection when nut comes from heap composition.,internal
+inheritance of namespace declarations for nested bundles,internal
+Fix for query parameters deserialization with remote connection Fix for ObjectDatabase automatic OClass generation and inheritance Fix for ObjectDatabase in version field conversion,internal
+Introduced Datastream abstraction for use with DatastreamService,internal
+Working on drivers for Plink's MAP and PED formats. Added a helper function to count the number of trailing newline characters at the end of a file to correctly get the number of elements. Restructured into packages. Introduced class 'Biallele' for the data types. Applied inheritance to data types to avoid duplicate variables.,internal
+added metadata abstraction,internal
+BLC-799 : When setting up a datasource with a ceiling entity that is not an interface  the inheritance hierarchy can be incorrect. (cherry-picked from 785dd2c),internal
+expaning writer abstractions  refactor packages  removed unused,internal
+CAS-1116 Refactor KryoTranscoder to use an initial buffer size and add explicit buffer overflow protection to handle what should be edge cases with proper buffer sizing.  Also  correct improper usage of ByteBuffer#array()  which caused entire backing buffer to be stored in cache instead of just used bytes. Unfortunately the fix requires byte array copying with the resulting object allocation overhead.,internal
+cleanup of Encapsulation class,internal
+Refactored to use annotations instead of inheritance.,internal
+Added Peer inheritance in comm. tests  user-defined CommAddress,internal
+Reduce size/complexity of app.js serialization (#959),internal
+Browser should open to maximum size by default,internal
+[KARAF-831] Added cluster:group-pick command. Also added output suppression support for all group commands. This is really useful for command composition.,internal
+JaxbCollection: Renamed size to maxLength,internal
+webadmin: Edit/Remove Template & VM abstraction (#748413),internal
+SPR-6093 - MVC Annotation Inheritance,internal
+Remove uneeded abstraction,internal
+Issue 176: size can now test compatibility with images; refactored vcloud config logic; updated to support latest bluelock,internal
+Added a layer of abstraction  to make it easier to insert a new ScriptEngine,internal
+SONARPHP-613 Improve ClassComplexityCheck,internal
+IDE-943: added abstraction to make IContentAssistCalculators independent from WTP's internal classes,internal
+major overhaul of the JavaDoc mechanism to support JavaDoc inheritance,internal
+undid generic DocumentAccessor due to unnecessary complexity,internal
+Tighter coupling of subscription expiry logic with other subscription management. The previous implementation could detect an expired subscription  allow another client to subscribe to it  and then stop the (now active) subscription.,internal
+Refactoring of SlidingWindow class in RR to reduce complexity and fix important bug.,internal
+Fixes #216 Interceptors do not support Entity inheritance,internal
+Minimize transient garbage volume by optimized serialization based on the 'Kryo' library * AutoKryo     extension of Kryo to allow classes to control their own registration  trigger registration of associated classes  and deserialize classes without no-arg constructors * KryoBinding     binding for use with BDB that uses AutoKryo serialization for a 2X-4X reduction in byte[] size * UURI     improved serialization via Externalizable and Kryo's CustomSerialization methods * BdbModule     discard deprecated CachedBDBMap option     (getObjectCache) extend with both declaredClass and valueClass (for when map values are specializations of the declared type  as with frontier.allQueues)     adjust type declarations * ObjectIdentityBdbCache     use KryoBinding rather than SerialBinding * CachedBdbMapTest     discarded * BdbFrontier  BdbServerCache  StatisticsTracker     adjust type declarations  objectCache creation * BdbMultipleWorkQueues     use KryoBinding rather than (Recycling)SerialBinding * BdbWorkQueue  CrawlServer  CrawlHost  CrawlURI     add autoregister support * LinkContext     public for kryo registration  ,internal
+Uses DEV_NULL instead of SYSTEM StringLogger in many places  as well as abstractions instead of printStackTrace() and such. This greatly reduces amount of logging to the console when running kernel tests.,internal
+finalized functionality and tests,external
+* In alignment-to-text  tsv or tsv-single-base output there was a column for score but no header. added header. * For the QueueObjectPool  made a more generic interface and added a Null version that always creates new objects. This can be used for performance comparisons. * Added another layer of object abstraction GobySamRecord which contains one or more GobySamSegment. Things that exist for the entire read are stored in this object and the parser returns a GobySamRecord instead of a List<GobySamSegment>. This is easier to understand and models the data better. * Discovered a minor error with GobySamSegment sequence variation generation * Added tests from seq-var to verify seqvar during clipping  indels  etc. Make sure gsnap->sam->GobySamParser gets the same output as gsnap->compact-alignment->display-sequence-variations which enabled me to find one more issue with gsnap->compact-alignment seqvar generation related to soft clipping.,external
+Introduced Miner level child injector for miner based singletons and other sub-application super-device functionality,external
+Improve performance of MessageSource condition,external
+"Added ""delete candidate sessions"" functionality",external
+changing CreatedResources to be a Map indexed by key to make lookup easier based on creatable definition includes: - updates to all the tests and samples affected by this - tested and passing - some cleanups of the affected samples for better efficiency  simplicity and coding patterns - simplification of the CreatedResourcesImpl,external
+improve logging to capture some simple rules and thresholds to indicate performance issues,external
+Fix the ted bug 18097 : Performance enhancement:  DTE should use ArchiveEntryInputStream.read() when reading only one byte data from report document,external
+Fix #792 : JUnit 4.12 compatibility,external
+change performance testcase  add proxool/tomcat-jdbc,external
+Implement cascading functionality for triggers,external
+releng: Make use of Tycho POM-less functionality,external
+"Revert back to the package name ""org.kohsuke.stapler"" to avoid backward compatibility issues",external
+Bug 268916: Support genReport -help to show help document in command line Bug 268915: [Accessibility]Provide engine supported optionName/configName list in genReport help,external
+performance enhance,external
+Improved Keyboard stability and performance (#1239),external
+rename parameters for readability,external
+Removed performance monitor as it is unneeded and didn't work  Made a Game interface for the API  Added a chat perm,external
+Moving functionality to client. Some parts are in stub form  some are not done yet. Xml parsing is in flux,external
+added Join operations to Criteria; modifications to increase JPA performance; upgraded to latest eclipselink - rjrjr,external
+the processOccurence method is splitted into two for better modularity.,external
+moving compatibility tests to another project so they can be shared,external
+Started cleaning up modules - introduced a 'lang' module for shared functionality.  This might even make its way back into core - just flushing out things at the moment.,external
+CLEREZZA-511: improving performance without changing the public api as the issue suggests,external
+Fixed a performance bottleneck in adding ids to RelIdArray,external
+[CXF-3675] Add a classloader based map of DocumentBuilder instances in DOMUtils to improve performances when building documents. This also restores the former behaviour  with the DocumentBuilder being cached in DOMUtils.,external
+Refactored messy UI setup into named methods  renamed variables  general cleanup for readability.,external
+SCHEMA-37. Adds stability annotations to all classes.,external
+Bug 298671 Implement enough compatibility to bring up a simple view,external
+Performance improvements:  - Memoized MathUtil's cumulative binomial probability function.  - Reduced the default size of the read name map in reduced reads and handle its resets more efficiently.,external
+improved performance of builder by removing child injector,external
+refactored cycle API  added RenderInfo to provide standard set of available views for plug-ins  changed the content-type definition by using a mixin interface to add extensibility to the set of standard content-types  refactored API according to these changes  adapted the UI/REST component accordingly,external
+Make bitcoinSerialize() return a copy by default  provide an unsafeBitcoinSerialize() method for high performance applications that are willing to deal with the extra API complexity.,external
+Renames the ComplexData classes that will be kept.,code smell
+Refactored dead code elimination,code smell
+Refactored to use a sensible MantaMetadata class.,code smell
+Refactor and removal og duplicate code.,code smell
+got rid of some duplicate code in the Goal classes,code smell
+" - Merge changes from Pull-Request #6 	 - Fix aggregation generation and cleanup dead code  - Update dependencies versions",code smell
+Documented depositSchemaProperty  and refactored duplicate code into a single method within BeanSerializerBase,code smell
+"DelegatingPreparedStatement extends DelegatingStatement DelegatingCallableStatement extends DelegatingPreparedStatement => refactoring to remove duplicate code & other general cleanup => getDelegate methods changed signature (return always ""Statement"")",code smell
+More style stuff; use \n line separator always  unify use of log placeholders  fix unit tests that weren't cleaning up files (MAHOUT-217)  remove dead code  redundancies  etc.,code smell
+ISIS-993: factored out LayoutMetadataService  renamed the metadata classes,code smell
+fix duplicate code,code smell
+Updated test method names to new API of data classes,code smell
+improve test coverage of ParseableQuery and LuxQueryParser; removed some dead code,code smell
+refactoring long method hadleException,code smell
+NetCDFReader code to be moved into ExperimentalData class,code smell
+Remove dead code and optimize boolean filter,code smell
+engine: Moving Duplicate Code to Base Class,code smell
+"MATH-389 Duplicate code in ""MultivariateRealOptimizer"" and ""DifferentiableMultivariateRealOptimizer"" moved to new interface ""BaseMultivariateRealOptimizer"". New ""AbstractScalarOptimizer"" superclass allow implementations that do not use derivatives. Deprecated ""protected"" fields. ""NonLinearConjugateGradientOptimizer"" changed to make use of the newly added accessors instead of the ""protected"" fields.",code smell
+JCLOUDS-826: Add blob operations,code smell
+Removed duplicate code.,code smell
+Changelog updated and make MetaData class compile,code smell
+Removed dead code since DegreeCurricularPlans and StudentCurricularPlans now always have a root group.,code smell
+Added new Query Parameters for Content Spec searching. Cleaned property tag code to remove duplicate code.,code smell
+Moving setValues() into deserializer as logic shouldn't be within data classes,code smell
+Refactored duplicate code into separate method.,code smell
+refactor (move duplicate code up),code smell
+refactor some duplicate code,code smell
+-Refactored Robot's data class -Added logic to find winner,code smell
+Got the first bits of vision working for homing Moved some code around Deleted some dead code,code smell
+Moved data classes to a more suitable package.,code smell
+Refactor the KeyOutWriter and DailyKeyOutWriter to create a slf4j logger. Remove duplicate code from DailyKeyOutWriter. Add the ability to create a Logback based out writer with size and time based rolling and with no filename on rollover. Update slf4j to the version used by Logback.,code smell
+Remove duplicate code by making hierarchy between Indy and Basic interpreting visitors.,code smell
+test the default case on the switch statement in tokenComments,code smell
+fix configuration abstraction for c + tests + minor fixes,internal
+XWIKI-11460: Allow filesystem skins to indicate a base skin * better handling of cross inheritance,internal
+New tests and fixes - inheritance  injection,internal
+Complete LUP decomposition with pivoting,internal
+more code cleanup  exporter is now even simpler due to composition,internal
+Reduce complexity of tool framework,internal
+Created ValidationEventHandler which allows the xml file to be validated Validates xml files before they are unmarshal Added an additional method to auto find a elementMass file in default location Generated the schema for aminoacidcomposition.xsd Change the XML file structure such that the element weight is directly recorded instead of computed Remove all the test cases for the computation of the abundance. Successfully generated an XML schema for ElementMass.xsd and AminoAcidComposition.xsd Remove abundance from ElementMass.xml,internal
+Support for scale relations and checking them in coupling,internal
+Break apart the inheritance structure of the timeline into Timeline and MessageListener.,internal
+allow inheritance of @UseModules,internal
+more inheritance testing,internal
+Added popups. Introduced page-level abstraction called container for pages and popups.,internal
+Bug 497008 - java.lang.StackOverflowError or eclipse crashs when using Quick Type Hierarchy and Open Type Hierarchy on cyclic inheritances,internal
+Dump sample for Mysql  file size request  file size printing for dumps.,internal
+bug #5154 : incorrect sender for pdc notification - taking the opportunity to fix a little problem around the footer of the mail sent by delayed notification mechanism - refactoring the inheritance of created PDC user notification classes and renaming them in order to be homogeneous with the existing ones,internal
+continued cleanup  made tables joined inheritance and matched nullable/sizes,internal
+HIVE-1631. JDBC driver returns wrong precision  scale  or column size for some data types (Patrick Hunt via cws),internal
+[C#] Updated complexity distribution computation,internal
+major reimplementation of list and combobox binding dynamic filter and dynamic sorting is now fully supported through java.util.Observable. selectableItemsHolder replaced with selectableItems property to support any selectable collection type like ListModel  Collection  List  ValueModel (containing a collection type)  Object[] or Object (single selectable element) reduced complexity of ListBinder/ListBinding. Collection type for selected items is now determined from propertyType including single selection and multiple selection ListBinder and ComboBoxBinder now supports the definition of preset values for selectableItems  filter  comparator  editor (only ComboBox) and renderer to support further customizing ,internal
+Removed the obnoxious size pair and replaced it with two ints. NEW - # 348: Provide a TileStore implementation for accessing remote WMS instances  http://tracker.deegree.org/deegree-services/ticket/348,internal
+StewartSingularValueDecomposition: re-factor monolithic code and ugly switch statement into multiple methods,internal
+Enhanced tool palette composition functionality. Added Morph Activity/Gateway features.,internal
+Refactor Main test class to have higher abstraction,internal
+SONARJS-509 FunctionComplexity: ignore AMD pattern and IIFE,internal
+Common abstraction of DockElement  DockTitle and other elements representing Dockables,internal
+Adding a notion of a graph composition  which is a series of GAV-sets each optionally paired with a filter that can be combined through some calculation (optionally) like add  subtract  intersection...then allow the RepositoryOps recipe to use that for complex recipes. Also  add the preset factories from aprox-depgraph (integration with cartographer) here so we can use them in embedded mode if we want.,internal
+remove @JsonIgnore  remove inheritance of KillBillObject (auditLogs) and refactor worng property names for json building,internal
+reworked groups (again!); now inheritance works,internal
+Major refactoring of FormModel related code: * Reorganized interfaces and implementations * Reorganized package structure * Improved JavaDoc * Introduced validation abstraction * Removed dependency on Rules for validation * Dirty tracking now works for unbuffered form models * Dirty tracking now fires property change events * Revert now works for unbuffered form models * Improved unit test coverage to about 80%,internal
+"[BACKLOG-4709] - Small changes in platform to improve performance - UserSettingService    - replace keySet() + get() combination with entrySet()    - remove useless object instantiation    - remove useless explicit map.remove() - AbstractSpringPentahoObjectFactory    - add logger.isDebugEnabled()    - remove useless non-null validation - OrderedApplicationEventMulticaster    - replace ArrayList with array for faster sorting    - extract stateless Comparator to a final field to avoid useless instantiation    - replace new Integer.compareTo() with Integer.compare()    - add tests - RoleAuthorizationPolicy    - create ArrayLists of exact size - JcrRepositoryFileAclUtils    - iterate through List  not Set - DefaultPermissionConversionHelper    - replace indexOf("":"") with indexOf(':') as it is more effective - AuditConnection    - change the order: first try to obtain a connection and only then sleep",internal
+Implementing code review comment from r428: Using Polymorphism for exclusion strategies for expose annotations.,internal
+Added test case to ensure inheritance and properties work fine,internal
+[bs-15] Integrate audit abstraction into Spring Security setup,internal
+Fixed problem with Axis reusability and priorities  included UML diagrams.,external
+RHQ-1315 - subsystem view for alert definitions   implemented all functionality listed in corresponding description of JIRA; ,external
+Java 7 source compatibility updates,external
+Allow user add throughput to performance charts,external
+ISIS-109: fixes for json viewer (compatibility with spec),external
+Get password history data gui and backend service/dao functionality added  get password access audit log gui and backend service/dao functionality added  added ability to change max history on password edit screen  password search panel grid action is double click cell again  upgraded to Ext GWT 2.1.0 (dialog box field focus now works!)  tested integration  fixed bug in edit permissions access level combo box gui caused by Ext GWT upgrade.,external
+Removes untyped App.get() method to avoid performance problems in large databases due to unsupported relationship indexing in Neo4j.,external
+removed ambiguous relations finder since its functionality overlaps with the SKOS S27 integrity condition already checked by SkosReferenceIntegrityChecker,external
+Bug 298671 Implement enough compatibility to bring up a simple view,external
+Start with testing activiti 5 unit tests with activiti 6 engine for backwards compatibility,external
+ISIS-993: improving the usability of the schema; minor stuff for wicket components,external
+"Factored out ""center"" functionality from showFrameCentered functions",external
+Adding let inlining test cases to show difference in behavior between var and let. Part of ES6 compatibility for Inline Type Aliases (full functionality + tests not yet complete).,external
+Minor Change: Transfer second cycle applications to other period functionality,external
+[DS-247] [DS-243] [DSB-37] extend functionality of ContextUtil so request object can be used as parameter.,external
+Performance optimizations for Genotype field decoding for GT field,external
+HIVE-15076: Improve scalability of LDAP authentication provider group filter (Illya Yalovyy  reviewed by Aihua Xu  Naveen Gangam),external
+Added functionality to capture execution information about the methods under test. This is useful for generating new reports.,external
+use person POJO for reflection performance showcase,external
+"[MONDRIAN-2390] - Poor performance when accessing RolapSchemaPool from many threads - replace ""synchronized"" sections with ReentrantReadWriteLock-embraced - increase the amount of cycles in the concurrency test to make it more exhaustive - add one more test case",external
+refactoring for better readability,external
+1) Added server.http.parallelthreads= entry to marybase.config to set the number of parallel http request handler threads. 2) Commented marytts.server.http.handleClientRequest code. 3) Changed random request id generation into consecutive id generation for http server. 4) Fixed beQuiet functionality in MaryHttpClient.,external
+Improve JAX-RS stability and move to WildFly 9,external
+Refs #100331 Add test for ContentName print (toString) performance.  Fix name of parse performance test.  Fix parse performace so no overflow if it gets faster.,external
+Fixed missing IdManager  improved delete performance.,external
+Added logic to determine the proper twiML file for different use cases. Added abstract Request class for common Request functionality.,external
+Completed test for verifying correct functionality of distributed cache.,external
+Done refactorings to solve https://bugs.eclipse.org/bugs/show_bug.cgi?id=342692 (inline of MeasurementUtil functionality to MeasurementOperator),external
+Restored functionality of DrugGroup. There are no related JUnit tests yet.,external
+- Summary: [Enhancement] problems with usability of chart designer,external
+Added a compatibility mode for the PHP framework Symfony.,external
+implement the previous functionality  where a separate refreshChildren method gets called only for the browsed folder  and not for the parent nodes.,external
+Fully implements core ModelService functionality,external
+Removed duplicate code and put it in a function,code smell
+Refactoring to remove duplicate code,code smell
+Refactored duplicate code into separate method.,code smell
+Refactored: replaced BigInteger with EntityId  to solve Primitive Obsession,code smell
+DATAGRAPH-564 - Rewriting SD-commons classes to be based on default abstract implementations. Deleting lots of dead code and cleaning up class dependencies.,code smell
+fixes #743 made data classes final,code smell
+SOC-890 | Improve Code quality - avoid duplicate code,code smell
+Camel forge command - Align the duplicate code we have for add/edit endpoint options to use same class.,code smell
+Remove dead code related to Elasticsearch utilities,code smell
+WFLY-4303 Allow expressions in jboss-ejb-client.xml remove duplicate code and allow expressions for all versions of namespace,code smell
+Tons of dead code,code smell
+Some refactoring to lessen class dependencies  reduce number of parameters and duplicate code,code smell
+Lots of refactoring and stripping out dead code. Removed the code dependency on the deprecated EAWT methods Renamed packages and introduced new ones to properly segregate the areas of concern. Added support for preferences.,code smell
+OGM-146 Simplify PackagingRule  second pass: removing dead code,code smell
+"Refactored the Thymeleaf implementation All abstract processors now contain utilities to facilitate the creation of processors Added new processors allowing to write a ""configuring div"" inside a template  just before the table tag. This div allows to configure: exports  callback  extraFile and configuration properties. Comments updated/added in almost all processors Renamed some processors for the sake of consistency Removed all processors related to export and callback (now handled by the new ""configuring div"") Removed dead code Updated integration tests with the new features and cleaned all test templates Closes dandelion/issues#161 Closes dandelion/issues#201 Closes dandelion/issues#202",code smell
+Added StandardTestData class which contains UUIDs of metadata from standardTestDataset.xml Added AbstractPatientWrapper,code smell
+Encapsulate core raw + derived data into SlimData class.,code smell
+cleanup  delete dead code,code smell
+A bunch of inspection changes  including some dead code removal and tightening visibility  removing unnecessary casts,code smell
+#305 Modularize logic / separate from data classes (wip – doesn't compile),code smell
+Minor fixes: Removed dead code  fixed variable names.\n Also  using normalize method of WeightedIntDocVector when building weighted int doc vectors. We should do the same change to other places in code where there is normalization.,code smell
+EMBRYO-40  EMBRYO-49  EMBRYO-28  EMBRYO-29: cleanup of dead code,code smell
+prevent too much duplicate code beetween Maven2 and Maven3 ProcessFactory,code smell
+[PAXURL-242] removed duplicate code,code smell
+[duplicate code] Unify scheduling of merge jobs,code smell
+[dsx] fixed fields for data class for getOrderStatus method,code smell
+Now DocumentHandler uses DocumentProducer instead of duplicate code.,code smell
+Major refactoring to remove duplicate code detected by Simian. Just demonstrates the power of the tools for find code that needs refactoring.,code smell
+Refactor duplicate code into a method.,code smell
+Remove dead code from method visitor and method helper,code smell
+REPLACED log4j2 logger with slf4j/logback REFORMATTED code to align with general code formatting guidelines REFACTORED some code with lambda expressions and some duplicate code with method or object replacements,code smell
+removed duplicate code by adding a public getPropertiesFile method to obtain the File,code smell
+MongoStore: Refactor to avoid to long methods,code smell
+Removed complexity.,internal
+more refactoring towards a cassandra abstraction,internal
+Adds base api support via single-inheritance interfaces,internal
+Refactoring of filters to make better use of inheritance hierarchy.,internal
+Clean up Navin's abstraction over Hibernate Core  clean style issues  apply back changes from my original fix patch,internal
+Throwing out the Key and Value classes for now to reduce the overall complexity,internal
+Refactor People Project & Inheritance Projects,internal
+ROO-2018: Roo 1.1.1 does not support inheritanceType TABLE_PER_CLASS with GWT 2.1.1,internal
+adding valiation to Jaxb. Replacing strings with statics. correcting the composition of the specicmeasures xml,internal
+Added abstraction to messages  to contain senders ip. Necessary to determine which slave message comming from at master  but also used to provide masterIp at slave's initial setup,internal
+created sketch of type handling removed unnecessary abstraction reuse for declaring type,internal
+Refining HttpServiceProxy abstraction.,internal
+Reduce move generator complexity,internal
+Changed JOhm persistence paradigm to JPA-like from inheritance-like to make API use annotation-driven and minimally-invasive.,internal
+#135:  Comments InheritanceCompatibilityChecker,internal
+More abstractions in Adapter pattern + exercise for Bridge pattern,internal
+EST-76: more decoupling (asset from lease),internal
+first steps to refactor the database layout code to use class inheritance,internal
+Semantin analysis decoupling Integration with prototype e4 DI integration New extension point,internal
+[PLAT-2500] Initial work on dynamic composition of market data providers,internal
+SONARDOTNT-49 Replace complexity distribution by class -> by file,internal
+Renamed TrafficCompositionInputData to VehicleTypeInput to more closely correspond with the XML element name.,internal
+Start to build BWT abstractions  so we can present a reasonable facsimile of the BWT to the user no matter how it's represented on disk.,internal
+fixed inheritance recursion,internal
+Reviewed by tlerios  Colin & Will per ENG-508 1. Added 2 new constructors to ExpectedFailure. one default and another one that accepts I18NBoundMessage. Updated all usages of the single arg constructor with a null value  to prevent compilation errors. 2. Added a mechanism to abstract out instrument specific functionality into pluggable classes. All the instrument functions in this checkin are abstracted out except for XML serialization  which requires the specific Instrument classes to be included in an annotation. 3. Added new option position APIs & option symbol <=> option root lookup APIs to the client. 4. Added pluggable mechanism to extract & insert instrument from / into FIX messages 5. Updated PositionKeyComparator to use new pluggable mechanism for position comparison 6. Updated orderloader to support options 7. Removed OptionSymbolSplitterMessageModifier & its unit test as it doesn't make sense for options any more. 8. Updated ORS to save the fields for options for position computation. Added implementations for the new client services. 9. Updated FIXConverter and RequestHandler to add a particular FIX field to the message only if it is supported for the specific message. 10. Added OptionRootUnderlyingMap abstraction to the ORS for carrying out option symbol to option root symbol mapping. 11. Fixed an issue in the suggestions view that was preventing the photon strategy perspective from opening up.,internal
+update web-core:com.silverpeas.sharing package - Update NodeAccessControl in order to make CDI works - Update JPA model for subclass Entity inheritance purpose,internal
+* Added more to the end2end spike * Created some concrete Phase classes * refactored/renamed phases * removed BasePhase to encourage loose coupling * removed dependency on spring from events module,internal
+CAY-795 Horizontal inheritance,internal
+Refactored event listening  fixed group invalidation  fixed inheritance of rights from main wiki  added unit test.,internal
+Multiple code improvements - common-java:DuplicatedBlocks  squid:S00112  squid:S134  squid:MethodCyclomaticComplexity  squid:HiddenFieldCheck  squid:S1172,internal
+Added new CManager class and started basework for manage AI. Modified Player and Person class inheritance.,internal
+Don't allow inheritance in glue code (stepdefs and hooks). Also fixes #257 in a more encapsulated way.,internal
+more abstraction in scheduler,internal
+DNA-178: Completed basic functionality to  retrieve nodes and properties,external
+Performance improvement :  client rest api change,external
+"Revert ""Mercurial Integration is now done with java native library hg4j. Refactoring to clean up the code and to allow easy adoption of other java native libraries in the future. Some unit tests added and classes moved to dedicated packages for better maintainability""",external
+[WFLY-8561] fixing test for @RunAs functionality which was ported from eap5 testsuite (JBPAPP-7897),external
+Split the loader functionality in 3 classes - now need to sort the tests out to match (not TDD  but quicker this way),external
+more rep functionality  fixes for mandelbrot,external
+Add goog.reflect.objectProperty as a first class primitive with the same functionality as JSCompiler_renameProperty.,external
+Remove write functionality from Source.,external
+Trying to fix incompatibility of handlings png on Windows and Mac (second try),external
+1) Compatibility with Java 1.7_17 2) Better build.xml - now dist includes necessary resources and javadoc and CLI.,external
+YARN-2980. Move health check script related functionality to hadoop-common (Varun Saxena via aw),external
+applied patch from Marc Portier to improve extensibility of DefaultApplicaitonWindow/LifecycleAdvisor,external
+FACES-1358 Develop JSF1 <-> JSF2 compatibility layer (Add support for detection of JSF 1.x request headers),external
+The performance enhancements may conflict with some setting methods. Uses the ActivityStackListener to clear the cache flag.,external
+#10  #17  #18 Improved test coverage  fixed test cases and bugs revealed by tests  increased performance and improved visitors,external
+Dramastically increase performance Maybe fix low tps :O,external
+move compatibility checker exception for making it compatible with exomiser!,external
+DRILL-4328: Fix backward compatibility regression caused by DRILL-4198,external
+WICKET-4028 Improve PageInstanceMapper#getCompatibilityScore() to return higher value if the request starts with 'wicket/page',external
+MAHOUT-706 use reusable TokenStream in Lucene for performance,external
+"Reassembled the ""startlistfile"" code - the pieces were in there for the most part. However  using a small startlistfile within an iterative process (other than at the very end of one) is liable to lead to inefficiency downstream with -incrementaldocvectors  as currently we depend upon there being perfect alignment between the generate docvectors.bin and the documents in the Lucene index - i.e. we will end up with many zero vectors on disk. ",external
+CAMEL-4417 Move AsnycProcessorTypeConverter.convert method to processor while keeping the old one for compatibility,external
+refactor to prepare performance improvements,external
+Rename directory to better reflect functionality.,external
+add pojo metadata caching  optimized sql2o performance test  underscore to camel case performance tests,external
+did not like the fact that the method was getting big; refactored my logic to a private method to increase readability,external
+ Bug 233643 -  API builder performance bad for incremental build,external
+Bug 353240 [Compatibility] IWorkbenchWindow's openPage(String  IAdaptable) is not implemented correctly,external
+MassiveCore - Performance improvement for command argument readers.,external
+Added some performance testing,external
+Refactoring of DSS and Definition  for performance,external
+Minor performance improvements.,external
+cleanup; added functionality to select on collection associated fields - rjrjr,external
+Refactoring of core data classes. Implementation of RefactoringRegistry.,code smell
+- removed a small piece of duplicate code in QuerySet#get,code smell
+ReplacedBlock data class,code smell
+minor refactoring to remove duplicate code,code smell
+Remove some dead code. ------------- Created by MOE: https://github.com/google/moe MOE_MIGRATED_REVID=103318387,code smell
+removed duplicate code  decrment jar size,code smell
+Duplicate code gathered in one location.,code smell
+Various refactoring & renaming  and JUnit tests. Added surefire and cobertura to the maven pom. Removing dead code and adding Asserts to the mix.,code smell
+[BISERVER-7317] More test cases  javadoc and some dead code removal,code smell
+HBASE-14203 remove duplicate code getTableDescriptor in HTable (Heng Chen),code smell
+Refactoring: moving ExternalSensorDescriptor and MeasurementLevel to better packages  deleting dead code,code smell
+"Added some unit tests (and removed a bit of dead code) to boost our coverage over 80%;  	found one bug in SaxonTranslator w/treat as in the process re-orged the documentation",code smell
+MODE-2629 Fixes the issue with too many parameters for the IN clause This commit changes the queries that get sent down to the DB so that when the number of parameters exceeds a certain limit  the IN clause gets broken down into multiple IN OR IN clauses. It also adds Docker support for the modeshape-persistence-relational module so that low level DB operations can be tested against different DBs.,code smell
+core: long method refactor,code smell
+rename appData to applicationData - rename appId to id - move applicationData class to internal package,code smell
+TEZ-444.  Rename *.new* packages back to what they should be  remove dead code from the old packages - mapreduce module (part of TEZ-398). (sseth),code smell
+convert to switch statement; added document and comment node constructors,code smell
+* Removed a bunch of duplicate code from PictReader * Fixed OpenlabReader to handle openlab/stefan/270508.  Note that this file's images still look wrong (since the file is all kinds of corrupt)  but at least all of the images are detected now.,code smell
+removing dead code,code smell
+Starting to remove some duplicate code,code smell
+Removed dead code. If we aren't needing the page name  no reason to loop around doing stuff to find it. Cleaned up javadocs a bit.,code smell
+Bug 372840: [quick fix] Add a quick fix to add the missing default in a switch statement,code smell
+Removed duplicate code,code smell
+Checked in some dead code recommendations.,code smell
+[AS7-462] Cleanup metadata classes,code smell
+[CLEANUP] - Split overly long method into smaller chunks.,code smell
+callgraph: Remove dead code.,code smell
+Refactored the FieldConverter stuff to remove a lot of duplicate code.  Created a BaseFieldConverter class.,code smell
+fixed EtcdBasedConfigurator context refresh stacktrace printing and some refactoring of duplicate code,code smell
+BEAM 4.7 data model changes: new Mask and VectorData classes,code smell
+feature #907 sprint5 : The user can now view all its suggestions whatever their status. For doing  the identifier of a user can be now passed to the REST web service in the getting of published suggestions. Improve the JQL query construct in JPQLQueryBuilder. Fix some discovered bugs. Clean up dead codes in JS and in JSP.,code smell
+Removed duplicate code and added outlines for how to add version to the start log entry.,code smell
+ICE-5960 Factored out duplicate code into updateBundle() private method. Clarified boolean tests.,code smell
+HSEARCH-2581 Add an abstraction layer over ES requests,internal
+continued cleanup  made tables joined inheritance and matched nullable/sizes,internal
+Renamed SingleTaskRenderingExecutor to DefaultRenderingExecutor and simplified the code. GEOT-3784: reduced coupling between JMapPane and MapLayerTable. GEOT-3746: work towards map pane with multiple backing images GEOT-3780: start of new JLayeredMapPane (not usable yet) Simplified RenderingTask class and RenderingExecutor interface. Removed renderer setter from JMapFrame (assumes StreamingRenderer instead) Removed unnecessary event constants and related methods in listeners. More unit tests.,internal
+Some minor abstraction in SPARQLParserBase to make it easier to extend sub-query parsing,internal
+More work on abstraction.,internal
+@djazayeri Rename MPI interface and change inheritance.,internal
+BookKeeper Client: Ensemble placement policy changes - Include ackQuorum as an argument to the newEnsemble method - Add ackquorum size to RRTopologyAwareCoverageEnsemble - Include ensemblesize  write quorum  ack quorum and existingEnsemble as a separate explicit argument to replaceBookie; so replacement decisions can be made in accordance with any constraints on the ensemble,internal
+SCRUM-285: code review: inherit -> enabled. Using InheritanceContentWrapper temporarily to be replaced with inheritance wrapper.,internal
+HBASE-11527 Cluster free memory limit check should consider L2 block cache size also when L2 cache is onheap. (Anoop),internal
+DATADOC-128 - Enable storing inheritance trees.,internal
+Analyse: System documentation extended with UmlLink and Type Parameter declaration detection. UmlLink detection extended with links to library classes. C# code analysis improved (multiple inheritance. Test case extended.,internal
+Added ErodingPool decorators designed to shrink the size of a pool without the use of an evictor.,internal
+add support for Lucene indexes configuration: directory (mmap  fs)  analyzers  stopwords  size of buffers,internal
+Refactor some of the inheritance providers.,internal
+Bug 388281 - [compiler][null] inheritance of null annotations as an option - comment 28: consider inherited annotation inside method body  too,internal
+Measure coverage for equals/hashCode methods with inheritance generated by Lombok,internal
+Added an additional abstraction layer for example queries and implemented a generator for simple regex queries.,internal
+Error messages are slightly colorized  continued implementing JPA setup abstraction,internal
+JBRULES-1450 De-couple drools-core from the java dialect's PackageCompilationData -Initial de-coupling attempt -also updated to mvel 2.0 alpha 2,internal
+Extracted A SortedIndex interface from the Index interface to non sorted indexes having to deal with that leaky abstraction. - Added A free() method to the Paged for symetry with the alloc() method. - Added A A couple of pre canned Marshaller impls,internal
+Fix size parameter passed to freeSpace,internal
+reactoring classes coupling and dependencies in NPM,internal
+accounting for changed inheritance - Renamed method to more sensible wording,internal
+Refactored into polling and direct route selection.  Required new abstraction and inheritance.  Simplified/moved data types and utils.  ,internal
+Stage / InstrumentType decoupling.,internal
+Finalize decoupling of producer parts from concrete JAX-RS implementation,internal
+fixes #591 we are now a bit smarter about the size of tables that we create by default  which was the root of the time and memory consumption problems here.,internal
+Added Agent abstraction to coordinator,internal
+Reduce size of feature list in request URL,internal
+ItEr34S12CUCreacionUnidadesPlanificacionItEr33S14: Extracting methods in order to keep the same abstraction level,internal
+Fixed the new events to use the abstraction layer,internal
+Updated to fix issues with inheritance and tree branching in querying,internal
+Optimize SkipList flush by Sync thread to check if mem-table entry after sync-logMarker  which indicates the target checkpoint position. SkipList is augmented to capture last rolled-logMarker before inserting any entry  to indicate all entries are added after rolled log Marker (aka checkpoint). The sync thread simply move sync-logMarker on timeout or shutdown for checkpoint position  which allows SkipList size limit and sync-interval settings factored in the tuning.,internal
+trying to make twidere work with identi.ca #235 improved L compatibility,external
+Separated C++ and C Physical Implementations to provide Andrew more flexibility. Added ICPPASTTemplateId and implementation.,external
+BUg 495095 - Disable a test that tests functionality that isn't implemented yet,external
+seperated functionality to make the update procedure easier to understand,external
+Improve Collect Earth performances,external
+Issue #851: Initial implementation of batch-push functionality,external
+Add in a simple builder for SQL strings  and use it to implement some additional functionality in EntityCollectionImpl,external
+Fixes #205 Performance issue when an entity has a lot of attachments,external
+Renamed performance test. Introduced AbstractModule to support more concise configuration code.,external
+performance improved version of VirtualBandOp,external
+repackaged integration tests into non-specific web package for simplicity and removed AbstractTest since it is not used,external
+[MRM-1283] moved browseGroup() functionality over to metadata repository,external
+Renamed GraphSail property default.namespace --> default-namespace for compatibility with OrientDB. OrientGraphSailTest now passes. Other lightweight changes.,external
+improved the performance of Bytecode and ConstPool.  Added clone() to Bytecode.,external
+move directories for maven compatibility; also formatting,external
+EST-794: removed RendererAbstract  inlining functionality to RendererForFreemarker subclass.,external
+HADOOP-2471 Add reading/writing MapFile to PerformanceEvaluation suite,external
+slight cleanup  reformatting for better readability,external
+Refactoring of JML test execution functionality,external
+changes for readability,external
+Improved the performance for clearing reference attributes when the attribute they reference is deleted.,external
+introduced the Graph class to improve the OO-ness of the model classes. This should also improve testability a bit.,external
+Split responsabilities between CompatibilitySuite and TestContext,external
+HBASE-528 table 'does not exist' when it does -Changed HStore and Memcache methods for computing closest row at or before -Added more test cases for verifying this functionality -Simplified the getClosestRowBefore interface so that it does not take timestamps -Noted that getClosestRowBefore is assumed to work correctly ONLY on tables where updates are always with ascending timestamps (method is still not a part of HTable interface  so not available to clients),external
+Removing PrimitiveValueType and merging its functionality with the ValueType. The multivalue and hierarchy flags are removed and ListValueType and PathValueType are created instead. To the ListValueType and PathValueType it is possible to give as extra 'typeParams' the ValueType that should be put in the List or Path.,external
+HBASE-1364 [performance] Distributed splitting of regionserver commit logs,external
+Improved communicate protocol performance by keeping socket and database connection alive,external
+Added hook for progress reports on  and hooks for user configurability of file reading,external
+Refactor event store benchmark and benchmark tracking performance as well,external
+topic: code enhanced type: functionality module: other description: MDEditor - switched to dictionaries  updated export,external
+Concept charts visualization 1. The box plot outliers functionality is added 2. Removing not used code 3. Adding the heat map concept code.,external
+fix typo in PerformanceNode class name,external
+Tools developed for multiresolution signal processing using the available filter classes/functions. Filter classes expanded with minor additional functionality.,external
+ Removed lots of duplicate code  better error reporting due to another logger for traces,code smell
+moved java metadata classes to a separate package,code smell
+cleanup: move data classes to new packages,code smell
+webadmin: add disk - cleanup and duplicate code removal,code smell
+Delete dead code that isn't used anymore  as it's now automatically provided by DOM support,code smell
+added condition set command  cleaned up some unnecessary duplicate code,code smell
+Remove some duplicate code from heterogeneity minor fixes,code smell
+1. Implemented function to modify a loan product. 2. Added security controls so that only administrators can view  create  update  and delete loan products. 3. Refactored loan product controller hierarchy to eliminate duplicate code.,code smell
+ItEr22S12CUVistaRecursosTempoPorProxectoItEr21S07: Creating package for resourceload data classes,code smell
+Added back in password parameter to use on SQL data source (whoops)  cleaned up output  moved RandomData class to tests.,code smell
+oprofile/perf: Remove dead code.,code smell
+removed some dead code,code smell
+Extract duplicate code into a method,code smell
+Made annotator tests extend abstract AnnotatorTestData class,code smell
+Removing duplicate code from import/export wizards. JUnits were corrected.,code smell
+Less duplicate code ... I think.,code smell
+Added bagging approach to handle unbalanced data classification,code smell
+Removed duplicate code and added outlines for how to add version to the start log entry.,code smell
+REPLACED log4j2 logger with slf4j/logback UPDATED meta data extraction logic by refactoring duplicate code,code smell
+Feature #4149 : user account validity - modifying database structure around users - modifying unit tests datasets around users - modifying models and query mechanism around users - adding columns into ST_User for next features - deleted users are retrieved by their state and no more by access level - changing the management of user accessLevel information - removing some dead code - centralizing/refactoring some code,code smell
+[SUREFIRE-695] Avoid duplicate code in SurefirePlugin and IntegrationTestMojo,code smell
+kie-services-client: Cleaning up duplicate code and packaging,code smell
+Bug 335909 - adjusted cfg generation for switch and dead code,code smell
+HEAD - removing dead code,code smell
+Instead of initializing imported classes immediately  they are only initialized if constants (heuristic: upper case!) are used. Static method and constructor calls are intercepted by a class-initializing wrapper method  anyway. This makes lazy class initialization effective! It may also allow later to introduce extended scopes (*-imports  same package  statics of super classes) when preloading all classes. All Jangaroo examples and Jangaron have been adapted to work with the new semantics.,code smell
+Removed some dead code  implemented LinearGradientPaintFactory and RadialGradientPaintFactory in preparation for enhanced passthrough gradients  and changed lists of custom graphics to be sorted to improve the UX somewhat.,code smell
+Move *MetaData classes to meta subpackage  rename MetaData to ExchangeMetaData,code smell
+refactor duplicate code,code smell
+systemtap: Remove dead code all around.,code smell
+290: Extracted some methods to reduce average method size  and eliminate some duplicate code.,code smell
+XSKINX-29: Refactor duplicate code Refactor JsxAction and SsxAction. Patch from Caleb James DeLisle  applied with minor changes.,code smell
+Added Content Spec filters back after adding Filter Types. Cleaned up the Search views  to remove duplicate code.,code smell
+ENH: add labels for all system entities Set EntityMetaDataMetaData.LABEL to required Use simpleName by default in EntityMetaData Consistency: rename *EntityMetaData classes to *MetaData classes,code smell
+"fixed decoding of captured data: - packets with a timestamp of 0xffffff start with 4 bytes unknown data that are not included in the header size - don't decode ""notify"" packets with a stream id as they contain stream metadata",internal
+[SPARK-9453] [SQL] support records larger than page size in UnsafeShuffleExternalSorter,internal
+[SSHD-82] reame listFiles() to listSshFiles() to allow implementation using FtpServer file abstraction,internal
+Fix Quality flaws about complexity,internal
+SONARJS-729 Do not include complexity of nested functions into nesting one complexity (#309),internal
+[ARQ-193] Create auxillary OSGi test bundle Add TestClass abstraction. ClassEvent uses TestClass internally Add Context parameter to DeploymentPackager Add Context parameter to ApplicationArchiveGenerator  ApplicationArchiveProcessor,internal
+SCRUM-500 refactored AbstractRegistry to be used with composition rather than inheritance,internal
+RESOLVED - issue SEAMSOCIAL-27: Enhance loose coupling by having more CDI bean associated to the service and less standard objects  https://issues.jboss.org/browse/SEAMSOCIAL-27,internal
+Translation of imports and log checkers done. Basic log fw abstractions implemented,internal
+Fixed dimensions not being properly reduced  ImagePlusContianers were always 5d which breaks e.g. Gaussian Convolution that cannot handle dimensions with size 1.,internal
+FINALLY! decoupled the gwt  amf  rest  and xfire modules from the spring-app module. rearchitected  loosened the module dependency tree streamlined the configuration for spring 2.5 support removed unneeded complexity in spring-app. split out each module into its own servlet.,internal
+- Added UNICAST_RetransmitTest to test https://issues.jboss.org/browse/JGRP-1868 - SeqnoList now extends FixedSizeBitSet and uses a bitmap for retransmission (https://issues.jboss.org/browse/JGRP-1868) - NAKACK2  UNICAST3: added max_xmit_req_size - Table.,internal
+CMTC-10 : [Groovy support] Add tests for metamodel inheritance,internal
+"- Added an abstration of condition expression lanugage (cel) - Added an abstraction of function expression language (fel) - Removed the tight coupling between the bean framework and valang.  - Changed the ""valang"" annotation and element to ""expression"" - ",internal
+* restructured code and package structure for higher cohesion * implemented proxy logic with cglib * fixed bug with introspector  generics and interfaces in java 1.6 * extended and added tests for ReflectUtil and ObjectFactory * added AbstractBeanTest to pull out similarities,internal
+Slight abstraction,internal
+Improved mmap management by computing the right size of blocks avoiding overlapping,internal
+push rarely-used repositoryService injection down inheritance tree,internal
+DATACMNS-387 - Introduce Slice abstraction.,internal
+Thirs commit for Roller 3.1 Theme Encapsulation work ...,internal
+added algorithm to marshalling generator to guestimate a more appropriate allocation size for the StringBuilder used to construct the marshalled object.,internal
+Decoupling the MethodTargetResolver from the ApplicationContext,internal
+Added experimental support for inner joins and flattened attributes. Improved support for inheritance (mostly untested). Separated out common EOAdaptor code for implementing non SQL EOAdaptors.,internal
+ClockService  Starting on decoupling (agreement from lease  finance),internal
+DAO abstractions and updated 'npc' sql file,internal
+CAMEL-4428 Introduce NamedNode as Abstraction of OptionalIdentifiedDefinition. This avoids some references from api to model,internal
+Added QCOW2 virtual size checking for S3.,internal
+revamped inheritance lookup,internal
+Added a layer of abstraction  to make it easier to insert a new ScriptEngine,internal
+experiment to support inheritance during parsing of inlined entities,internal
+fixing inheritance issues (Issue #256).  thx rrotmark,internal
+Refactored command line argument and configuration file handling * Improved and refactored Configuration class * Added extensive unit test for Configuration class * Tried to reduce tight coupling with Main and Configuration class * addresses issues SERVER-43  SERVER-44,internal
+[cleanup] Reduce fanout complexity (but still not enough),internal
+Performance: Claim Lookup,external
+Changes to the performance tests using JMeter. Added load test for the JPA store.,external
+JBIDE-9588 Poor performance of XHTML template validation,external
+SLE-127 Bad performance while handling Markers,external
+Fix really a lot of bugs; rewrite for performance,external
+Refactoring - pushed property mgmt functionality into new superclass now shared by the report renderers,external
+separate benchmarks from correctness tests which are now part of a junit test suite integrated into the build system,external
+[MRM-1025] remove database cleanup consumers and centralise functionality in RepositoryListener Note: this commit requires that a following work item be completed to add a service for scanning metadata and cleaning up if a file is erased. Workflow will be documented first.,external
+Issue 176: size can now test compatibility with images; refactored vcloud config logic; updated to support latest bluelock,external
+1.0 release * New data sources:   - Grayscale heightmaps as source for elevations   - Arbitrary images as source for ground textures   - Custom OSM XML Files as source for ground textures * Full Support for the European Cities DLC.   The building style of existing maps can be changed in the Metadata-Editor * Performance of OpenStreetMap-Downloads improved  the hard download limits   were removed * Windows-Executable (.exe-file) * Program Update Notifications * Cache Janitor: removes deprecated and broken files from the cache * Drastically improved error handling * Useful new options in the settings menu (log file  updates  cache janitor  ...) * Many small improvements and lots of bugfixes  see CHANGELOG.md,external
+RESOLVED - issue RF-10987: Improve GraphValidator performance  https://issues.jboss.org/browse/RF-10987,external
+Bug 476074 - [region] performance issue with large number of service listeners and service events,external
+Refactoring to separate Bugzilla/Github/Jira functionality,external
+ACT-746: added functionality to involve people and give them custom roles,external
+Fix tracker bug 94614 : BIRT: performance issue with function dataRequestSessionImpl.getColumnValueSet.,external
+Added fetching recipient id functionality/tests based on commit author from a build for private messages.,external
+moved citizens compatibility classes into QuesterNpcs,external
+Bug #1261: Extract method createTab with common functionality for each tab,external
+topic: code enhanced type: functionality module: other description: mdEditor - ongoing: support of referenced groups,external
+BATCHADM-72: Improve chunking traceability - add sequence info to chunks - Improve logging in ChunkMessageChannelItemWriter - Add mysql/h2/derby properties to integration project - Add drop scripts necessary for persistent databases,external
+added EntityManagerImpl.persist(Collection<Object> objColl) - the main advantage over persist(Object obj) is that   a single batch mutation will be used for performance,external
+CSPACE-3175 Refactored *Resource classes to use functionality in two main base classes: ResourceBase  and SecurityResourceBase. Also  changed how some responses are now response code 400  BAD_REQUEST  where previously they were incorrectly sent as server error  500.  See extensive notes here: http://issues.collectionspace.org/browse/CSPACE-3175 ,external
+Refactor to improve readability of comparisons,external
+Included 0.7 API. Note that there is a lot to implement. This just includes the API and changes for non-code-breaking functionality for the impl/unit tests/examples.,external
+added new performance data,external
+Account status functionality implemented in M2 style. TestEditStatusAction is added.,external
+SAK-1756 -- Merged sections-dev-branch into trunk.  Section Info and SectionAwareness now rely on (and decorate) the framework's generic grouping functionality.,external
+fixes  refactor parser - TODO performance check,external
+[MOD] ArrayList replaced with ObjList [FIX] GUI: drag'n'drop functionality fixed [MOD] local session support for JAX-RX added,external
+Added some JCR-related functionality  including a code that monitors the rule sets in a repository and keeps them in sync with the RuleSet instances in a RuleService.  Also created the concept of an ExecutionContext to encapsulate some commonly-needed functionality (including tools and the session factory).,external
+Refactor demos for readability  better comments and configuration,external
+Added the functionality required for BZ#1011904 - Support multiple config files.,external
+[changed] common | feature: multi subscriptions - Connection type to MapServerConnection [added] common | feature: multi subscriptions - equals for Data [added] common | feature: multi subscriptions - new SubscribtionData class,code smell
+refactored PageData class to now be WeblogTemplate ,code smell
+KARAF-1243 First part. Refactoring on trunk to remove duplicate code on mbeans and shell. Bugfix for delayed update not yet included,code smell
+solr components working again  removing dead code,code smell
+Supplier interface and BuiltLazy class.,code smell
+Rename ClientData class to Client,code smell
+Added allowInSwitchCase property to AvoidNestedBlocksCheck to allow limiting the scope of variables to one case of a switch statement.,code smell
+Fixed unnecessary method and created MockData class.,code smell
+UPDATED readme to reflect changes REFACTORED some methods from disk writer to the file handle class to reduce the number of objects to keep as members UPDATED the shutdown of the application as there were cases when the remaining data was not written correctly ADDED hashCode and equals methods to FlippableData class to minimize the chance of randomly appearing further elements in the flipped queue (though this sometimes still occurs for no obvious reason),code smell
+frontend: reduce duplicate code related to run-once capability,code smell
+added codemodel switch statement for careRecordType parameter,code smell
+Refactor to eliminate duplicate code between Loggers and Handlers,code smell
+recognize switch statements that have exhaustive labels for an enum,code smell
+Cleaned up SoapSerialization envelope.  Added some rudimentary dot net support so it will work with sites like weatherX etc.. Removed some dead code.,code smell
+[MRM-1551] add rest method to delete artifact. reuse service in webapp action to avoid too much duplicate code.,code smell
+"Fix stack overflow on long methods bug. See test case for more details. - Convert the problematic recursion (SEARCH of SSA conversion) into an ""iterative"" code (by introducing a stack data structure.",code smell
+Test the metadata class with JDO,code smell
+refactor move rename trade metadata classes,code smell
+Bug 268036 Revoked the deprecated script method: beforeComputations and afterComputations  since it can't be replaced by beforeGenerations and afterGenerations respectively. Also added new PlotComputation as super class of PlotWithAxes and PlotWithoutAxes  so user can use code assistance in js editor more effectively and chart engine can remove much duplicate code.,code smell
+[SHRINKWRAP-12] - Cleaned up some duplicate code from the exporter test cases,code smell
+GUI changes due to BEAM 4.7 data model changes: new Mask and VectorData classes,code smell
+Forced metadata classes such as users  roles  etc to go into the metadata cluster to protect them.,code smell
+[Bleeding] Add new MaterialData classes for new blocks and update existing blocks with new data,code smell
+removed duplicate code by adding a public getPropertiesFile method to obtain the File,code smell
+Splits a long method into multiple shorter methods.,code smell
+[MCHECKSTYLE-123] refactoring to prevent duplicate codes.,code smell
+Various cleanups in tosa-loader to kill dead code,code smell
+BEAM 4.7 data model changes: new Mask and VectorData classes,code smell
+Added new Metadata class for easy access to core metadata * Enforces 'fail-fast' - if metadata object doesn't exist then exception is thrown,code smell
+#675 refactored the Options/Metadata classes so they can be deserialised in AbstractDataStore; so we can killed containers now,code smell
+Refactoring  translation and removing dead code,code smell
+DDF-465: Code clean up. Removed commented out code lines and duplicate code in the tests.,code smell
+working up test coverage; minor tweaks; removing dead code; fixing very minor bugs; adding tests,code smell
+[XQUF] fast replace  fixed missing attribute size update for parent. still deactivated though,internal
+ROO-3353: Make GAE and GWT version properties ROO-3352: setAccetableValues(Collection collection) method is still added to EditViews when field is marked read-only in proxies. ROO-3211: Modify the inheritance chain of activities and views in order to increase flexibility. ROO-3208: setEntityPickerValues method not being added to View interface in EditActivityWrapper ROO-3204: Use existing renderers in mobile list views rather than defining new ones ROO-3179: Better organize the scaffolded views in a GWT application ROO-3178: If a user adds a field to an unmanaged edit view  do not add it to the managed edit view,internal
+Keep track of top-most rank; remove unused abstractions,internal
+ You can now resize the browser size and the screenshots in the reports using the thucydides.browser.width parameter.,internal
+Reduce the size of calculation job result messages.,internal
+bugfix; 3136650; problem with inheritance mappings;,internal
+Implemented sort() Fixed missing so that it works correctly with the formal argument has a default value Implemented cat() Implemented stdout() Corrected bug in unique() Removed special handling for classpath: files and created simple abstraction over file system so that library and other files can be read from jar files.  library paths are now constructed from the classpath.,internal
+[1065461] readOnly configuration is editable via CLI - Fix a regression in List of Maps handling by relaxing size assumptions - on the old and new list entries. - Add equals checking for read-only Maps and Lists,internal
+OGM-256 Provide support for InheritanceType.TABLE_PER_CLASS,internal
+Op products and compositions,internal
+UOM management for symbol's size in value classif for points Everything is updated  that's beautiful.,internal
+o Strengthened IT to check deeper inheritance hierarchy,internal
+Refactored to prefer composition over inheritance,internal
+Made XReferenceType an interface.  Changed XObjectType to extend AbstractVertex.  Added InheritanceGraphEdge class. These changes allow us to create a graph of inheritance relationships.,internal
+LOG4J2-1412 Unbox test increasing the cache size should run later,internal
+Removed responsibility of getExportExtension to abstraction service layer,internal
+HBASE-7255 KV size metric went missing from StoreScanner.,internal
+remove inheritance in tables since inheritance strategy joined creates extra tables,internal
+fix(engine): Changed size to totalJobs in MockBuilder for Batch,internal
+Extracted and renamed some interfaces  as the first step towards reducing coupling between the parsing and specification modules. This will eventually allow multiple specification methods.,internal
+Removing player index to reduce complexity since I doubt its required. Decouble and nullify faction descriptions.,internal
+[WFLY-405] make core-service=patching:show-history return all the history (instead of the current patching state)  modified the history format to patch-id  type  applied-at  make CliUtilsForPatching.rollbackAll() actually rollback all the ever applied patches  introduced PatchingHistory abstraction with the possibility to iterate over the patching history  added ageout-history handler which deletes history past the last active cp,internal
+move old composition stuff away,internal
+DRY'd up the Tomcat remote container.  Refactored to composition over inheritence for the Tomcat Manager command URLs.,internal
+Fix for 256-bytes payloads  better errors for payloads that exceed the maximum size allowed  ability to estimate the size of a payload before adding a property  option to reject properties if the size estimate exceeds the maximum size allowed  new class for running specific tests related to reported issues  and more.,internal
+– changed render routine for text fields – added tabbing abilities to CustomScreen – various modifications on CustomScreen to match the new TextField requirements – changed size of PacketSky,internal
+Abstraction of `CeylonBuilder.getSourceFolder()` and `CeylonBuilder.getResourceFolder()`,internal
+Core API: Compositions support topic refs (#786).,internal
+Introduce environment variable controlling page size of nitro requests,internal
+Adds options for num writers and commit size on db-bootstrap page; improves bootstrap file format and performance by using type names instead of IDs,internal
+"Refs #3052  #2939: Adds default ENTER and ESC key mappings to Preferences and Bookmarks dialogs. Also increases the size of the ""Filter Displayed Data"" dialog  so the title end is not cropped.",internal
+Integrate Statistics modules in the trunk with large refactoring. Clean API and split StatisticsAPI module with a new DesktopStatistics  where the TopComponent and desktop UI  controller and model is located. Build a MVC architecture to support workspace encapsulation and adapt Panels code to support asynchronous model-based refresh. Reimplement Panels with better layout. Adapt StatisticsStandard with new API  delete front-ends and migrate to use current Graph API access. Increase consistency of Statistics settings panel.,internal
+reporting module: added automatic deleting of reports after a configurable number of hours. added UI to build CompositionCohortDefinition.  added UI shortcuts for creation of common parameters added UI to re-run a historic report with a new format,internal
+moves default response functionality to AbstractMockOperation - removes listener call no one listens to,external
+Functionality extended to include HUSACCT in build process. Furthermore refactoring improvement of the batch process + removal of password protection (since it did not work).,external
+Fixed Term delete api incompatibility with runway gis universal requirements.,external
+improve performance of type qualifier analysis shrink debugging output for type qualifier analysis,external
+"Removed destructive ""all"" view from all ResourceProviders  added ""doNotSort"" flag when only UUID query is executed in SearchCommand  added session timeout to Jetty configuration  some other performance optimizations and code cleanup.",external
+"Foundation + Further work on parsing action-based extension points. + Introduction of CommandAction  which emulates the IAction interface using command-based managers + Moved the uncategorized category down to CommandManager from CommandService + Renamed all the IHandlerState related objects to be IState.  The ""handler"" qualifier  while indicating the primary use case  is an unnecessary qualification. + Made the state identifier a more integral part of how state works.  The id is used to identify which piece of state applies in a particular scenario.  This is used to distinguish ""name"" and ""description"" label state. + Refactored some common functionality related to property change listeners from Action to a new class AbstractAction. + Extracted some label parsing utilities (related to mnemonics and accelerators) from Action to LegacyActionTools. + Extracted some common constants into CommonCommandPersistence. + Created SelectionEnablerExpression to wrap the legacy SelectionEnabler framework. + Started work on a proxy for pulldown delegates.",external
+Restore compatibility with 1.8,external
+<STORY 248-SOLR plugin> Update and delete functionality for Mongo and SOLR Entities,external
+Added additional flexibility to fetching SCOP domains from an AtomCache.,external
+BZ-1060747 - IBM WAS 8.5 compatibility: splitting kie-services-client into kie-services-client and kie-services-jaxb (cherry picked from commit ba362d120c000ce13aadbb9e632359f3db48c753),external
+Added statistics endpoint. Refactoring of functionality into own packages,external
+Bug 233643 API builder performance bad for incremental build,external
+AbstractBlobTransformer uses template pattern to encapsulate from implementations blob 'delete' functionality.,external
+WICKET-3730 extremely slow performance in development mode WICKET-3731 PackageResourceReference.lookupStream(IResourceStreamLocator  Locale  String  String) creates wrong PackageResourceReference.StreamInfo,external
+Fix performance regresssion introduced by using InetSocketAddress getHostName() Patch provided by Scott Harrington  improved upon by Kris Jurka,external
+o Refactored API to move from tree to graph  thereby allowing to fix CPU/memory performance,external
+Compatibility with SQ 6.1,external
+implemented registry and unregistry of apns api  also started implementing the send to device functionality (#14),external
+Traceability has no API,external
+Much less mockup in the updatetracker  and better performance for the summa integration,external
+Added new map functionality. Performed deep tests and fixes,external
+SONARPLUGINS-3168  SONARPLUGINS-3423 Compatibility with multi-language plugins and no more compute file hashes as it is already done by the core.,external
+created new functionality to phd candidacy process to allow associate any active candidacy from student ,external
+Bug 86013 Performance failures should be written to separate log,external
+further refactorings to performance test components,external
+Lucene Directory performance regression test (trunk),external
+Rewrite the ImmutableSortedMultiset implementation for improved efficiency and reduced memory consumption. From Louis: http://codereview.appspot.com/6203097/ ------------- Created by MOE: http://code.google.com/p/moe-java MOE_MIGRATED_REVID=30340746,external
+Add SessionComponent for better compatibility with old releases. XmppConnection has better documentetation. Better release name: 0.6.0 Release Candidate 1,external
+v0.87 fixed bugs  added compatibility with Mean Admins  added command alias /mobarena  bigger auto-generated arena,external
+ACT-628 fixing backwards compatibility of deprecated expressions type,external
+use AWT toolkit to read images instead of ImageIO for better performance,external
+Some new tests added and functionality for detection of errors related to events and observers.,external
+Keep the original signature intact for backward compatibility,external
+General cleanup for metadata classes. Moved and overhauled ome.xml test cases. Support for UUID value through re-run of code generation. (ome-xml:r613),code smell
+[PAXEXAM-383] Do not duplicate code for JUnit and TestNG drivers,code smell
+remove dead code,code smell
+OPENNLP-175 Removed duplicate code in parser train methods,code smell
+Remove duplicate code related to SNMPv1 vs SNMPv2 traps from TrapQueueProcessor,code smell
+Better integrate the @ArgumentCollection into the command-line argument parser.  Walkers can now specify their own @ArgumentCollections.  Also cleaned up a bit of the CommandLineProgram template method pattern to minimize duplicate code.,code smell
+Avoid duplicate code by extracting inner class.,code smell
+Moved xml document creation into DBMetaData class  from NetKernel accessor.,code smell
+Refactored everything out of SenderOptionsPanel and SenderOptionsPanelController that I could  so adding new sub preferences should require no duplicate code.,code smell
+pmd: duplicate code: refactor to minimize dupe code,code smell
+Source attribution is now consistent across all registered Problems + Various pruning of dead code and polish,code smell
+Add a catch clause in the SettingBundle#getString(String) in order to detect the missing required keys. Fixes the missing translations by either adding them or removing them when they aren't more used (dead code),code smell
+Improve handling of /reload  clean up dead code,code smell
+removed dead code of fee calculation,code smell
+Moved as much duplicate code as possible into a different package.,code smell
+Cleaned out some dead code that was replaced by Spring Social,code smell
+MONDRIAN  Enhanced support for native evaluation of virtual cubes.  Queries involving dimensions that do not join to all base cubes in the query can now be natively evaluated. This change involved refactoring of SqlTupleReader  HighCardSqlTupleReader and the Target classes used in each to eliminate duplicate code.  ,code smell
+Removed the MGRast export functionality since it's just dead code. Added ISAconverter integration. Some small additions to add  but functionality is there. Improvements are just focused on UI. Closes #12,code smell
+Reduce some duplicate code between the various HTTP providers,code smell
+add of blob class with relative cluster management methods.,code smell
+Splitting long method to load settings,code smell
+Cleans up HtmlApiFilter to reduce duplicate code.,code smell
+[CLEANUP] - Refactored some duplicate code and checkstyle.,code smell
+Refactored gradebook data classes.,code smell
+refactored away some duplicate code,code smell
+Removed dead code. Added a bit of clarification.,code smell
+QuickCloud: Remove reference to unused code QuickCloud: remove some dead code in ConsoleProxyManager,code smell
+remove duplicate code in MetadataApiControllerTest,code smell
+Add updateSchema to HBaseMetadata class,code smell
+Fix test XmlDecoder (Duplicate code removed),code smell
+Adding new status attribute to CommentData class to replace the old combined use of approved/spam/pending boolean flags.  Comments now support 4 distinct status options  APPROVED  DISAPPROVED  PENDING  SPAM.,code smell
+Cleaned up some duplicate code in preparation for making plugin dir configurable.,code smell
+Refactored dead code elimination,code smell
+extracting LexicalEnvironment abstraction,internal
+Refining HttpServiceProxy abstraction.,internal
+Use composition  not inheritance,internal
+"added abstraction level to navigation renamed ""scheduler()"" method of EntityAI to ""tick()""",internal
+Bug 432265 - Support manifest inheritance and global properties for Cloud Foundry Deployment,internal
+Refactored ManagementContext to  improve encapsulation - so all registrations of MBeans happen in one place,internal
+Multiple code improvements - squid:MethodCyclomaticComplexity  squid:S00119  squid:S134  squid:RedundantThrowsDeclarationCheck  squid:SwitchLastCaseIsDefaultCheck  squid:UselessParenthesesCheck,internal
+Moved worker thread spawner into new method (NPath Complexity is 80 (max allowed is 50)).,internal
+SONARPHP-664 Correct Cyclomatic Complexity implementation (#172),internal
+ASNN-719 Moving method that's only used in a single producer to that producer so we can finish decoupling AssignmentSubmissionBean from non-grading pages,internal
+Rename new grammar class and new complexity visitor,internal
+Factored out useless cell value abstraction,internal
+MNG-5871 refactoring: put url extrapolation algorithm in inheritance model merger,internal
+Standarize solution and entity classes annotation inheritance behaviour + Check interfaces too. + add unit tests,internal
+413155 refactor HttpTransportOverSPDY to fix some bugs and reduce cyclomatic complexity,internal
+SB-713:  LayoutProviders draft implementation using Path abstraction,internal
+replaced jersey w/Uris & UriTemplates; removed complexity in url encoding and edge cases like matrix params,internal
+ACT-696: Added inheritance for TaskPage,internal
+EST-257: refactoring inheritance hierarchy,internal
+Refactoring  * move ASHelper methods to appropriate classes (to ensures abstraction)  * rename WS_ENDPOINTS_KEY -> JAXWS_ENDPOINTS_KEY  * getJaxwsPojos & getJaxwsEjbs should never return null collection,internal
+Tweaks to tests  BasePerson class  common inheritance to test classes  tweaks to complex/simple type detection.,internal
+EXOJCR-350 : Enable plugability of management layer : first pass of decoupling  need more work,internal
+JBIDE-9763 https://issues.jboss.org/browse/JBIDE-9763 When building inheritance for parameted types  resolved parameters are reused from base types.,internal
+Better encapsulation inspired by AbstractCRPDBTest.configureEntities (configuration of entities mixed with db configuration),internal
+Reduced complexity in getIgnoredFields(),internal
+[core kraken coinmate] removed additional data map from Trade  replaced it with KrakenUserTrade  added inheritance to Trade.Builders  renamed Coinmate integration test classes,internal
+reducing complexity by introducing intermediary abstraction (removing reference to RestClient from commands),internal
+Added person connection abstraction.,internal
+Removed coupling between XT Ajax and Prototype: + Prototype-specific actions have now their proper package. + Two different directories for JS libs: core and opt.,internal
+changed inheritance and moved stuff to ERXComponent,internal
+Analyse: Indirect inheritance associations are reported now; also indirect-indirect inheritance associations are reported (recursivly).,internal
+More work on abstraction.,internal
+Removed abstractions - we're only supporting Bukkit API,internal
+https://jira.jboss.org/jira/browse/JBIDE-3628 - Plugins should be .jar's not directories for efficiency sake to make Plug-ins were converted to jars: jsf jsf.ui jst.web jst.web.ui jst.web.tiles jst.web.tiles.ui jst.jsp common.projecttemplates,external
+Refactored and improved performance of validator generator,external
+use File creation date for better accuracy,external
+Added @ContextParameterObserver event functionality with examples,external
+Refactor of XMPPChatClient for generality and simplicity,external
+CARE #85: Performance test engine,external
+* code cleanups + Tcl keyword  parser extensibility,external
+implemented functionality for send_on_all_interfaces and send_interfaces,external
+Adding and Fixing functionality,external
+Use the FringeTile multi-image functionality to allow different base tilesets to simultaneously fringe upon another base.,external
+GWT remote poller app refactor for performance and testing,external
+- kie-remote rest API documentation/readability (REST/JAX-RS annotation clean up),external
+User can touch the clusterized diffs on result picture and they are fading. Need to be improve the layout and add saving functionality.,external
+Performance optimization of annotation processing/handling,external
+Brought in old JUnit4ClassRunner for compatibility. Renamed new JUnit4ClassRunner to BlockJUnit4ClassRunner.,external
+Added Queries.returns(). Renamed all() to any(). Excluded SourceConsumer from source tracing. Added performance check for indexing. Set version # to 1.0rc1.,external
+Method name change to avoid confusion with visibility: hidden / Don't create empty inline boxes after all (inline layout will ignore them anyway) / Robustness improvements to generated content (treat display: table/table row groups/table-row as regular block boxes),external
+Rename MulticastMain and PerformanceMain to PerfTest and PerfTestMulti.,external
+MEDIUM: Fixed old code generator because it is still needed for a while. Backward compatibility shall be maintained,external
+Adding functionality to upgrade/downgrade version of webdriver,external
+Add ThreadLocal cache to proxies to improve performance,external
+Deprecating old api key classes and moving functionality over to new api key resources.,external
+224364: re-enable fix after performance improvements from Markus,external
+Major performance update,external
+Add a new window in time for event occurrences: the year  so that this new functionality provided by the Almanach EJB can be directly used for rendering event occurrences in the current year instead of using the overloaded getListRecurrentEvent() method. It stays the AlmanachPdfGenerator to update with this new feature. In todo: add a message waiting during the load of occurrences in a given period (weekly  monthly or yearly),external
+- Summary: [Chart usability spec#2.5]UI refinement of Axis title/label,external
+XLCLOUD-216 user creation functionality for selected account [vcms-gui],external
+completed missing functionality from idmconsole example,external
+XRENDERING-187: Implement a Rendering Compatibility Test Suite * Add inherit for the HTML syntax * Provide safety to make the test not applicable if no parser or renderer exists for the syntax,external
+seperated functionality to make the update procedure easier to understand,external
+ISIS-1411: removing DomainObjectContainerResolve helper class (inlining its functionality); removing inner interfaces only implemented by PersistenceSession.,external
+Performance tuning,external
+MiniMaven: refactor a bit for readability,external
+Slightly reduced duplicate code.,code smell
+refactor discovery to use the new Pinger; remove a bunch of pointless/dead code and threads... yay!,code smell
+Type converters for easy access to XDS meta data classes within routes. Adapted tests to use meta data classes.,code smell
+Refactored away some duplicate code,code smell
+"[JBIDE-6828] renamed ""Open Management Console"" to ""Web Management Console""  moved duplicate code in ServerLogActionProvider & OpenManagementConsole to CommonActionProviderUtils. Made sure ""Web Management Console"" is only enabled if the server is started",code smell
+Followup after review of LC code with ELZI - XmlTree is now more flexible in resolving paths  and a lot of duplicate code is removed. Javadoc is consistent with interface.,code smell
+Remove duplicate code,code smell
+PMD Rule:ExcessiveMethodLength Priority:3 Avoid really long methods . Issue #744,code smell
+Now Includes Performance Improvements - All the maps iterators to for-each loops - Removed duplicate code - Other minor changes,code smell
+refactor  add metadata class,code smell
+Reduced duplicate code in CoordinatorCli.,code smell
+YARN-1335. Move duplicate code from FSSchedulerApp and FiCaSchedulerApp into SchedulerApplication (Sandy Ryza),code smell
+refactored to remove duplicate code.,code smell
+Cleaning form generator classes  refactoring to remove duplicate code. EasyWSDl is the default WSDL parser because we have a library version problem with Woden.,code smell
+PRD-4379: Metadata classes copyright update; API change AttributeRegistry has a put-semantic  not a classical getter/setter semantic.,code smell
+Modified unit test after having removed dead code,code smell
+Extract duplicate code into a method,code smell
+Reduced duplicate code in ClientConnector.,code smell
+remove dead code,code smell
+Removed MetaData class. Lots of refactoring.,code smell
+Merged duplicate code,code smell
+WELD-1784 Remove dead code,code smell
+Refactor and remove duplicate code between Movies and Episodes,code smell
+Removing some duplicate code.,code smell
+Remove dead code ExaminationSolutionInitializer,code smell
+"SONARPHP-451 Add parameter for (S107) ""Functions should not have too many parameters""",code smell
+Refactor duplicate code,code smell
+define OptionData class 2,code smell
+started refactoring ResourceNameIterator and ResourceStream to make the locale  style etc. available for which the resource was found. Will eventually allow to remove duplicate code e.g. in PackageResource.,code smell
+Removed duplicate code from FileHandle,code smell
+Introduced Data interface and TransposableData implementation to replace Data class  added getTranspose method. Further extended Data interface into DataVisualizer interface  its TransposableDataVisualizer and CompositeDataVisualizer implementations  and related DataVisualizerBoundingBox class. Introduced Viewer interface & its DefaultView implementation  Drawer interface & its LineDrawer implementation. Changed dataset type from ArrayList<int[]> into List<Object> for better generality  which slightly impacted all Filters & Readers. Finally  implemented test cases for all new classes listed above.  ,code smell
+simplify and remove duplicate code,code smell
+ctf: remove duplicate code in array/sequence declarations,code smell
+rename the TcmSearchData class to TcmInferSearchData class,internal
+"* refactored to fold DebugST into ST; adds one object ptr to every ST instance but worth reduction in complexity. ""new ST(...)"" calls didn't work (not DebugST objects) in inspector.  ST.inspect() for any ST now. * Fixed bug in STViz. Didn't highlight entire output when you click topmost template. * STGroup.debug no longer there nor static.  It's an instance var of Interpreter.  ST.inspect() tells interp to debug. STGroup.trackCreationEvents says to record where in code an ST was created and where code added attributes. * Gutted tree model for STViz  refactored debugging/event tracking code. * creation events had wrong location (launch of interp location); only tracks now for externally/injected created templates.",internal
+Made an InterfaceGenerator  renamed CSharpClassData to CSharpData for some abstraction reasons. Made ClassGenerator and NamespaceGenerator work together well  now it sees the nested namespaces  but cannot see which it is nested to. Will do that later. Fixed small typo in ModelCreatonService,internal
+More sophisticated partial indexing which allows decisions based on other fields. Added ValueIf and PojoIf base classes. Fixed a bug in If class inheritance. Added unit test for PojoIf.,internal
+Starts decoupling from old span type; untangles ServerRequestInterceptor (#299),internal
+simplify impl inheritance,internal
+HIVE-10028: LLAP: Create a fixed size execution queue for daemons (Prasanth Jayachandran),internal
+First step towards store size limit,internal
+bugfix; 3385226; 1953410; inheritance with more than two levels deep causes same mappings done multiple times;,internal
+Allow specifying memory size to the BitmapManager,internal
+Config decoupling continued.  Created a convenient abstract ConfigSingletonFactory class that can be used to create singletons based on config .properties.,internal
+Implement framework code to support for Resource-per-class-hierarchy approach to hiding inheritance - RESTWS-243,internal
+Removed unnecessary abstraction,internal
+The lions share of work on issue #636. Checkstyle errors have gone from a count of 383 at release of 0.0.2 to 488 errors after almost all of 0.0.3 is finished  to a count of 300 errors now that a good bit of work has been done on that front. Along with that  some complexity reduction work was done. Play and Fling actions got refactored as well as the mouseWheel zooming code both in EntireGraphingPanel.java. Bugs found and fixed were a play delay int roll-over catch that didn't work in the slowDown() method of EntireGraphingPanel.java and the method getTransferDataFlavors() in GenericDataElement.java was returning a reference to the interal array instead of a copy.,internal
+WAL max size limit was restored. Free space detection bug was fixed. Additional improvements.,internal
+Eating a creature provides a stat bonus. Body size calculated based on part sizes. Entities now have width/height for intersection calculations. Screen helper for a random point within a restricted region of the screen.,internal
+Portals and inheritance,internal
+Consolidate database connecting actions reducing code complexity and duplicate code fragments,internal
+Enhanced ERXFetchSpecificationBatchIterator to optionally re-filter batches against the original qualifier after fetching. Also wired things up so that interleaving calls to nextBatch() with calls to next() or nextElement() works as expected  as does changing the batch size mid-stream. (Committing to trunk  and copying trunk version to Wonder_2_0_0_Branch branch.),internal
+Various fixes and changes: removed operations abstraction and merged with Request abstraction. Refactored Request (now ClientRequest) out of the server behaviour and added a LocalServerRequest subclass that is aware of the local server instance. The base request only operates on the CF Java client. Updated junits with further harness changes  fixing several failing test cases. Additional bug fixes  including bugs in URL domain and org and spaces lookups.,internal
+"Revert ""Revert ""[MIFOS-4052] removed original loan schedule and fees inheritance""""",internal
+* Added @size attributes to fs:deepfs  fs:dir and fs:file elements * human readable size value for fs:fsSize element,internal
+can now set font size for UI (in code),internal
+Add polymorphism with discriminator test,internal
+Extracted protocol and server bits into abstraction.,internal
+added params inheritance test for spring,internal
+BVAL-31 first support for basic composition,internal
+Repackaging to remove remaining cycles and increase cohesion,internal
+fix subscription/feeding extract common database encapsulation types,internal
+* fixed formatting issues * broke down complexity of getGenericTypeAwarePropertydescriptor method * refactored names of tests to be more expressive,internal
+Bug fix : when an error happen before the total size is computed  the progress bar should be in determinate state.,internal
+chor(engine): change ManualActivation rule to reduce cyclomatic complexity,internal
+More cleanup and following through on better encapsulation of Flags.dimension and Flags.seedlength.,internal
+Small changes around composition over inheritance.,external
+CLOUDSTACK-10053: Performance improvement: caching of NuageVsp ID,external
+Merge compatibility APIs from `-hadoop{1 2}` branches.,external
+CHANGED: Reduced the number of File objects held in memory by FileFactory. CHANGED: Added an additional check when saving a file to payload directory of a bag to make sure it is actually saved there. NEW: Added a StopWatch class for measuring time elapsed between its start and stop method calls. Provides basic performance metrics for tasks that use it. NEW: ThreadPoolService now accepts cleanup tasks that are executed during @PreDestroy method. Updated TagFilesService to schedule a write all tag files to disk during cleanup. UPDATED: All storage event tasks to use StopWatch class.,external
+Improved parsing  usability and oo design,external
+JavaCL: - complete rewrite of CLBuffer genericity to unify with the BridJ port : CLBuffer<DoubleBuffer> is now CLBuffer<Double>  and CLBuffer.read/write/map are no longer strongly typed (it is implicitely typed with Buffer subclasses for compatibility with existing code). The BridJ port will be favoured  and its read/write/map methods use typed Pointer<T>. - complete rewrite of UJMP Matrix implementation  using coding style borrowed from ScalaCL,external
+[DROOLS-1026] improve equals/hashCode performances for all rete nodes,external
+http://bugs.sakaiproject.org/jira/browse/SAK-11481 Removing new findResources method since it would be a huge performance problem.,external
+Cleanup test for JUnit 4 compatibility.,external
+Preload backgrounds during population overview gen. Extract common preload functionality into sps-gamelib. Move preloader UI elements into sps-gamelib. Cleanup unpackaged game source code files.,external
+extracted functionality removed unnecessary working directory code replaced with environment user.dir property added javadocs,external
+Move SynchronizationAdapter to support and add compatibility stub,external
+Issue #4873   methods to gather WAL and full checkpoint performance  were added.,external
+improved digits parse performance,external
+Enhanced tool palette composition functionality. Added Morph Activity/Gateway features.,external
+Improved configuration options; improved efficiency to algorithms; minor bug fixes,external
+New performance tests for rename package  move compilation unit and move static members,external
+"Been working offline for too long. However  all the work submitted by this long change list is documented in the jobs attached. As far as I can tell right now  only two jobs remain unfinished: * JOO-5: At least managed to complement ""this."" for private members and for public members declared in the same file. * JOO-30: Implemented ""as"" and function syntax type cast in the runtime for interfaces only (and with bad performance  as the cast() call is completely obsolete). Also worked on support for get and set functions: these are only supported syntactically  and so far converted to normal functions named get$<member> and set$<member>. Not yet decided on a real solution.",external
+Supported bound data columns and added backward compatibility.,external
+Turnning invoke method performance,external
+Reduced synchronization in GenericObjectPool  GenericKeyedObjectPool.  Factory method activations within synchronized blocks were causing performance problems in DBCP and other applications where factory methods could block. ,external
+[PLAT-5246] Adding support for legal entity information in calculators and curve construction. Backwards compatibility is ensured by using the short name meta data filter where necessary,external
+Create node functionality complete,external
+Added Paranamer.lookupParameterNamesForMethod(Method) functionality,external
+Fixed a permissions-related issue in the upload files functionality where a user was being authorised for a null domain object.,external
+MAHOUT-767 Improve RowSimilarityJob performance  threshold integration,external
+"[BACKLOG-4709] - Small changes in platform to improve performance - UserSettingService    - replace keySet() + get() combination with entrySet()    - remove useless object instantiation    - remove useless explicit map.remove() - AbstractSpringPentahoObjectFactory    - add logger.isDebugEnabled()    - remove useless non-null validation - OrderedApplicationEventMulticaster    - replace ArrayList with array for faster sorting    - extract stateless Comparator to a final field to avoid useless instantiation    - replace new Integer.compareTo() with Integer.compare()    - add tests - RoleAuthorizationPolicy    - create ArrayLists of exact size - JcrRepositoryFileAclUtils    - iterate through List  not Set - DefaultPermissionConversionHelper    - replace indexOf("":"") with indexOf(':') as it is more effective - AuditConnection    - change the order: first try to obtain a connection and only then sleep",external
+reverting d99cec54  still maintain Jdk6 compatibility,external
+Query has lost fluid language and improved usability.,external
+added separate states for separate downloaders to give us more flexibility,external
+code reorganization  moved files around to better seperate functionality,external
+Issue #1698. Map of temporary and new rids is returned and IndentiyChangedEvent implementation was reverted because of possible performance issues.,external
+[DOXIA-184] make parser emit tableRows() correctly. Refactor some private methods for code readability.,external
+externalized a minor duplicate code section in JestHttpClient's execute method(s).,code smell
+refactor discovery to use the new Pinger; remove a bunch of pointless/dead code and threads... yay!,code smell
+Removed dead code  moved testing target into test package,code smell
+Refactor some duplicate code.,code smell
+Use a data class for the sonic resultset,code smell
+DocSerializer: removed duplicate code,code smell
+extracted createArguments() and removed duplicate code,code smell
+"Added a zero argument constructor for the NetworkData class and changed the constructor that read from a file to a new method named ""populateFromDisk"".  Updated the unit test to understand this new reality.",code smell
+256272: [preferences] Surface new compiler preference for dead code detection: - added quick fixes,code smell
+ref: removed duplicate code and useless inner class fix: fixed stateless test,code smell
+ ItEr17S10CUCreacionProxectoPlanificacionItEr16S12: Removing Bean sufix to data classes. To avoid name collisions with the components of the same name  Component is appended.,code smell
+Code cleanups:   - remove dead code   - rename DocumentModifier => DocumentEdits,code smell
+Remove duplicate code from between Movies and Episodes,code smell
+DDF-495 removed some duplicate code,code smell
+core: Remove duplicate code in HotPlugDiskToVmCommandTest,code smell
+factored out some duplicate code,code smell
+Eliminated duplicate code between GenericBuiltinGuard and BuiltinSpecializer,code smell
+HBASE-14901 Remove duplicate code to create/manage encryption keys,code smell
+" Deleted obsolete / dead code. - Started a heavy refactoring of the ServiceDescriptionFactory class in order to make it a ""fail fast"" factory to avoid any runtime errors due to misconfiguration.",code smell
+dynect: replace usage of UnsignedInteger with int and fixed serialized form of rdata classes,code smell
+Rewrite all the possible Blocks for the If  While  For  ForEach and Switch statements. This rewriting handles modifications in the Block type from curly to non-curly ('Alternative') forms of blocks.,code smell
+"[CXF-1500] Remove duplicate code from the tools ""Stax2DOM"" thing and move it into StaxUtils.   Allow WSDLManager to have line numbers of elements recorded into DOM that the wsdls schemas use so an error with a line number can be displayed.",code smell
+Increased Findbugs sensitivity and fixed a bunch of minor style issues  removed dead code  ...,code smell
+reorganized test classes to separate expensive syntax/parsing tests from functionality tests fixed Rascal JUnit runner test reporting removed dead code,code smell
+Moved MD5 utils from WalkerTest to BaseTest for use by PipelineTests. Moved VariantEval validation from FCPTest to PipelineTest. Cleaned up some duplicate code for writing temp files during tests. Moved FCPTest to playground namespace to match move for FCP.q. Added a basic HelloWorldPipelineTest for the HelloWorld QScript.  Moved duplicated error handling from JobRunners into the FunctionEdge.,code smell
+move MAVEN_METADATA_XML constant to MavenMetadata class,code smell
+refactored duplicate code,code smell
+Refactor GlobalTypeInfo into a data class and a separate pass.,code smell
+new control  remove duplicate code,code smell
+Introduced path API to deal with resources of both disk and ZIP archives that fixes #52. Classpath and regex support totally reviewed with this API. Also simplify the code  remove useless sample files and dead code.,code smell
+MODE-1334 Ported java sequencer from 2.x -removed old OriginalFormatSourceFileRecorder -refactored test code so that the class file and java file sequencers use the same test files -fixed JDT parser so that 1.5 files (and greater) are properly handled -refactored JDT metadata classes,code smell
+Put duplicate code in a UTIL class,code smell
+WINDUP-523: Fix up some code-style issues and clean up dead code/comments,code smell
+initial attempt for abstraction; druid cluster works with Derby as a default,internal
+Refactored: inlined serialization filter classes to reduce complexity,internal
+#136 Reduce cyclomatic complexity,internal
+Fixed file and directory size calculation in MapView.,internal
+Fixed message ID in topics Added method inheritance test Refactored out NevadoQueueConnection and NevadoTopicConnection,internal
+o Added another test to exhibit inheritance issue o Removed task tags for resolved issues,internal
+Bug 82854.  Reduced the size of the event classes. Fixed some of the copyright information. Removed some unnecessary classes.,internal
+CRUD  reorder  and inheritance of notes on workflow step.,internal
+Added some better commentary  made sure unit tests pass. Added overrides to common methods for the abstraction in SparseMatrix.,internal
+create ThresholdGroup abstraction to make configuration more clear -- reviewed by mhuot,internal
+cleanup abstractions by pulling out State interface  implement StatefulBolt for regular topologies,internal
+Issue 130: fleshed out compute abstraction and hardened TemplateBuilder design,internal
+Added class higerarchy scanning for inheritance handling Moved Parcelable collections into singleton repository,internal
+Changed font size management to preferences,internal
+Expose our own History abstraction to avoid needing so many hacks,internal
+Restructuting to get file layout closer to maven standard  remove complexity of poms,internal
+Correct PiffSampleEncryptionBox behaviour when asked for it's size before being written (after manual creation),internal
+CAY-795 Horizontal inheritance,internal
+Decreased complexity,internal
+added additional device and component abstractions / added device and component event listeners,internal
+SONARCS-601 complexity metrics for functions and classes (#99),internal
+Create alternative inheritance structures for axioms that do and do not need to cache entities and named individuals,internal
+Issue 183: Adds support for detecting multiple barcodes  and simplifies ResultPoint abstraction,internal
+Password complexity  force register and ip verification options  xauth.exclude permissions node to exclude a group/player from having to register  option to block players with blank names from joining the server  players are no longer kicked if someone with the same name joins the server  unregistering a player now notifies them and hides their inventory  registration.pw-min-length -> password.min-length  security.filter.* -> filter.*,internal
+Use object model renderable abstraction to generate layout builders instead of templates w/ spaghetti code. Removed code generation hooks from Directive  should not be possible for directives to insert arbitrary code  as convenient as it may seem. Still not as clean as it could be.,external
+added an InstallTask abstraction so we can use it to resolve profiles / bundles or copy/change files from inside a profile,external
+Reduced NPath Complexity of HostAdressPicker (CheckStyle issue).,external
+HIVE-16392 : Remove hive.warehouse.subdir.inherit.perms and all permissions inheritance logic (Sahil Takiar via Ashutosh Chauhan),external
+Move shell abstraction into scan service package where it is used,code smell
+Analyse - Decomposition View: Extended with a Statistics panel  which shows the numbers ofpackages  classes and lines of code; for Java and C#. Lines of code is the full number of lines  including blanc lines and comments.,external
+"I hate Java. I hate everything about the Java ecosystem. I have moved this project to Maven with no small amount of difficutly. Honestly most of the pom.xml file is just magic to me. I understand parts   but like most things in java I have no idea how its doing most of what its doing. Its a large cryptic XML document with very little human readable meaning. I mean Makefiles were considered arcaic  however you can find a dozen or so simple introductions on how to construct a Makefile that doesn't depend on magic to build your project. Not so with Maven. The only official Documentation is a 100+ line document that has no coorliation to what is actually happening to build your file. Take for example the fact that i know have a whole target folder that has lots of stuff in it. At no place in my pom.xml did I say create a target folder  nor did I say run javac. The closest I came to either of those was set my ""source"" tag to 1.5 ( I only knew to do this because Bukkit does it ). Furthermore the comand to compile the project into a jar ( again no mention of a jar file in the pom.xml ) is to issue a mvn install command. That clearly makes sense. mvn build anyone mvn package  nope mvn install. Its like java heads have a fetish for complexity.",internal
+InternalLockService Extracted. Classes should not depend on final impl classes as it creates tight coupling and makes testing hard.,external
+[#LIB-15] Support Device Extensions by composition alternatively to inheritance,internal
+Update for Sprite class. There is much less difference from Sprite2 now. Performance is just a tiny bit better than Sprite2 on desktop and G1  and the same on Droid.,external
+Static utility class renamed for JUnit compatibility.,external
+Changed implementation of adding/removing/getting relationships on a node in cache layer. Previous implementation worked with sets but that had a performance problem  when doing small modifications to a node (create adding or removing a few  relationships). This could be noticed when node had many relationships (copy on  write on largers sets was just to slow). ,external
+Prismtech JAC#429: performance enhancements,external
+HBX-1467: Move functionality of JDBCMetadataConfiguration into JdbcMetadataSources - Inline JDBCMetaDataConfiguration#getMetadata() in JDBCMetaDataConfiguration#readFromJDBC(),external
+"[BEAM-1184] - Reprojection dialog does not remember values (""Output Parameters"") [BEAM-1183] - Improve reprojection UI usability",external
+Improved reliability by adding priority execution for System Operations.,external
+Standalone Atlas: NetCDF generation performance tuning  using Deque class to make sure refs to Future aren't retained.  Renamed Deque append() method to offerLast() though  so method names are identical to their equivalent in Java 6 Deque - it'll make it easier if we want to switch.  Updated context.xml and loaderContext.xml to use connection pool properties that seem to nullify the pool exhausted exception: due to maxIdle value?,external
+improving performance  especially around FK metadata reading,external
+Functionality moved from from ConnectorGui and ../client/HubConnector into GuiHubConnector,external
+339835: Remove all classes that provide backward compatibility for eclipse & swt 3.4 https://bugs.eclipse.org/bugs/show_bug.cgi?id=339835,external
+Refactored: made RestService protected and moved all functionality to LeanEntity.,external
+Move enable jobs functionality over to the Jobs class  this also now runs code after everything has been initialized,external
+Add counter on issues performance tests,external
+Performance improvements around anonymous entry points.,external
+Bug 283178 [Compatibility] Make actionSets visible/invisible,external
+Re-factored limit functionality for including specific genes in fusions,external
+synchronize the performance optimize from 2.2.1 to main branch,external
+refactoring to improve extensibility,external
+Rename Scenegraph to Scene for simplicity,external
+Improvements to system tests readability,external
+Bug 263090 [legacy] Load the model with commands and handlers Bug 271331 [Compatibility] Fill in the main menu with menu contributions Bug 271332 [Compatibility] Fill in the main menu with action sets,external
+MONDRIAN: rolling back removeoverlappingtuples optimization for distinct count.refer http://forums.pentaho.org/showthread.php?t=59308.By removing this tuple list optimization we get a boost in performance at the cost of losing capability to handle elimination of duplicates and duplicates occur in rare scenarios.,external
+Google App Engine compatibility as a plugin (.jar).,external
+Performance improvements,external
+"Added schema json importer and extended existing import functionality to support Schema JSON. Now you can incrementally extend an existing schema by adding Schema JSON embedded in <script type=""application/schema+json""> tags in Widgets.",external
+Add documentation about E-mail sending functionality. Update JUnit version. Code refactoring. Imports optimizations. Changes to UI of E-mail Templates page. New values for i18n. Validations of E-mail functionality.,external
+GTNPORTAL-155 Merge performance branch ( up to revision 473) into trunk,external
+Improve LoggerManager compatibility,external
+Portlet: Created JBDS7CompatibilityGatein test with artefact updated on nexus,external
+Implement ClassPath class  refactor analysis code to use new ClassPath functionality  start adding verification for individual opcodes,external
+Repackage compatibility,external
+Refactored: removed ConvertEntityToBytes and moved its functionality to GcAwareEntityRepository,external
+Removed dead code  more coverage,code smell
+Adding new CloudStackApi class  adding the rest of CloudStack data classes  moving cloudstack data classes into folder models  Starting work on ec2engine revamp with new api,code smell
+Bug 256359 [metadata] Consider interfaces for Metadata classes,code smell
+Refactored Long Method,code smell
+XWIKI-4906: Includes are not taken into account when renaming a page - Fixed checkstyle warnings and refactored to minimise some of the duplicate code - Added tests,code smell
+More flexible EC2 user data classes.,code smell
+Bug 374605: Unreasonable warning for enum-based switch statements,code smell
+Refactored compiler to be able to select different code generation sinks (single file vs. merged output) - Refactored compiler configuration to remove duplicate code from CLI  Ant task  Maven plug-in - extended Maven plugin to select output mode,code smell
+Refactored call ordering in builder API: extracted duplicate code into method,code smell
+introduced adjuncts from stapler - fixed the feature envy problem in the version computation,code smell
+Area data class,code smell
+reworked metadata classes,code smell
+Flesh out HBaseMetadata class.,code smell
+Bug 260913 [metadata] Move concrete metadata classes to an internal package,code smell
+"MATH-394  MATH-397  MATH-404 Overhaul of the ""optimization"" package. Removed lots of duplicate code. Removed methods referring to the concept of ""iteration"". Removed interface methods to access the number of evaluations of the gradient and Jacobian. Removed all references to ""OptimizationException"" (replaced by ""ConvergenceException""). Javadoc comments updated.",code smell
+[BZ 1089108] File Systems -> Free Space graph off by a factor of 1000. Refactored to a much cleaner solution with no IF logic. Removed some dead code from Measurement helper classes.,code smell
+Removed duplicate code and added outlines for how to add version to the start log entry.,code smell
+removed dead code and some bugs were fixed,code smell
+SOAP-653: Removed duplicate code and fixed compilation errors,code smell
+ISIS-1194: removing more dead code (in FrameworkSynchronizer),code smell
+Factorize duplicate code in SnmpConnection,code smell
+SAM-2151 Allow the instructor to include extra calculations within the calculated question Also includes some cleanup and improvements to the calculated question (reduced duplicate code  etc.),code smell
+Improved ProjectMetadata class.,code smell
+Major refactor. Fiction scripts are now being parsed. There is still some dead code to trim  but now the fiction and parser configuration (vocabulary) are being loaded from the file. I still need to process expressions when verb messages are received.,code smell
+Replaced uses of MetadataConstants with the new Dictionary and Metadata classes,code smell
+removing dead code,code smell
+Remove dead code,code smell
+Composite operators now return SopremoModule instead of ElementarySopremoModule to help optimization and remove duplicate code,code smell
+Modify some method calls  so they meet the LimitOffsetQueryData class.,code smell
+"Fixed bugs 1022 and 1031 reported by Wiktor.  Thanks for the bug report and the patches.  Little different fix  removed duplicate code Wictor discussed his patch created and moved this code to NotifdConfigManager rather than NotificationManager base class.-David",code smell
+Refactored the StringData class to simplify its most common use  which is to render a properly quoted string for use in SQL statements.,code smell
+Rename subject data classes for brevity,code smell
+Finished eliminationg duplicate code,code smell
+CAY-2242 Vertical Inheritance: Cannot Insert Record With Multiple Flattened Relationships,internal
+Bug 103863 - Support encapsulation in SWT layout mechanism,internal
+Block inheritance by default on per-branch permissions.,internal
+refactoring methods to reduce complexity,internal
+DATADOC-63 - Added TypeMapper abstraction to customize how type information is written to a DBObject and retrieved from it.,internal
+Multiple categories on tests  category inheritance  production classes in production package.,internal
+Coupling between object,internal
+Restoring logics without size fields caching,internal
+WAL max size limit was restored. Free space detection bug was fixed. (cherry picked from commit b23efd9),internal
+Added support for hierarchical model inheritance.,internal
+Final modifications to implement new event model that eliminates many couplings.,internal
+Improved Attributes Management using Composition instead of Inheritance,internal
+"[#3481] Help link on the bottom of the page not working [#3527] Lazy init exception when viewing Cherry Pick Request [#3520] Show compound name column in the study annotation viewer [#3528] Add a total Lab Cherry Picks column to the CherryPickRequestSearchResults [#3529] Server crash on export of library images to xls format [#3511] ""Medicinal Chemist User"" Facility Usage Role should be changed to ""Medicinal Chemistry User"" [#3531] Facility User Role ""QPRC User"" is incorrect [#3510] Increase the size of the confidentiality notice on the login page [#3478] Modifications for #3478 - PropertyPathDataFetcher based Search results sort null values higher than non-null values (in PostgreSQL)",external
+Remove User/Item abstractions. Preference values are now floats. Lots of API changes to reflect and rationalize these changes. Replace Preference[] with PreferenceArray implementations for memory efficiency.,internal
+Started refactoring Media Channels by decoupling RTP  RTCP  ICE and DTLS components from the RTP Connection,internal
+fix eomodeler sql gen bugs for: when you only select a single single table inheritance entity (bring in the parents and children) drop tables produces multiple entries for single table inheritance allows null is set for single table inheritance attributes that aren't inherited ,internal
+Use the 'Source' abstraction in the Parser,internal
+#589 - ElasticSearch  Transaction - rename DocStoreMode and batch size methods,internal
+EST-838: new index module  decoupling Indexable from Lease,internal
+work on composition for indexing,internal
+1.9-RC update Fixes issue 313.    - Map max size not enforced.,internal
+The FieldsetPanels option and page size are now created by AbstractListForm.,internal
+"JSP refactoring (backlog.jsp  project.jsp) A visual indication on the backlog of which features are ""must haves"" Rename the ""Stop"" feature to be ""Blocked"" Headings for size and importance columns on backlog Notes with quotation marks are not displayed correctly A column without WIP limits should mouse over with no WIP limit not WIP limit: -1",internal
+make static methods to attempt to decouple inheritance,internal
+reducing the test set size 10x for speed,internal
+2644350 - Patch fixes two bugs; Map behaviour with inheritance; Considering full interface-superclass hierarchy instead of direct interfaces;,internal
+improved programs for getting size of read bytes,internal
+Add cache folder to InFileObjetPersisters. Customizable  tests and inheritance. Issue #103 and issue #98.,internal
+DB abstraction; Added ConversionService approach; Corrected unit tests,internal
+Changes to use the Datasource Abstraction libraries and to move Content Specs to their own database tables.,internal
+[ISPN-59] (Add unit test that verifies number of written bytes) Implemented more efficient marshalling framework based on JBoss Marshaller where size of payloads are reduced and faster code path is used.,internal
+Refactor code for better cohesion,internal
+Fixed bug 1055930 - CouplingBetweenObjectsRule no longer throws a NPE on interfaces,internal
+This update adds additional functionality to dfr-syn in partial fulfillment of dfr-91.  Given the existence of a directory /tmp/dfr-test/ with several files in it and a locally running duracloud instance on 8080 with admin/apw credentials  files are being uploaded  and active and queue status info is being reported.,external
+A few refactorings in anticipation of more formats that needs some common functionality,external
+removed PerformanceStats since we've moved from a loopbased to an event based system Fixed mobs falling through the floor on 'in npc'  Fix hp bug Cleaned up a lot of legacy movement handling and moved them to the session system.,external
+Refactored all operations to use OperationsParams and GenericOptionsParser. Let operations access command line arguments directly for flexibility,external
+Bug 428427 - introduced ResourceBundleProvider to increase extensibility for loading resource bundles,external
+Code review: pulled up some functionality into AbstractMarshallingSession. Reduces several cut-n-pasted code chunks.,external
+refactor  fixes  performance upgrades deleted feedback factor,external
+Implements Editors functionality  single ok but infinite editors partially First shot of serialisation of the MapContext in the GUI (the map is automatically saved by the map editor),external
+Fixed unit test to reflect current core snapshot functionality.,external
+Updates to events and session list functionality.  Started adding twitter feed for events.,external
+Improved robustness for download failure cases,external
+HV-912 Reducing accessibility of some classes and methods,external
+Bug 445802 - Heavy progress reporting degrades performance,external
+Massively improved efficiency and performance of Criteria folder handling.,external
+make performance meter factory configurable through .options,external
+initial take on the new enunciate engine run() functionality,external
+Added functionality to handle InputStreams. (useful when loading JarEntries),external
+Enhanced WKTShapeParser for extensibility.,external
+major restructuring on the way to good separation of functionality,external
+Refactor ProcessInstanceUtil & StartProcessInstanceCmd for extensibility,external
+improve mysql sql parser performance,external
+Added functionality to PrivateMessage for either supplying username/password OR basic auth token.,external
+[CORE] Add RANDOM functionality and more filters.,external
+Refactoring of JML generation related utility functionality to promote reuse,external
+(PLF-4239) JS of Getting Started portlet not good for performance.,external
+Many robustness improvements to the downloader,external
+Inproved I/O Manager performance.,external
+Additions: zip thread-safe locale scheduler bugfixes performance improvements,external
+#943 - Refactor internals - Performance tweak / tidy for WhoCreated  WhoModified on OneToMany connections. #942,external
+Finalized Sorting  Hashing and Resettable logic. Baseline performance passed.,external
+Implement new  high-performance cipher in native code. Currently available only for Linux-x64  other platforms will fallback to Java cipher.,external
+Readability: changed populateFedoraRoles to populateFedoraAttributes and updated comments/javadocs  since the method has the effect of populating FEDORA_AUX_SUBJECT_ATTRIBUTES with fedoraRole in additional to all other subject attributes.,external
+Fixed profile experience UI and functionality,external
+Refactored Generic CertificateStore + SslUtil and CertificateDialog classes.  Updated API and removed dead code. ,code smell
+refactor duplicate code for playing lands from grave,code smell
+SONAR-7705 remove dead code and dead sql in purge,code smell
+DRY'd up ShrinkWrapUtil.  Removed dead code.,code smell
+renamed Crew and Squad classes  handles Squads now  moved String configs to UpdateMapData class,code smell
+DDF-1219 Collapsing  normalizing  and refactoring unit tests. There are more opportunities for refactoring  but this represents approximately a 15% reduction in class size and removes much of the duplicate code.,code smell
+STS-3056: introduced interface for annotation metadata classes to allow introduction of adapters,code smell
+another pass of data classes  and some cleanup in client code,code smell
+MONDRIAN: removed dead code  added package documentation for rolap package  activated tests for FastBatchingCellReader,code smell
+Remove duplicate code in new metrics code,code smell
+Bugfixes and more Bukkit abstraction,internal
+TEZ-558. Optionally send broadcast output in the DataMovementEvent if the size of the data is small. (sseth),internal
+Short the length of the field_type in order to reduce the size of the document.,internal
+fixes #4568. Nearcache eviction will run again if cache size is not below under max size in first run.,internal
+Full support for X_Elemental injection of HtmlTemplate inheritance. ,internal
+Create abstraction for definition references so it can be used by both ComponentDefRef and ModuleDefRef. (DefinitionReferenceImpl  BaseDefRefHandler),internal
+ROO-1251: Method naming conventions provided by Json addon need to be adjusted to take inheritance relationships into account,internal
+fixed bug 201861 loop in inheritance caused stack overflow.,internal
+Reduced coupling by extracting an interface from the StateFlowGraph,internal
+CDITCK-390 - Extend InterceptorBindingInheritanceTest,internal
+Various minor fixes and performance improvement.,external
+1) file data utilities - add utility function 2) improve context performance,external
+New patch from Chris Wiebe to boost the performance of the TypeInfo  a separation is done via the Core and UI to provide more flexibility for clients using this service.,external
+Private: Added functionality to end game.,external
+SONAR-4087 fix compatibility of Tinkerpop Blueprints with Java 5,external
+SOC-2371 | Avatar : Native english usability review,external
+Big refactoring to improve performance at N levels: - Serialization now minimizes the creation of temporary small objects like Strings. All serialization method receives a StringBuilder and append data directly to it - OLazyRecordSet now keeps the items always sorted for faster retrieval of items,external
+WICKET-4802 Add functionality to be able to export DataTable content,external
+Removing AS2 functionality from oxalis-outbound.,external
+Changed to inherit from PackageMemberAnnotation  from which we get some implementation functionality.  Split SignatureConverter into its own top level class.,external
+ Rename *.new* packages back to what they should be  remove dead code  from the old packages - mapreduce module - tez-engine module (part of  TEZ-398). (sseth),code smell
+Add SVM metadata classifier,code smell
+Refactored duplicate code into separate method.,code smell
+Removed a lot of duplicate code in the CommandManagers Added missing cmds. Removed useless code.,code smell
+Massive update. - Infractions now is split into 3 parts. -- **Base** contains the main  cross-platform data classes that are shared between all implementations. -- **Bungee** is the default implementation as a BungeeCord plugin. -- **Spigot API** is an API that exists to allow for plugins to hook into Infractions from their spigot/bukkit plugins. - It is intended that individual servers will have their own take on Infractions  and thus a mere config file is unsuited for the majority of features (a la the Chitchat plugin). -- In this case  there is no default spigot/bukkit implementation  only an API that exists for accessing/manipulating the data. - Groundwork has been laid for the bungee plugin  various commands will be shared between servers. -- Many of these commands will probably be moved to the spigot API or completely removed (as we want each server to have their own implementation). - A default/barebones implementation for spigot/bukkit *may* exist in the future.,code smell
+ISIS-993: optional left and right columns either side of tab groups; tweaks to CSS; HasPath for all elements of the layout metadata classes (working towards support for persistence of widget state and hints),code smell
+RepositoryUtil: Remove dead code found during testing,code smell
+Fixed size calculation bug in LongerShortString  test to match Work around a similar bug in ShortArray  needs more work Fixed size calculation bug in WriteTransaction determining PropertyRecord suitability for changed property  test to match Assertions for certain sensitive paths in PropertyBlock/Record Some more tests Minor formatting changes,internal
+Code review tweaks: Event inheritance-based triggering protected over private Renamed and repackaged event related classes Comments,internal
+increasing default index page size to 100; default counter page size to 1000,internal
+Validate/Define: One InheritanceConvention rule instead of two. Conversion included in 'open workspace process' from old workspaces to new format.,internal
+Cleaned up abstraction.,internal
+introduction of relative_v0_randomization attribute in TRAFFIC_COMPOSITION for distributing the desired speed randomly. CAs are casted to integer. ,internal
+Fixed size update problem in Controls Demo TextSizeTab.,internal
+inheritance for make life easier during navigation tests,internal
+reducing complexity by refactoring,internal
+Refactored service integration tests to use inheritance. (v1 TK-09243),internal
+Abstraction and work on new data sourcing.,internal
+Double Inventory Access From Chests Native Double Inventory Class Fixed Packet Size Calculations More Widget Changes Latest MCP HD Texture Support for MCP,internal
+Added additional model abstraction to allow a progress button's task to be exchanged during runtime.,internal
+"Implemented between in LuceneSerializer. Fixed phrase queries (like query ""foo bar"" is transformed to ""+*foo* +*bar*""  this is as close as I could get result-wise). Improved LuceneSerialize encapsulation by splitting into methods. Updated tests in SimpleTest.",internal
+Inline method for decoupling. Not used anywhere else yet.,internal
+JCLOUDS-458: Added Blobstore Abstraction,internal
+Added functionality to fetch the approximated (VDM node) location of an IR node.,external
+Fixing BotOperation to allow for testability for formatMessage,external
+cleanup - javadoc   improved code readability   replaced full object stub with mockito's mock,
