@@ -16,7 +16,7 @@
     }
 
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 800px}
+    .row.content {height: 1060px}
 
     /* Set gray background color and 100% height */
     .sidenav {
@@ -56,7 +56,7 @@
 <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html">Home</a></li>
-        <li class="active"><a href="ESEM19_Experiment.html">Experiment</a></li>
+        <li class="active"><a href="ASE20_Experiment.html">Experiment</a></li>
       </ul>
     </div>
   </div>
@@ -68,41 +68,47 @@
      <h3>Collected Data</h3>
      <div class="well">
         <p></p>
-      <p><a href="./Commit_InternalQA_Filtered.sql">Commits Containing Internal Quality Attributes</a></p>
+      <p><a href="./RefactoringTypes.csv">Refactoring Types Prediction</a></p>
     </div>
-  <div class="well">
+	<div class="well">
         <p></p>
-      <p><a href="./Commits_InternalQA_Refactorings.sql">Refactoring Operations per Commit</a></p>
-    </div>
-   <div class="well">
-        <p></p>
-      <p><a href="./Metrics_Values_IQA.xlsx">Metric Values per Quality Attribute</a></p>
-    </div>
-
-    <div class="well">
-        <p></p>
-      <p><a href="./Commit_Before_After_Refactorings.csv">Commits before and after Refactoring</a></p>
+      <p><a href="./Refactoring_Types_WebService.xlsx">Automated Refactoring Types Prediction (Web Service)</a></p>
     </div>
     </div>
 
 
     <div class="col-sm-8 text-left">
-      <h1>On the Impact of Refactoring on the Relationship between Quality Attributes and Design Metrics</h1>
+      <h1>On the Documentation of Refactoring Types</h1>
       <hr>
-      <p>In this empirical study, we aim at identifying, among the various quality models presented in the literature, the ones that are more in-line with the
-developer's vision of quality optimization, when they explicitly mention that they are refactoring to improve them. We extract a large corpus of design-related refactoring
-activities that are applied and documented by developers during their daily changes from 3,795 curated open source
-Java projects. In particular, we extract a large-scale corpus of structural metrics and anti-pattern improvement changes, from
-which we identify 1,245 quality improvement commits with their corresponding refactoring operations, as perceived by software engineers. Thereafter, we empirically analyze the impact of these refactoring operations on a set of common state-of-the-art design quality metrics.</p><br>
-      <p>More specifically, the research question that we investigated is:</p>
-      <p><strong>RQ. Do the developer perception of quality improvement align with the quantitative assessment of code quality?</strong></p>
+      <p>In this study, we propose an approach to
+challenges the ability of refactoring documentation,
+written in commit messages, to adequately predict the refactoring
+types, performed in code changes at the commit level. Specifically, we combine the N-Gram TF-IDF feature selection with multiclass classifiers to build our model.
+We challenge our model using a total of 5004 commit messages extracted from well engineered open-source projects.</p><br>
+      <p>More specifically, the research questions that we investigated are:</p>
+	  <p><strong>RQ1. How effective is our supervised learning in predicting
+the type of refactoring?</strong></p>
+<p>We performed an automatic
+approach to predict the refactoring
+types to determine if the classification
+using machine learning techniques can result in high accuracy.</p>
+<p><strong>RQ2. How do our model compare with keyword-based
+classification?</strong></p>
+<p>Answering this research question would shed light on whether the prediction
+of refactoring types is a learning problem. We hypothesize that
+if learning algorithms cannot outperform a string matching
+algorithm, then there is no need for proposing such framework.</p>
 </br>
+<div class="videos-container">
+                <h3 style="text-decoration: underline">How to use our deployed Azure web service?</h3>
+				<iframe width="550" height="305" src="https://www.youtube.com/embed/Pf9J2I_7ejc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></br>
 <p>If you are interested to learn more about the process we followed, please refer to our paper.</p>
 <hr>
 
       <h3>Related Paper</h3>
-      <p>Eman Abdullah AlOmar, Mohamed Wiem Mkaouer, Ali Ouni, and Marouane Kessentini, "On the impact of refactoring on the relationship
-between quality attributes and design metrics", the International Symposium on Empirical Software Engineering and Measurement (ESEM'2019). <a href=".\ESEM_Manuscript.pdf">[preprint]</a></p>
+      <!--<p>Eman Abdullah AlOmar, Mohamed Wiem Mkaouer, and Ali Ouni, "Toward the Automatic Classiffcation of Self-Affirmed
+Refactoring", the Journal of Systems and Software (JSS'2020). <a href=".\JSS_Manuscript.pdf">[preprint]</a></p>-->
     </div>
     <div class="col-sm-2 sidenav">
     </div>
