@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180076082-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180076082-1');
+</script>
+
+  <title>Refactoring Lab</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+   div.box{
+text.align: center;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+        .button {
+    background-color: #555555;;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="IWoR19_index.html">Home</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Can Refactoring be Self-Affirmed?</h1>
+  </div>
+</div>
+
+
+<blockquote><h2>Research Questions and Findings</h2></blockquote>
+
+<blockquote><strong>RQ1: What patterns do developers use to describe their
+refactoring activities?</strong></blockquote>
+<blockquote><p>Developers tend to use a variety of textual
+patterns to document their refactoring activities, such as "refactor", "move", "extract", "reorganize", and "fix". These patterns could provide either (1) a generic description/
+motivation of the refactoring activity such as "optimize the code design", "improving code readability", and "fix long method", or (2) a specific refactoring
+operation name following Fowler's names such as "extract method", "extract class", and "extract interface".</p></blockquote>
+<div style="text-align: center" >
+
+<img src="./Images/pattern.PNG" height="900" width="900"></div>
+</div>
+</div>
+</div>
+<hr>
+
+
+
+
+<blockquote><strong>RQ2: What are the quality issues that drive developers to
+refactor?</strong></blockquote>
+<blockquote><p>Our findings indicate that developers frequently state their intention behind the application of refactorings. They address quality issues that can be
+related to : (1) internal quality attributes, (2) external quality attributes, or (3) code smells. Furthermore,
+developers occasionally mention their refactoring strategy or operation performed with regard of addressing
+the quality issue.</p></blockquote>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Internal Quality Attributes
+</div>
+        <div class="panel-body"><img src="./Images/internalQA-wordcloud.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">External Quality Attributes
+</div>
+        <div class="panel-body"><img src="./Images/externalQA-wordcloud.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-success">
+        <div class="panel-heading">Code Smell
+</div>
+        <div class="panel-body"><img src="./Images/codesmell-wordcloud.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+  </div>
+</div><br>
+<hr>
+
+
+
+<blockquote><strong>RQ3: What are the top-10 patterns developers use to
+describe quality issues in their commits?</strong></blockquote>
+<blockquote><p>Our findings indicate that while there are no
+patterns that are restricted to a specific quality issue, developers occasionally do link the refactoring of a
+quality issue with a specific operation e.g., associating the correction of a feature envy by the operation move method.</p></blockquote>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-danger">
+        <div class="panel-heading">Top-10 Popular Patterns</div>
+        <div class="panel-body"><img src="./Images/topkeyword-wordcloud_4.PNG" class="img-responsive" style="width:95%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+
+<hr>
+
+
+
+
+<blockquote><strong>RQ4: Do Commits containing the label Refactor indicate
+more refactoring activity than those without the label?</strong></blockquote>
+<blockquote><p>Our findings confirm that developers do not exclusively rely on the pattern "refactor" to
+describe refactoring activities. However, we found that developers do document their refactoring activities in commit messages with a variety of patterns that we identified in this study.</p></blockquote>
+
+<!--<div style="text-align: center" >
+
+<img src="./Images/RQ4.PNG" height="800" width="900"></div>-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-danger">
+        <div class="panel-heading"></div>
+        <div class="panel-body"><img src="./Images/RQ4.PNG" class="img-responsive" style="width:95%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+</footer>
+<!-- Google Analytics -->
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');ga('create','UA-180076082-1','auto');ga('send','pageview');</script>
+</body>
+</html>

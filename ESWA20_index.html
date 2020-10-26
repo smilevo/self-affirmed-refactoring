@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180076082-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180076082-1');
+</script>
+
+  <title>Refactoring Lab</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 1000px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+		<li class="active"><a href="ESWA20_dataset.html">Dataset</a></li>
+        <!--<li class="active"><a href="ESWA20_Experiment.html">Experiment</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid text-center">
+  <div class="row content">
+
+    <div class="col-sm-2 sidenav">
+     <h3></h3>
+
+    </div>
+
+
+    <div class="col-sm-8 text-left">
+      <h1>How We Refactor and How We Document it? On the Use of Supervised Machine Learning Algorithms to Classify Refactoring Documentation</h1>
+      <hr>
+      <p>Refactoring, as coined by William Obdyke in 1992, is the art of optimizing the syntactic design of a software system without altering its external behavior. Refactoring was also cataloged by Martin Fowler as a response to the existence of defects that negatively impact software design. Since then, a significant amount of research in refactoring has presumed that refactoring is primarily motivated by the need to improve system structures. However, recent studies have shown that developers may incorporate refactoring strategies in other development-related activities that go beyond improving the design. Unfortunately, these studies are limited to developer interviews and a reduced set of projects.
+
+To cope with the above-mentioned limitations, we aim to better understand what motivates developers to apply a refactoring by mining and automatically classifying 111,884 commits containing refactoring activities, extracted from 800 open source Java projects. We trained a multi-class classifier to categorize these commits into 3 novel categories, namely, Internal Quality Attributes, External Quality Attributes, and Code Smells, along with the traditional Bug Fix and Functional categories. Such classification enables to quantification of how much each of these categories trigger refactoring activities in general, and challenges the original definition of refactoring, being exclusive to improving software design and fixing code smells. Furthermore, to better understand our classification results, we qualitatively analyzed commit messages to extract textual patterns that developers regularly use to describe their refactoring activities.
+
+The results of our empirical investigation show that (1) fixing code smells is not the main driver for developers to refactoring their code bases. As explicitly mentioned by the developers in their commits messages, refactoring is solicited for a wide variety of reasons, going beyond its traditional definition, such as reducing the software’s proneness to bugs, easing the addition of functionality, resolving lexical ambiguity, enforcing code styling, and improving the design’s testability and reusability; (2) the distribution of refactoring operations differ between production and test files. Operations undertaking production is significantly larger than operations applied to test files; (3) developers use a variety of patterns to purposefully target refactoring-related activities; (4) developers occasionally explicitly mention the motivation behind their refactoring strategies; (5) the textual patterns, which we extracted in this paper, provide a better coverage for how developers document their refactorings.</p><br>
+      <p>More specifically, the research questions that we investigated are:</p>
+      <p><strong>RQ1. What is the purpose of the applied refactorings?</strong></p>
+      <p>While previous surveys analyze how developers apply refactorings in varying development contexts, none of them have measured the ubiquity of these varying contexts in practice. Therefore, we quantify the distribution of refactorings performed in varying development contexts to augment our understanding of refactorings in theory vs. practice.</p>
+	  <p><strong>RQ2. Do software developers perform different types of refactoring operations on test code and production code between categories?</strong></p>
+      <p>This question further explores the findings of the classification to see to what extent developers refactor production files differently from test files.</p>
+	  <p><strong>RQ3. What patterns do developers use to describe their refactoring activities?</strong></p>
+      <p>Since there is no consensus on how to formally document the act of refactoring code, we intend to extract (from commit messages) words and phrases commonly used to document refactoring. Such information is useful from many perspectives: it allows the understanding of the rationale behind the applied refactorings, e.g., fixing code smells or improving specific quality attributes. Also, it reveals what refactoring operations tend to be typically documented, and whether developers explicitly mention them as part of their documentation. Little is known about how developers document refactoring as previous studies mainly rely on the keyword refactor to annotate such documentation.</p>
+	  <p><strong>RQ4.Do commits containing the label Refactor indicate more refactoring activity than those without the label?</p>
+	  <p>We revisit the hypothesis raised by Murphy-Hill et al. about whether developers use a specific pattern, i.e., “refactor” when describing their refactoring activities.</p>
+</br>
+<p>If you are interested to learn more about the process we followed, please refer to our paper.</p>
+<hr>
+<!--
+<div style="text-align: center" >
+
+<img src="./pattern.PNG" height="1000" width="1000"></div>
+-->
+<!--
+<div style="text-align: center" >
+
+<?php include_once "graph.php" ?>
+
+</div>
+<div style="text-align: center" >
+
+<div id="SecondHTML">
+</div>
+</div>
+<script>
+$(function()
+{
+$("#SecondHTML").load("graph.html");
+});
+
+</script>
+<div style="text-align: center" >
+
+<hr>
+<div w3-include-html="graph.html"></div>
+<script>
+w3IncludeHTML();
+</script>
+</div>
+-->
+
+      <h3>Related Paper</h3>
+      <p>Eman Abdullah AlOmar, Anthony Peruma, Mohamed Wiem Mkaouer, Christian Newman, Ali Ouni, and Marouane Kessentini "How we refactor and how we document it? On the use of supervised machine learning algorithms to classify refactoring documentation", the Expert Systems with Applications (ESWA'2020). <a href="./preprint/ESWA20_preprint.pdf">[preprint]</a></p>
+    </div>
+    <div class="col-sm-2 sidenav">
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p></p>
+</footer>
+<!-- Google Analytics -->
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');ga('create','UA-180076082-1','auto');ga('send','pageview');</script>
+</body>
+</html>
