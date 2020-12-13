@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180076082-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180076082-1');
+</script>
+
+  <title>Refactoring Lab</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 1060px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index2.html">Home</a></li>
+        <!--<li class="active"><a href="JSS19_Experiment.html">Experiment</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid text-center">
+  <div class="row content">
+
+    <div class="col-sm-2 sidenav">
+     <h3>Collected Data</h3>
+	 	<div class="well">
+        <p></p>
+      <p><a href="./Data/satd_dataset.sql">SATDBailiff dataset</a></p>
+    </div>
+     <div class="well">
+        <p></p>
+      <p><a href="./Data/satd_sample.xlsx">SATDBailiff Sample Validation</a></p>
+    </div>
+  <div class="well">
+        <p></p>
+      <p><a href="./Data/Maldonado Study Replication.zip">Maldonado Study Replication</a></p>
+    </div>
+	<div class="well">
+        <p></p>
+      <p><a href="./Data/">Large-Scale dataset</a></p>
+    </div>
+    </div>
+
+
+    <div class="col-sm-8 text-left">
+      <h1>SATDBailiff - Mining and Tracking Self-Admitted Technical Debt</h1>
+      <hr>
+      <p>Self-Admitted Technical Debt (SATD) is a metaphorical concept to describe the self-documented addition of technical debt to a software project in the form of source-code comments.SATD can linger in projects and degrade source-code quality, but can also be more visible than unintentionally added or undocumented technical debt. Understanding the implications of adding SATD to a software project is important for developers to understand the quality trade-offs they are intentionally making. However, little has been done to establish a quality and large scale empirical history for SATD in software projects. SATDBailiff is a first attempt at an empirical aggregation tool for collecting SATD instances from Git repositories. The tool mines empirical histories of SATD comments by looking at all versions of source code, and identifying SATD using a previously published Natural Language Processing tool designed specifically for SATD detection.</p>
+	  <p><strong>What is SATDBailiff?</strong></p>
+<p>SATDBailiff is a Java tool designed to mine the empirical history of SATD instances from Java project Git repositories on a large scale. This is done with the goal of tracking the additions, removals, and changes to SATD instances that occur during the process of software development. SATDBailiff’s output can be used to better understand the prominence of SATD in software projects at different points over the course of those projects’ lifetimes, while also offering new ways to interpret and visualize those SATD instances. While SATDBailiff accomplishes its objective using a state-of-the-art classification model and a scalable output format, the tool was also designed with modularity in mind, to allow for the implementation of new classification models and output formats.
+
+</p>
+<p>
+<ul>
+<li>SATDBailiff code:</i><a> https://github.com/smilevo/SATDBailiff</a> 
+<li>SATDBailiff documentation:</i><a> https://github.com/smilevo/SATDBailiff/blob/master/readme.md</a>
+<li>SATDBailiff docker image:</i><a> https://hub.docker.com/r/mihalbsh/satdbailiff</a>
+</ul>
+</p>
+</br>
+<div class="videos-container">
+                <h3 style="text-decoration: underline">How to run SATDBailiff?</h3>
+<iframe width="600" height="320" src="https://www.youtube.com/embed/yf0cvyvaY94" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></br>
+<p>If you are interested to learn more about the process we followed, please refer to our paper.</p>
+<hr>
+
+      <h3>Related Paper</h3>
+      <p>"SATDBailiff - Mining and Tracking Self-Admitted Technical Debt", the Science of Computer Programming (SCP'2020). <a href=".\">[preprint]</a></p>
+    </div>
+    <div class="col-sm-2 sidenav">
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p></p>
+</footer>
+<!-- Google Analytics -->
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');ga('create','UA-180076082-1','auto');ga('send','pageview');</script>
+</body>
+</html>
