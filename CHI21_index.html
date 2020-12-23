@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180076082-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180076082-1');
+</script>
+
+  <title>Refactoring Lab</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 3200px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index2.html">Home</a></li>
+        <!--<li class="active"><a href="JSS19_Experiment.html">Experiment</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid text-center">
+  <div class="row content">
+
+    <div class="col-sm-2 sidenav">
+     <h3>Collected Data</h3>
+	 	<div class="well">
+        <p></p>
+      <p><a href="./Data/Dataset_5326_deployed.csv">Accessibility Review (Manual Labeling)</a></p>
+    </div>
+     <div class="well">
+        <p></p>
+      <p><a href="./Data/Automating Detection of Accessibility Reviews [Predictive Exp.]-12_16_2020 18_11_58.xlsx">Automated Accessibility Review Identification (Web Service)</a></p>
+    </div>
+	<div class="well">
+        <p></p>
+      <p><a href="https://gallery.cortanaintelligence.com/Experiment/Automating-Detection-of-Accessibility-Reviews-2">Azure ML Studio (Experiment)</a></p>
+    </div>
+	   <div class="well">
+        <p></p>
+      <p><a href="./Data/CHI_webservice.py">Python code (Web Service)</a></p>
+    </div>
+    </div>
+
+
+    <div class="col-sm-8 text-left">
+      <h1>Finding the Needle in a Haystack: On the Automatic Identification of Accessibility User Reviews</h1>
+      <hr>
+      <p>
+In recent years, mobile accessibility has become an important trend with the goal of allowing all users
+the possibility of using any app without many limitations. User reviews include insights that are useful
+for app evolution. However, with the increase in the amount of received reviews, manually analyzing
+them is tedious and time-consuming, especially when searching for accessibility reviews. The goal of
+this paper is to support the automated identification of accessibility in user reviews, to help technology
+professionals in prioritizing their handling, and thus, creating more inclusive apps. Particularly, we
+design a model that takes as input accessibility user reviews, learns their keyword-based features, in
+order to make a binary decision, for a given review, on whether it is about accessibility or not. The
+model is evaluated using a total of 5326 mobile app reviews. The findings show that (1) our model
+can accurately identify accessibility reviews, outperforming two baselines, namely keyword-based
+detector and a random classifier; (2) our model achieves an accuracy of 80.7% with relatively small
+training dataset; however, the accuracy improves as we increase the size of the training dataset.
+      </p>
+<p>More specifically, the research questions that we investigated are:</p>
+      <p><strong>RQ1. To what extent machine learning models can accurately distinguish accessibility reviews
+from non-accessibility reviews?</strong></p>
+      <p>To answer this research question, we rely on a manually curated dataset of 2663
+accessibility reviews, which we augment with another 2663 non-accessibility reviews.
+Then we perform a comparative study between state-of-the-art binary classification
+models, to identify the best model that can properly detect accessibility reviews, from
+non-accessibility reviews.</p>
+	  <p><strong>RQ2. How effective is our machine learning approach in identifying accessibility reviews?</strong></p>
+      <p>To answer this research question, we rely on a manually curated dataset of 2663
+accessibility reviews, which we augment with another 2663 non-accessibility reviews.
+Then we perform a comparative study between state-of-the-art binary classification
+models, to identify the best model that can properly detect accessibility reviews, from
+non-accessibility reviews.</p>
+	  <p><strong>RQ3. What is the size of the training dataset needed for the classification to effectively identify accessibility reviews?</strong></p>
+      <p>In this research question, we empirically extract the minimum number of training
+instances, i.e., accessibility reviews, needed for our best performing model, to achieve
+its best performance. Such information is useful for practitioners, to estimate the
+amount of manual work needs to be done (i.e., preparation of training data) to design
+this solution.</p>
+</br>
+<hr>
+ <h1>Web Service</h1>
+<div class="videos-container">
+                <h3 style="text-decoration: underline">How to use our deployed Azure web service?</h3>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/9NNXg5nEKbE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></br>
+
+        <h3 style="text-decoration: underline">Web Service Request and Response</h3>
+        <pre><code>
+    Request
+    -------------
+{
+  "Inputs": {
+    "input1": {
+      "ColumnNames": [
+        "review_text"
+      ],
+      "Values": [
+        [
+          "value"
+        ],
+        [
+          "value"
+        ]
+      ]
+    }
+  },
+  "GlobalParameters": {}
+}
+
+    Response
+    -------------
+{
+  "Results": {
+    "output1": {
+      "type": "DataTable",
+      "value": {
+        "ColumnNames": [
+          "Scored Labels"
+        ],
+        "ColumnTypes": [
+          "String"
+        ],
+        "Values": [
+          [
+            "value"
+          ],
+          [
+            "value"
+          ]
+        ]
+      }
+    }
+  }
+}
+</code></pre>
+<h3 style="text-decoration: underline">Python script to call the Web Service from your computer</h3>
+ <pre><code>
+import urllib2
+# If you are using Python 3+, import urllib instead of urllib2
+
+import json 
+
+
+data =  {
+
+        "Inputs": {
+
+                "input1":
+                {
+                    "ColumnNames": ["review_text"],
+                    "Values": [ [ "value" ], [ "value" ], ]
+                },        },
+            "GlobalParameters": {
+}
+    }
+
+body = str.encode(json.dumps(data))
+
+url = 'https://ussouthcentral.services.azureml.net/workspaces/41654fb2238f449daf8dc7954f22ee9b/services/128f31001e794cd19ab042010d1f4a0e/execute?api-version=2.0&details=true'
+api_key = 'FrykEwu75lBeqhdG/Iz8NdwmY0GOrAJVNl+f+BcXCPChMrDkYRL4S/F7E33YxFRkJrese1giJ9NrWOBxJjWgag==' # API key for the web service
+headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
+
+req = urllib2.Request(url, body, headers) 
+
+try:
+    response = urllib2.urlopen(req)
+
+    # If you are using Python 3+, replace urllib2 with urllib.request in the above code:
+    # req = urllib.request.Request(url, body, headers) 
+    # response = urllib.request.urlopen(req)
+
+    result = response.read()
+    print(result) 
+except urllib2.HTTPError, error:
+    print("The request failed with status code: " + str(error.code))
+
+    # Print the headers - they include the requert ID and the timestamp, which are useful for debugging the failure
+    print(error.info())
+
+    print(json.loads(error.read()))                 
+</code></pre>
+
+<p>If you are interested to learn more about the process we followed, please refer to our paper.</p>
+<hr>
+
+      <h3>Related Paper</h3>
+      <p>"Finding the Needle in a Haystack: On the Automatic Identification of Accessibility User Reviews", the international conference on Human-Computer Interaction (CHI'2021). <a href=".\">[preprint]</a></p>
+    </div>
+    <div class="col-sm-2 sidenav">
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p></p>
+</footer>
+<!-- Google Analytics -->
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');ga('create','UA-180076082-1','auto');ga('send','pageview');</script>
+</body>
+</html>
