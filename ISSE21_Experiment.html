@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180076082-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180076082-1');
+</script>
+
+  <title>Refactoring Lab</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+   div.box{
+text.align: center;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+        .button {
+    background-color: #555555;;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="ICSR20_index.html">Home</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Refactoring for Reuse: An Empirical Study</h1>
+  </div>
+</div>
+
+
+<blockquote><h2>Research Questions and Findings</h2></blockquote>
+
+<blockquote><strong>RQ1: Do developers refactor code differently for the purpose of improving
+reusability?</strong></blockquote>
+<blockquote><p>We have shown that the distribution of refactoring types,
+applied in the context of reusability, is different from the distribution
+of refactoring types in mainstream development. In the refactorings per-
+formed to improve reusability, files are subject to more design level
+types of refactorings (e.g., Move Method, Extract Method) in general,
+and inheritance-related refactorings (e.g., Pull-up Method, Pull-up At-
+tribute) in particular, while in other refactorings, files tend to undergo more
+renames (e.g., Rename Method, Rename Variable) and data type changes
+(e.g., Change Variable Type) to identifiers. Reusability refactorings heavily
+impact, high-level code elements, such as packages, classes, and methods,
+while typical refactorings, impact all code elements, including identifiers,
+and parameters.</p></blockquote>
+<div class="container text-center">    
+  <br>
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Distribution of code elements in reusability refactoring commits</div>
+        <div class="panel-body"><img src="./Images/ICSR_CodeElementDist.PNG" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<hr>
+
+
+<blockquote><strong>RQ2: What is the impact of reusability refactorings on structural metrics?</strong></blockquote>
+
+<blockquote><p>When developers refactor their code for the purpose of
+reusability, we found that the number of methods significantly increased,
+but the majority of the state-of-the-art metrics did not capture any
+improvement, or captured non significant improvement.</p></blockquote>
+
+<div style="text-align: center" >
+
+</div>
+</div>
+</div><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">LCOM
+</div>
+        <div class="panel-body"><img src="./Images/ICSR_LCOM.PNG" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">CBO
+</div>
+        <div class="panel-body"><img src="./Images/ICSR_CBO.PNG" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-success">
+        <div class="panel-heading">WMC
+</div>
+        <div class="panel-body"><img src="./Images/ICSR_WMC.PNG" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">DIT
+</div>
+        <div class="panel-body"><img src="./Images/ICSR_DIT.PNG" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">NOC
+</div>
+        <div class="panel-body"><img src="./Images/ICSR_NOC.PNG" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-success">
+        <div class="panel-heading">RFC
+</div>
+        <div class="panel-body"><img src="./Images/ICSR_RFC.PNG" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">LOC
+</div>
+        <div class="panel-body"><img src="./Images/ICSR_LOC.PNG" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">CC
+</div>
+        <div class="panel-body"><img src="./Images/ICSR_CC.PNG" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<blockquote><strong>RQ3: What triggers developers to refactor the code for the purpose of code reuse?</strong></blockquote>
+
+<blockquote><p>Code reuse helps with various software development activities. Our analysis found that the extraction of reusable component leads the rationale behind reuse-related code changes. Refactoring reusable code also helps with API management, duplicate code removal, changes to visibility, test code reorganization, and implementing design patterns.</p></blockquote>
+<div class="container text-center">    
+  <br>
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Distribution of code reuse context in reusability refactoring commits.</div>
+        <div class="panel-body"><img src="./Images/ISSE_taxonomy.PNG" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<hr>
+
+
+
+<footer class="container-fluid text-center">
+</footer>
+<!-- Google Analytics -->
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');ga('create','UA-180076082-1','auto');ga('send','pageview');</script>
+</body>
+</html>
