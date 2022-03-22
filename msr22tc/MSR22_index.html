@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180076082-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180076082-1');
+</script>
+
+  <title>Refactoring Lab</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 2500px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../index.html">Home</a></li>
+		<li><a href="MSR22_dataset.html">Dataset</a></li>
+		<li><a href="MSR22_taxonomy.html">Thematic Analysis</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid text-center">
+  <div class="row content">
+
+    <div class="col-sm-2 sidenav">
+     <h3></h3>
+
+    </div>
+
+
+    <div class="col-sm-8 text-left">
+      <h1>Code Review Practices for Refactoring Changes: An Empirical Study on OpenStack</h1>
+      <hr>
+      <p>Understanding the practice of refactoring code review is
+of paramount importance to the research community and industry. Although Modern Code Review (MCR) is widely adopted in open-source and industrial projects, the relationship between code review and refactoring practice remains largely unexplored. In this study, we performed a quantitative and qualitative study to investigate the challenges faced by developers when reviewing refactorings.</p><br>
+      <p>More specifically, the research questions that we investigated are:</p>
+      <p><strong>RQ1. How do refactoring reviews compare to non-refactoring reviews in terms of code review efforts?</strong></p>
+      <p>This research question compares refactoring and non-refactoring reviews based on set of metrics. As we calculate the metrics of refactoring and non-refactoring reviews, we want to distinguish, for each metric, whether the variation is statistically significant. </p>
+	  <p><strong>RQ2. What are the criteria that mostly associated with refactoring review decision?</strong></p>
+      <p>This research question explores the review criteria to assess refactoring changes.</p>
+</br>
+<hr>
+ <h3>Example of a code review from OpenStack project using Gerrit:</h3>
+ 
+ <div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-danger">
+        <div class="panel-heading"></div>
+        <div class="panel-body"><img src="./Data/OS_example.PNG" class="img-responsive" style="width:95%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<hr>
+ <h3>Approach:</h3>
+ 
+ <div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-danger">
+        <div class="panel-heading"></div>
+        <div class="panel-body"><img src="./Data/Approach_v2.PNG" class="img-responsive" style="width:95%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<hr>
+<h3>Replication Package:</h3>
+A replication package containing both the datasets and the scripts that were used for our analysis can be found <a href="MSR22_dataset.html">here</a>. More specifically, the link includes the following material:
+<ul>
+  <li><i>"openstack-repositories-to-clone.txt"</i> - A file containing the OpenStack repositories to be cloned using Gerrit miner. </li>
+  <li><i>"preliminary_analysis.ipynb"</i> - The Python Jupyter Notebook script that was used for the data collection process (i.e., refactoring reviews). </li>
+  <li><i>"Code_reviews_analysis.ipynb"</i> - The Python Jupyter Notebook script that was used to obtain code review mining results. </li>
+  <li><i>"projects_stats.ipynb"</i> - The Python Jupyter Notebook script that was used to obtain code repositories statistics. </li>
+  <li><i>"Openstack-20211024T162557Z-004.zip"</i> - A zip file containing all of the cloned OpenStack repositories. </li>
+  <li><i>"Openstack_results_v2.sqlite"</i> - The final dataset that was produced after the data preparation process. </li>
+  <li><i>"RQ1.csv"</i> - The dataset that was produced to answer the first research question along with the metrics definition and correlation analysis. </li>
+  <li><i>"RQ2.csv"</i> - The dataset that was produced to answer the second research question. </li>
+  <li><i>"Survey.pdf"</i> - List of survey questions used for the external validation. </li>
+  <li><i>"Transcript.pdf"</i> - Interview transcript for the external validation. </li>
+</ul> 
+
+<p>If you are interested to learn more about the process we followed, please refer to our paper.</p>
+<hr>
+
+
+<?php include_once "graph.php" ?>
+
+<!-- Google Analytics -->
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');ga('create','UA-180076082-1','auto');ga('send','pageview');</script>
+</body>
+</html>
