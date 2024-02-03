@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180076082-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180076082-1');
+</script>
+
+  <title>Refactoring Lab</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 3500px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href=""></a></li>
+        <li class="active"><a href=""></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid text-center">
+  <div class="row content">
+
+   <div class="col-sm-2 sidenav">
+     <h3>Artifacts</h3>
+     <div class="well">
+        <p></p>
+      <p><a href="https://github.com/AnonymousResearcherSubmission/devgpt-pipeline">DevGPT pipeline (Jupyter Notebook file)</a></p>
+    </div>
+     <div class="well">
+        <p></p>
+       <p><a href="https://drive.google.com/drive/folders/1p7Svf66c8bmksNF8xgLfiugnblF8SO4q?usp=sharing">Extracted data from DevGPT (SQLite database)</a></p>
+    </div>
+	<div>
+        <p></p>
+    </div>
+    </div>
+
+
+
+
+    <div class="col-sm-8 text-left">
+      <h1> How to refactor this code? An exploratory study on
+developer-ChatGPT refactoring conversations</h1>
+      <hr>
+      <p>Large Language Models (LLMs), like ChatGPT, have gained wide-
+spread popularity and usage in various software engineering tasks,
+including refactoring, testing, code review, and program compre-
+hension. Despite recent studies delving into refactoring documen-
+tation in commit messages, issues, and code review, little is known
+about how developers articulate their refactoring needs when in-
+teracting with ChatGPT. In this paper, our aim is to explore the
+developer-ChatGPT refactoring conversations to better understand
+what developers identify areas for improvement in code and how
+ChatGPT addresses developers’ needs. Our approach relies on text
+mining refactoring-related conversations from 17,913 ChatGPT
+prompts and responses, and investigating developers’ explicit refac-
+toring intention. Our results reveal that (1) developer-ChatGPT con-
+versations commonly involve generic and specific terms/phrases; (2)
+developers often make generic refactoring requests, while ChatGPT
+typically includes the refactoring intention; and (3) various learning
+settings when prompting ChatGPT in the context of refactoring. We
+envision that our findings contribute to a broader understanding of
+the collaboration between developers and AI models in the context
+of code refactoring, with implications for model improvement, tool
+development, and best practices in software engineering.</p>
+</br>
+<hr>
+<p>If you are interested to learn more about the process we followed, please refer to our paper.</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-danger">
+        <div class="panel-heading">  Example of a ChatGPT conversation in the context of GitHub issue about refactoring.</div>
+        <div class="panel-body"><img src="./Images/MSR-Example.png" class="img-responsive" style="width:95%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+<h2> Example of a ChatGPT conversation in the context of improving internal quality attributes</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <!--<div class="panel panel-danger">-->
+        <div class="panel-heading">  Prompt</div>
+        <div class="panel-body"><img src="./Images/Prompt_redundancy.png" class="img-responsive" style="width:95%" alt="Image"></div>
+       <!-- <div class="panel-footer"></div>-->
+      <!--</div>-->
+    </div>
+        <div class="col-sm-4">
+      <!--<div class="panel panel-danger">-->
+        <div class="panel-heading">  Response</div>
+        <div class="panel-body"><img src="./Images/Response_dependency.png" class="img-responsive" style="width:95%" alt="Image"></div>
+        <!--<div class="panel-footer"></div>-->
+      <!--</div>-->
+    </div>
+  </div>
+</div>
+<hr>
+
+<h2> Example of a ChatGPT conversation in the context of improving external quality attributes</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <!--<div class="panel panel-danger">-->
+        <div class="panel-heading">  Prompt</div>
+        <div class="panel-body"><img src="./Images/Prompt_readability.png" class="img-responsive" style="width:95%" alt="Image"></div>
+        <!--<div class="panel-footer"></div>
+      <!--</div>-->
+    </div>
+        <div class="col-sm-4">
+      <!--<div class="panel panel-danger">-->
+        <div class="panel-heading">  Response</div>
+        <div class="panel-body"><img src="./Images/Response_readability.png" class="img-responsive" style="width:95%" alt="Image"></div>
+        <!--<div class="panel-footer"></div>-->
+      <!--</div>-->
+    </div>
+  </div>
+</div>
+<hr>
+
+<h2> Example of a ChatGPT conversation in the context of removing code smells</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <!--<div class="panel panel-danger">-->
+        <div class="panel-heading">  Prompt</div>
+        <div class="panel-body"><img src="./Images/Prompt_codesmell.png" class="img-responsive" style="width:95%" alt="Image"></div>
+        <!--<div class="panel-footer"></div>-->
+      <!--</div>-->
+    </div>
+        <div class="col-sm-4">
+      <!--<div class="panel panel-danger">-->
+        <div class="panel-heading">  Response</div>
+        <div class="panel-body"><img src="./Images/Response_codesmell.png" class="img-responsive" style="width:95%" alt="Image"></div>
+        <!--<div class="panel-footer"></div>-->
+      <!--</div>-->
+    </div>
+  </div>
+</div>
+<hr>
+
+    
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p></p>
+</footer>
+<!-- Google Analytics -->
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');ga('create','UA-180076082-1','auto');ga('send','pageview');</script>
+</body>
+</html>
