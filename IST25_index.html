@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180076082-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180076082-1');
+</script>
+
+  <title>Refactoring Lab</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 3300px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       <li class="active"><a href="index.html">Home</a></li>
+        <li class="active"><a href="IST25_example.html">Example</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid text-center">
+  <div class="row content">
+
+   <div class="col-sm-2 sidenav">
+     <h3>Collected Data</h3>
+     <div class="well">
+        <p></p>
+       <p><a href="./Data/Script.zip">Script (Python)</a></p>
+    </div>
+  <div class="well">
+        <p></p>
+      <p><a href="https://stevens0-my.sharepoint.com/:u:/g/personal/ealomar_stevens_edu/EfyKMxpBLclDvFviHpjDvfYBxRaCZ6V5EBwPsNyd9N1cQA?e=IZHbu8">Refactoring Commits and Metric Values (SQLite)</a></p>
+    </div>
+	<div class="well">
+        <p></p>
+      <p><a href="./Data/StatisticalTest.zip">Statistical Test (Python) </a></p>
+    </div>
+	<div>
+        <p></p>
+    </div>
+    </div>
+
+
+
+
+    <div class="col-sm-8 text-left">
+      <h1> An Empirical Study on the Impact of Code
+Duplication-aware Refactoring Practices on Quality
+Metrics</h1>
+      <hr>
+      <p><b>Background:</b> Code refactoring is widely recognized as an essential software engineering practice to improve the
+understandability and maintainability of source code. Several studies attempted to detect refactoring activities through mining software repositories, allowing one to collect, analyze and get actionable data-driven insights about refactoring practices within software projects. 
+</br>
+<b>Aim:</b> We aim to identify, among the various quality models presented in the literature, the ones that align with the developer's vision of eliminating duplicates of code, when they explicitly mention that they refactor the code to improve them. 
+</br>
+<b>Method:</b> We extract a large corpus of 2,164,797 refactoring commits that are applied and documented by developers during their daily changes from 128 open-source Java projects. In particular, we extract 12 structural metrics 
+from which we identify code duplicates removal commits with their corresponding refactoring operations, as perceived by software engineers. Thereafter, we empirically analyze the impact of these refactoring operations on a set of common state-of-the-art design quality metrics. 
+</br>
+<b>Results:</b> The statistical analysis of the obtained results shows that
+(i) some state-of-the-art metrics are able to capture developer's intention of removing code duplication; and
+(ii) some metrics are being more emphasized than others.
+<!--(ii) `Extract Method' refactoring operation is widely adopted by developers as it is a common technique to eliminate code duplication.-->        
+</br>
+<b>Conclusions:</b> We confirm that various structural metrics can effectively represent code duplication, leading to different impacts on software quality. Some metrics contribute to improvements, while others may lead to degradation. Most of the mapped metrics associated with the main quality attributes successfully capture developers' intentions for removing code duplicates, as is evident from the commit messages. However, certain metrics do not fully capture these intentions.</p>
+</br>
+
+<p>If you are interested to learn more about the process we followed, please refer to our paper.</p>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-danger">
+        <div class="panel-heading">Commit message indicating the removal of code duplication.</div>
+        <div class="panel-body"><img src="./Images/CommitMessage.png" class="img-responsive" style="width:95%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-danger">
+        <div class="panel-heading">Code snippet depicting the first instance of code duplication before refactoring.</div>
+        <div class="panel-body"><img src="./Images/DuplicateMethod1.png" class="img-responsive" style="width:95%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-danger">
+        <div class="panel-heading">Code snippet depicting the second instance of code duplication before refactoring.</div>
+        <div class="panel-body"><img src="./Images/DuplicateMethod2.png" class="img-responsive" style="width:95%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-danger">
+        <div class="panel-heading">Code snippet depicting the removal of the duplicated code through the `Extract Method' refactoring.</div>
+        <div class="panel-body"><img src="./Images/ExtractedMethod.png" class="img-responsive" style="width:95%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+      <!--<h3>Related Paper</h3>-->
+      <!--<p>Eman Abdullah AlOmar, Mohamed Wiem Mkaouer, and Ali Ouni, "Toward the Automatic Classiffcation of Self-Affirmed
+Refactoring", the Journal of Systems and Software (JSS'2020). <a href="./Preprint/JSS19-preprint.pdf">[preprint]</a></p>-->
+    </div>
+    <div class="col-sm-2 sidenav">
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p></p>
+</footer>
+<!-- Google Analytics -->
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');ga('create','UA-180076082-1','auto');ga('send','pageview');</script>
+</body>
+</html>
